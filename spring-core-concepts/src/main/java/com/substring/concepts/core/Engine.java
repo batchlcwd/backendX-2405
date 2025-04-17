@@ -1,14 +1,21 @@
 package com.substring.concepts.core;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Engine {
 
     private  String companyName;
 
-    public Engine(String companyName) {
+    @Autowired
+    public Engine( @Qualifier("engineBean") String companyName) {
         this.companyName = companyName;
     }
 
     public Engine() {
+        System.out.println("Engine default constructor: engine creating");
     }
 
     public String getCompanyName() {

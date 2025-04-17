@@ -1,19 +1,29 @@
 package com.substring.concepts.core;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("car")
 public class Car {
 
     private String name;
 
 
+
     private Engine engine;
 
 
-    public Car(String name, Engine engine) {
-        this.name = name;
+
+    @Autowired
+    public Car(@Qualifier("carBean") String name, Engine engine) {
+        this.name=name;
         this.engine = engine;
+        System.out.println("Car constructor: car creating");
     }
 
     public Car() {
+        System.out.println("Car default constructor: car creating");
     }
 
     public String getName() {
@@ -28,8 +38,10 @@ public class Car {
         return engine;
     }
 
+
     public void setEngine(Engine engine) {
         this.engine = engine;
+        System.out.println("setting engine using setter");
     }
 
     public void start() {
