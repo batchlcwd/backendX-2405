@@ -1,21 +1,22 @@
 package com.substring.concepts.core;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class BeanContainer
-{
+@ComponentScan(basePackages = {"com.substring.concepts.core","com.substring.concepts.config"})
+public class BeanContainer {
+
     @Bean(name = "carBean")
-    public String carName(){
+    public String carName() {
         return "Tata Safari";
     }
 
     @Bean(name = "engineBean")
-    public String engineName(){
+    public String engineName() {
         return "Ford";
     }
-
 
 
 }

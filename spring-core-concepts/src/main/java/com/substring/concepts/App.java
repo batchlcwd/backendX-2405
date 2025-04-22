@@ -1,7 +1,10 @@
 package com.substring.concepts;
 
+import com.substring.concepts.config.Student;
+import com.substring.concepts.core.BeanContainer;
 import com.substring.concepts.core.Car;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -22,11 +25,14 @@ public class App {
 
 //        BeanFactory
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext(BeanContainer.class);
+
         Car car = context.getBean("car", Car.class);
         car.start();
 
 
+        Student student = context.getBean("student", Student.class);
+        student.study();
 
 
     }
