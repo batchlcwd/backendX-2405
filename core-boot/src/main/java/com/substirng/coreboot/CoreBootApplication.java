@@ -1,5 +1,6 @@
 package com.substirng.coreboot;
 
+import com.substirng.coreboot.beans.Samosa;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -28,6 +29,13 @@ public class CoreBootApplication
 		//	it will boot ups your spring boot application
 		ConfigurableApplicationContext context = SpringApplication.run(CoreBootApplication.class, args);
 
+
+		/// we are getting the bean from the application context
+
+		Samosa bean = context.getBean("mySamosa", Samosa.class);
+
+		System.out.println(bean);
+		bean.eat();
 
 		/*
 
