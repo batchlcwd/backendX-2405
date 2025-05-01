@@ -1,14 +1,16 @@
 package com.substirng.coreboot.beans;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.Scanner;
 
 @Component("mySamosa")
-public class Samosa implements InitializingBean , DisposableBean {
+@Scope("application") // prototype scope
+public class Samosa  {
 
     private LocalDate localDate;
     private Scanner scanner;
@@ -18,8 +20,9 @@ public class Samosa implements InitializingBean , DisposableBean {
     }
 
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
+
+    @PostConstruct
+    public void init() throws Exception {
         this.localDate=LocalDate.now();
         System.out.println("date is set to: "+localDate);
         this.scanner=new Scanner(System.in);
@@ -35,12 +38,33 @@ public class Samosa implements InitializingBean , DisposableBean {
         System.out.println("----------------------");
     }
 
-    @Override
-    public void destroy() throws Exception {
+
+    @PreDestroy
+    public void cleanup() throws Exception {
         System.out.println("destroying samosa bean");
         this.localDate=null;
         System.out.println("date is set to: "+localDate);
         this.scanner.close();
         System.out.println("scanner is closed");
     }
+
+//    @Override
+//    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+//
+//        if(bean instanceof Samosa){
+//            System.out.println("pre- samosa bean");
+//        }
+//
+//
+//        return BeanPostProcessor.super.postProcessBeforeInitialization(bean, beanName);
+//    }
+//
+//    @Override
+//    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+//
+//        if(bean instanceof Samosa){
+//            System.out.println("post-- samosa bean");
+//        }
+//   return BeanPostProcessor.super.postProcessAfterInitialization(bean, beanName);
+//    }
 }

@@ -32,11 +32,15 @@ public class CoreBootApplication
 
 		/// we are getting the bean from the application context
 
-		Samosa bean = context.getBean("mySamosa", Samosa.class);
+		Samosa bean1 = context.getBean("mySamosa", Samosa.class);
 
-		System.out.println(bean);
-		bean.eat();
+		System.out.println(bean1);
+		bean1.eat();
 
+		Samosa bean2=context.getBean("mySamosa", Samosa.class);
+
+		System.out.println(bean2);
+		bean2.eat();
 		/*
 
 			it will boot ups your spring boot application
