@@ -1,0 +1,708 @@
+select users.userid, users.name , certificate.cid, certificate.title 
+from users 
+INNER JOIN 
+certificate
+on users.userid= certificate.user_id ;
+
+select users.userid, users.name , certificate.cid, certificate.title 
+from users 
+LEFT JOIN 
+certificate
+on users.userid= certificate.user_id ;
+
+
+
+select u.userid, u.name , c.cid, c.title 
+from users as u
+INNER JOIN 
+certificate as c
+on u.userid= c.user_id ;
+
+select COUNT(c.title) from 
+users as u 
+INNER JOIN
+certificate as c
+on u.userid= c.user_id
+where u.name ='Nikhil';
+
+
+
+
+
+select u.userid, u.name , c.cid, c.title 
+from users as u
+INNER JOIN 
+certificate as c
+on u.userid= c.user_id 
+
+where c.title LIKE '%python%'
+;
+
+// fetch all users with same city: 
+
+select t1.userid, t1.name, t1.city ,
+t2.userid, t2.name, t2.city
+from users as t1 
+INNER JOIN users as t2
+on t1.city = t2.city
+where t1.userid != t2.userid
+
+-------------------------------
+
+
+
+Date :
+
+DATE - format: YYYY-MM-DD
+DATETIME - format: YYYY-MM-DD HH:MM:SS
+TIMESTAMP - format: YYYY-MM-DD HH:MM:SS
+2025-05-03 15:30:00
+YEAR - format: YYYY
+-------------------------------
+SELECT * FROM Orders WHERE OrderDate='2008-11-11'
+
+
+
+mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 9.2.0 Homebrew
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| backendx           |
+| contact_manager    |
+| e_learn_batch      |
+| hiber              |
+| information_schema |
+| jb2404             |
+| jb2404_foodapp     |
+| learn              |
+| mysql              |
+| performance_schema |
+| substring_back     |
+| sys                |
++--------------------+
+12 rows in set (0.04 sec)
+
+mysql> use backendx
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++--------------------+
+| Tables_in_backendx |
++--------------------+
+| users              |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from users;
++--------+---------+--------------------+----------+-------+--------+
+| userid | name    | email              | password | city  | salary |
++--------+---------+--------------------+----------+-------+--------+
+|    101 | Nikhil  | nikhil@gmail.com   | abc@123  | delhi |   4000 |
+|    102 | sahil   | sahil@gmail.com    | admin    | noida |   5000 |
+|    103 | sarthak | sarthakl@gmail.com | admin    | noida |   5000 |
++--------+---------+--------------------+----------+-------+--------+
+3 rows in set (0.00 sec)
+
+mysql> insert into users values (5051,'Gaytri','gaytri@yahooemail.com','gaytri@123','banglore',10000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from users
+    -> ;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select * from users where email LIKE '%@gmail.com';
++--------+---------+--------------------+----------+-------+--------+
+| userid | name    | email              | password | city  | salary |
++--------+---------+--------------------+----------+-------+--------+
+|    101 | Nikhil  | nikhil@gmail.com   | abc@123  | delhi |   4000 |
+|    102 | sahil   | sahil@gmail.com    | admin    | noida |   5000 |
+|    103 | sarthak | sarthakl@gmail.com | admin    | noida |   5000 |
++--------+---------+--------------------+----------+-------+--------+
+3 rows in set (0.00 sec)
+
+mysql> select * form uses;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form uses' at line 1
+mysql> select * form users;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form users' at line 1
+mysql> select * from users;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select * from users where name LIKE '_a%';
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+3 rows in set (0.00 sec)
+
+mysql> select COUNT(userid) from users;
++---------------+
+| COUNT(userid) |
++---------------+
+|             4 |
++---------------+
+1 row in set (0.00 sec)
+
+mysql> select COUNT(userid) as "NUMBERS" from users;
++---------+
+| NUMBERS |
++---------+
+|       4 |
++---------+
+1 row in set (0.00 sec)
+
+mysql> select COUNT(userid) from users where city ='noida';
++---------------+
+| COUNT(userid) |
++---------------+
+|             2 |
++---------------+
+1 row in set (0.00 sec)
+
+mysql> select COUNT(userid) from users where email LIKE '%@gmail.com';
++---------------+
+| COUNT(userid) |
++---------------+
+|             3 |
++---------------+
+1 row in set (0.00 sec)
+
+mysql> select * users;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users' at line 1
+mysql> select * from users;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select AVG(salary) from users;
++-------------+
+| AVG(salary) |
++-------------+
+|   6000.0000 |
++-------------+
+1 row in set (0.01 sec)
+
+mysql> select AVG(salary) as "Average Salary" from users;
++----------------+
+| Average Salary |
++----------------+
+|      6000.0000 |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select MAX(salary) from users;
++-------------+
+| MAX(salary) |
++-------------+
+|       10000 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select MAX(salary) from users where city='noida';
++-------------+
+| MAX(salary) |
++-------------+
+|        5000 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida');
++--------+---------+
+| userid | name    |
++--------+---------+
+|    102 | sahil   |
+|    103 | sarthak |
++--------+---------+
+2 rows in set (0.00 sec)
+
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida') and city='noida';
++--------+---------+
+| userid | name    |
++--------+---------+
+|    102 | sahil   |
+|    103 | sarthak |
++--------+---------+
+2 rows in set (0.00 sec)
+
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida') and city='noida' limit 1;
++--------+-------+
+| userid | name  |
++--------+-------+
+|    102 | sahil |
++--------+-------+
+1 row in set (0.00 sec)
+
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida') and city='noida' limit 1;
++--------+-------+
+| userid | name  |
++--------+-------+
+|    102 | sahil |
++--------+-------+
+1 row in set (0.01 sec)
+
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida') and city='noida' limit 1;
++--------+-------+
+| userid | name  |
++--------+-------+
+|    102 | sahil |
++--------+-------+
+1 row in set (0.00 sec)
+
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida') and city='noida' limit 1;
++--------+-------+
+| userid | name  |
++--------+-------+
+|    102 | sahil |
++--------+-------+
+1 row in set (0.00 sec)
+
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida') and city='noida' lorder by name asc imit 1 ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lorder by name asc imit 1' at line 1
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida') and city='noida' order by name asc limit 1 ;
++--------+-------+
+| userid | name  |
++--------+-------+
+|    102 | sahil |
++--------+-------+
+1 row in set (0.01 sec)
+
+mysql> select userid,name from users where salary = (select MAX(salary) from users where city='noida') and city='noida' order by name desc limit 1 ;
++--------+---------+
+| userid | name    |
++--------+---------+
+|    103 | sarthak |
++--------+---------+
+1 row in set (0.00 sec)
+
+mysql> select * from users;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select * from users limit 2 offset 1;
++--------+---------+--------------------+----------+-------+--------+
+| userid | name    | email              | password | city  | salary |
++--------+---------+--------------------+----------+-------+--------+
+|    102 | sahil   | sahil@gmail.com    | admin    | noida |   5000 |
+|    103 | sarthak | sarthakl@gmail.com | admin    | noida |   5000 |
++--------+---------+--------------------+----------+-------+--------+
+2 rows in set (0.00 sec)
+
+mysql> select * from users limit 2 offset 2;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+2 rows in set (0.00 sec)
+
+mysql> show tables
+    -> ;
++--------------------+
+| Tables_in_backendx |
++--------------------+
+| users              |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from users;.
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+4 rows in set (0.00 sec)
+
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.' at line 1
+mysql> create table certificate(cid int primary key, title varchar(100) not null, description text , user_id int , foreign key (user_id) references users(userid));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc users;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| userid   | int          | NO   | PRI | NULL    |       |
+| name     | varchar(100) | NO   |     | NULL    |       |
+| email    | varchar(100) | NO   |     | NULL    |       |
+| password | varchar(50)  | YES  |     | NULL    |       |
+| city     | varchar(50)  | YES  |     | NULL    |       |
+| salary   | int          | YES  |     | 0       |       |
++----------+--------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql> desc certificate;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| cid         | int          | NO   | PRI | NULL    |       |
+| title       | varchar(100) | NO   |     | NULL    |       |
+| description | text         | YES  |     | NULL    |       |
+| user_id     | int          | YES  | MUL | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> insert into certifcate values(10001,'java certification','best java certificateion',101);
+ERROR 1146 (42S02): Table 'backendx.certifcate' doesn't exist
+mysql> insert into certificate values(10001,'java certification','best java certificateion',101);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from certificate;
++-------+--------------------+--------------------------+---------+
+| cid   | title              | description              | user_id |
++-------+--------------------+--------------------------+---------+
+| 10001 | java certification | best java certificateion |     101 |
++-------+--------------------+--------------------------+---------+
+1 row in set (0.00 sec)
+
+mysql> insert into certificate values(10002,'python certification','best python certificateion',101);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from certificate;
++-------+----------------------+----------------------------+---------+
+| cid   | title                | description                | user_id |
++-------+----------------------+----------------------------+---------+
+| 10001 | java certification   | best java certificateion   |     101 |
+| 10002 | python certification | best python certificateion |     101 |
++-------+----------------------+----------------------------+---------+
+2 rows in set (0.00 sec)
+
+mysql> insert into certificate values(10002,'python certification','best python certificateion',102);
+ERROR 1062 (23000): Duplicate entry '10002' for key 'certificate.PRIMARY'
+mysql> insert into certificate values(10003,'python certification','best python certificateion',102);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into certificate values(10004,'python certification','best python certificateion',102);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into certificate values(10005,'python certification','best python certificateion',102);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from certificate;
++-------+----------------------+----------------------------+---------+
+| cid   | title                | description                | user_id |
++-------+----------------------+----------------------------+---------+
+| 10001 | java certification   | best java certificateion   |     101 |
+| 10002 | python certification | best python certificateion |     101 |
+| 10003 | python certification | best python certificateion |     102 |
+| 10004 | python certification | best python certificateion |     102 |
+| 10005 | python certification | best python certificateion |     102 |
++-------+----------------------+----------------------------+---------+
+5 rows in set (0.00 sec)
+
+mysql> insert into certificate values(10006,'python certification','best python certificateion',1110);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`backendx`.`certificate`, CONSTRAINT `certificate_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`userid`))
+mysql> select * from users;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select users.userid, users.name , certificate.cid, certificate.title 
+    -> from users 
+    -> INNER JOIN 
+    -> certificate
+    -> on users.userid= certificate.user_id ;
++--------+--------+-------+----------------------+
+| userid | name   | cid   | title                |
++--------+--------+-------+----------------------+
+|    101 | Nikhil | 10001 | java certification   |
+|    101 | Nikhil | 10002 | python certification |
+|    102 | sahil  | 10003 | python certification |
+|    102 | sahil  | 10004 | python certification |
+|    102 | sahil  | 10005 | python certification |
++--------+--------+-------+----------------------+
+5 rows in set (0.00 sec)
+
+mysql> 
+mysql> select users.userid, users.name , certificate.cid, certificate.title 
+    -> from users 
+    -> LEFT JOIN 
+    -> certificate
+    -> on users.userid= certificate.user_id ;
++--------+---------+-------+----------------------+
+| userid | name    | cid   | title                |
++--------+---------+-------+----------------------+
+|    101 | Nikhil  | 10001 | java certification   |
+|    101 | Nikhil  | 10002 | python certification |
+|    102 | sahil   | 10003 | python certification |
+|    102 | sahil   | 10004 | python certification |
+|    102 | sahil   | 10005 | python certification |
+|    103 | sarthak |  NULL | NULL                 |
+|   5051 | Gaytri  |  NULL | NULL                 |
++--------+---------+-------+----------------------+
+7 rows in set (0.00 sec)
+
+mysql> 
+mysql> select u.userid, u.name , c.cid, c.title 
+    -> from users as u
+    -> INNER JOIN 
+    -> certificate as c
+    -> on u.userid= c.user_id ;
++--------+--------+-------+----------------------+
+| userid | name   | cid   | title                |
++--------+--------+-------+----------------------+
+|    101 | Nikhil | 10001 | java certification   |
+|    101 | Nikhil | 10002 | python certification |
+|    102 | sahil  | 10003 | python certification |
+|    102 | sahil  | 10004 | python certification |
+|    102 | sahil  | 10005 | python certification |
++--------+--------+-------+----------------------+
+5 rows in set (0.00 sec)
+
+mysql> select COUNT(c.title) from 
+    -> users as u 
+    -> INNER JOIN
+    -> certificate as c
+    -> on u.userid= c.user_id
+    -> where u.name ='Nikhil';
++----------------+
+| COUNT(c.title) |
++----------------+
+|              2 |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select u.userid, u.name , c.cid, c.title 
+    -> from users as u
+    -> INNER JOIN 
+    -> certificate as c
+    -> on u.userid= c.user_id 
+    -> 
+    -> where c.title LIKE '%python%'
+    -> ;
++--------+--------+-------+----------------------+
+| userid | name   | cid   | title                |
++--------+--------+-------+----------------------+
+|    101 | Nikhil | 10002 | python certification |
+|    102 | sahil  | 10003 | python certification |
+|    102 | sahil  | 10004 | python certification |
+|    102 | sahil  | 10005 | python certification |
++--------+--------+-------+----------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from users;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+4 rows in set (0.01 sec)
+
+mysql> select t1.userid, t1.name, t1.city ,
+    -> t2.userid, t2.name, t2.city
+    -> from users as t1 
+    -> INNER JOIN users as t2
+    -> on t1.city = t2.city
+    -> where t1.userid != t2.userid;
++--------+---------+-------+--------+---------+-------+
+| userid | name    | city  | userid | name    | city  |
++--------+---------+-------+--------+---------+-------+
+|    103 | sarthak | noida |    102 | sahil   | noida |
+|    102 | sahil   | noida |    103 | sarthak | noida |
++--------+---------+-------+--------+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> select CURDATE();
++------------+
+| CURDATE()  |
++------------+
+| 2025-05-03 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT CURRENT_DATE();  -- Output: '2025-05-03'
++----------------+
+| CURRENT_DATE() |
++----------------+
+| 2025-05-03     |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select CURRENT_DATE();
++----------------+
+| CURRENT_DATE() |
++----------------+
+| 2025-05-03     |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select NOW();
++---------------------+
+| NOW()               |
++---------------------+
+| 2025-05-03 22:31:07 |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql> select CURRENT_TIMESTAMP();
++---------------------+
+| CURRENT_TIMESTAMP() |
++---------------------+
+| 2025-05-03 22:31:21 |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql> select DAY(select CURRENT_DATE());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select CURRENT_DATE())' at line 1
+mysql> select DAY('2025-05-3');
++------------------+
+| DAY('2025-05-3') |
++------------------+
+|                3 |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> select DAY(select CURDATE());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select CURDATE())' at line 1
+mysql> select DAY(CURDATE());
++----------------+
+| DAY(CURDATE()) |
++----------------+
+|              3 |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select DAY(CURDATE());
++----------------+
+| DAY(CURDATE()) |
++----------------+
+|              3 |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select MONTH(CURDATE());
++------------------+
+| MONTH(CURDATE()) |
++------------------+
+|                5 |
++------------------+
+1 row in set (0.01 sec)
+
+mysql> select DAYNAME(CURDATE());
++--------------------+
+| DAYNAME(CURDATE()) |
++--------------------+
+| Saturday           |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select DAYMONTH(CURDATE());
+ERROR 1305 (42000): FUNCTION backendx.DAYMONTH does not exist
+mysql> select MONTHNAME(CURDATE());
++----------------------+
+| MONTHNAME(CURDATE()) |
++----------------------+
+| May                  |
++----------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from users;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
++--------+---------+-----------------------+------------+----------+--------+
+4 rows in set (0.00 sec)
+
+mysql> create view user_view as select userid,name from users where city ='noida';
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> select * from user_view;
++--------+---------+
+| userid | name    |
++--------+---------+
+|    102 | sahil   |
+|    103 | sarthak |
++--------+---------+
+2 rows in set (0.01 sec)
+
+mysql> insert into users values(10001,'sunil','sunil@gmail.com','suni','noida',25252);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from users;
++--------+---------+-----------------------+------------+----------+--------+
+| userid | name    | email                 | password   | city     | salary |
++--------+---------+-----------------------+------------+----------+--------+
+|    101 | Nikhil  | nikhil@gmail.com      | abc@123    | delhi    |   4000 |
+|    102 | sahil   | sahil@gmail.com       | admin      | noida    |   5000 |
+|    103 | sarthak | sarthakl@gmail.com    | admin      | noida    |   5000 |
+|   5051 | Gaytri  | gaytri@yahooemail.com | gaytri@123 | banglore |  10000 |
+|  10001 | sunil   | sunil@gmail.com       | suni       | noida    |  25252 |
++--------+---------+-----------------------+------------+----------+--------+
+5 rows in set (0.00 sec)
+
+mysql> select * user_view;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_view' at line 1
+mysql> select * from user_view;
++--------+---------+
+| userid | name    |
++--------+---------+
+|    102 | sahil   |
+|    103 | sarthak |
+|  10001 | sunil   |
++--------+---------+
+3 rows in set (0.01 sec)
+
+mysql> 
