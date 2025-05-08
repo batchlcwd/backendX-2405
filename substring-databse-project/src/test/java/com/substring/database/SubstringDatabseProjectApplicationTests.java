@@ -1,6 +1,6 @@
 package com.substring.database;
 
-import com.substring.database.dao.UserService;
+import com.substring.database.dao.UserDao;
 import com.substring.database.entity.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ class SubstringDatabseProjectApplicationTests
 
 
 	@Autowired
-	private UserService userService;
+	private UserDao userDoa;
 
 	@Test
 	void userTest(){
@@ -28,7 +28,7 @@ class SubstringDatabseProjectApplicationTests
 		user.setCity("Delhi");
 		user.setSalary(10000);
 
-		int rows = userService.saveUser(user);
+		int rows = userDoa.saveUser(user);
 		Assertions.assertEquals(1,rows);
 
 
