@@ -9,6 +9,8 @@ public class Book {
     private Boolean available = true;
 
 
+    private int priceOfDay;
+
     public int getId() {
         return id;
     }
@@ -55,5 +57,13 @@ public class Book {
 
     public void setAvailable(Boolean available) {
         this.available = available;
+    }
+
+    public int getPriceOfDay() {
+        return priceOfDay;
+    }
+
+    public void setPriceOfDay(int priceOfDay) {
+        this.priceOfDay = priceOfDay;
     }
 }

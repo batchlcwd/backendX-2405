@@ -12,6 +12,7 @@ public class BookDao {
 
     private JdbcTemplate jdbcTemplate;
 
+
     public BookDao(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
@@ -19,7 +20,7 @@ public class BookDao {
     //save the book
     public void save(Book book) {
 
-        String query = "insert into books (title, about, author, language, available) values (?,?,?,?,?)";
+        String query = "insert into books (title, about, author, language, available,price_for_day) values (?,?,?,?,?,?)";
 
         int rowsEffected = jdbcTemplate.update(
                 query,
@@ -27,7 +28,8 @@ public class BookDao {
                 book.getAbout(),
                 book.getAuthor(),
                 book.getLanguage(),
-                book.getAvailable()
+                book.getAvailable(),
+                book.getPriceOfDay()
         );
         System.out.println("book added: " + rowsEffected);
 

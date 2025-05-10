@@ -20,6 +20,7 @@ public class BookRowMapper  implements RowMapper<Book> {
         book.setAvailable(rs.getBoolean("available"));
         book.setAuthor(rs.getString("author"));
         book.setLanguage(rs.getString("language"));
+        book.setPriceOfDay(rs.getInt("price_for_day"));
 
 
         return book;

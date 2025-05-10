@@ -13,5 +13,20 @@ public class UserDao {
     private JdbcTemplate jdbcTemplate;
 
 
+    public User get(int userid) {
 
+        String sql = "SELECT * FROM users WHERE userid = ?";
+        User user1 = jdbcTemplate.queryForObject(sql, (rs, rowNum) -> {
+            User user = new User();
+            user.setUserId(rs.getInt("userId"));
+            user.setName(rs.getString("name"));
+            user.setEmail(rs.getString("email"));
+            user.setPassword(rs.getString("password"));
+            user.setCity(rs.getString("city"));
+            user.setSalary(rs.getInt("salary"));
+            return user;
+        }, userid);
+        return user1;
+
+    }
 }
