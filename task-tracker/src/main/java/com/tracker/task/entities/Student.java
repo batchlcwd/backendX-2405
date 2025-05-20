@@ -22,8 +22,6 @@ public class Student {
     private  Department department;
 
 
-
-
     public int getId() {
         return id;
     }
@@ -54,5 +52,13 @@ public class Student {
 
     public void setCertificate(Certificate certificate) {
         this.certificate = certificate;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 }
