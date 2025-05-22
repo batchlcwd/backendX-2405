@@ -21,6 +21,9 @@ public class Student {
     @JoinColumn(name = "department_id")
     private  Department department;
 
+    @Transient
+    private  String testing;
+
 
     public int getId() {
         return id;

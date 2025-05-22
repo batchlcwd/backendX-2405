@@ -33,8 +33,16 @@ public class TaskTrackerApplication implements CommandLineRunner {
     @Autowired
     private CategoryRepo categoryRepo;
 
+    @Autowired
+    private  StudentDao studentDao;
+
     @Override
     public void run(String... args) throws Exception {
+
+
+
+        studentDao.getJoinedData();
+
 
 
 // going to save student and certificate
@@ -91,26 +99,26 @@ public class TaskTrackerApplication implements CommandLineRunner {
 //        System.out.println("departement created:");
 
 
-        Category category1 = new Category();
-        category1.setTitle("Trending");
-        Category category2 = new Category();
-        category2.setTitle("Mobile Phones");
-
-
-        Product product1 = new Product();
-        product1.setName("Iphone 13");
-
-        Product product2 = new Product();
-        product2.setName("Asus ROG 123");
+//        Category category1 = new Category();
+//        category1.setTitle("Trending");
+//        Category category2 = new Category();
+//        category2.setTitle("Mobile Phones");
+//
+//
+//        Product product1 = new Product();
+//        product1.setName("Iphone 13");
+//
+//        Product product2 = new Product();
+//        product2.setName("Asus ROG 123");
 
 
         //mapping
 //        product1.getCategories().add(category1);
 //        category1.getProducts().add(product1);
 
-        product1.addCategory(category1);
-        product1.addCategory(category2);
-        product2.addCategory(category1);
+//        product1.addCategory(category1);
+//        product1.addCategory(category2);
+//        product2.addCategory(category1);
 
 //        product1.getCategories().add(category2);
 //        category2.getProducts().add(product1);
@@ -121,7 +129,7 @@ public class TaskTrackerApplication implements CommandLineRunner {
 
         //  save
 
-        producdRepo.save(product1);
-        producdRepo.save(product2);
+//        producdRepo.save(product1);
+//        producdRepo.save(product2);
     }
 }

@@ -23,6 +23,12 @@ public class Product {
     )
     private List<Category> categories = new ArrayList<>();
 
+    private  double price;
+
+    private  int discount;
+
+    @Transient
+    private  int finalPrice;
 
 
     public void addCategory(Category category){
@@ -30,6 +36,13 @@ public class Product {
             category.getProducts().add(this);
     }
 
+
+    @PrePersist
+    public void test(){
+        System.out.println("hi, going to save entity");
+        //
+        this.price=Math.floor(this.price);
+    }
 
 
     public int getId() {

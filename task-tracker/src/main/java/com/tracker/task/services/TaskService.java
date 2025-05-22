@@ -3,6 +3,7 @@ package com.tracker.task.services;
 import com.tracker.task.entities.Task;
 import com.tracker.task.entities.TaskStatus;
 import com.tracker.task.repositories.TaskRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ public class TaskService {
 
 
     // saveTask
+    @Transactional
     public Task saveTask(Task task) {
 
 
@@ -27,7 +29,11 @@ public class TaskService {
 
         // save karene ka logic likhenge
         Task savedTask = taskRepository.save(task);
+
+//        ....... 15 task
         System.out.println("Task saved with ID: " + savedTask.getId());
+
+
         return savedTask;
     }
 
