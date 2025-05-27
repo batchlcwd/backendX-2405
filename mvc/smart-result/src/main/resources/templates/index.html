@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartResult</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+<!-- Header -->
+<header class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Brand Name -->
+      <a href="#" class="text-2xl font-bold text-blue-700">SmartResult</a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+        <a  th:href="@{'/results/input'}"   class="text-gray-700 hover:text-blue-600 transition">View Result</a>
+        <a  th:href="@{'/results/add'}" href="#add" class="text-gray-700 hover:text-blue-600 transition">Add Result</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menuBtn" class="text-gray-700 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2">
+    <a href="#" class="block text-gray-700 hover:text-blue-600">Home</a>
+    <a href="#view" class="block text-gray-700 hover:text-blue-600">View Result</a>
+    <a href="#add" class="block text-gray-700 hover:text-blue-600">Add Result</a>
+    <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+    <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+  </div>
+</header>
+
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-blue-100 to-white py-20 px-6 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blue-800">Welcome to SmartResult</h1>
+  <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-gray-600">
+    The easiest way for students to access and understand their academic results online. Fast. Accurate. Hassle-free.
+  </p>
+  <a href="#" class="inline-block bg-blue-600 text-white px-6 py-3 text-lg rounded-xl hover:bg-blue-700 transition">Check Your Result</a>
+</section>
+
+<!-- Features Section -->
+<section class="py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-12 text-blue-800">Why SmartResult?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="text-green-500 mb-4">
+          <svg class="h-8 w-8 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2l4-4M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10s-4.48 10-10 10z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Instant Access</h3>
+        <p>Students can view their results as soon as they're published — no waiting, no hassle.</p>
+      </div>
+      <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="text-green-500 mb-4">
+          <svg class="h-8 w-8 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2l4-4M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10s-4.48 10-10 10z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">User Friendly</h3>
+        <p>Clean interface designed for simplicity. Easily navigate, search, and understand your performance.</p>
+      </div>
+      <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition">
+        <div class="text-green-500 mb-4">
+          <svg class="h-8 w-8 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2l4-4M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10s-4.48 10-10 10z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Secure & Reliable</h3>
+        <p>Your academic data is kept secure with modern standards and encryption.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="bg-blue-50 py-16 px-6 text-center">
+  <h2 class="text-3xl font-semibold mb-4 text-blue-800">Ready to Check Your Result?</h2>
+  <p class="text-lg mb-6 text-gray-700">Get your academic performance instantly. Start now with SmartResult.</p>
+  <a href="#" class="inline-block bg-blue-600 text-white px-6 py-3 text-lg rounded-xl hover:bg-blue-700 transition">Check Now</a>
+</section>
+
+<!-- Contact Section -->
+<section class="py-16 px-6 bg-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6 text-blue-800">Contact Us</h2>
+    <p class="mb-4 text-gray-700">Have questions or need support? Reach out to us anytime.</p>
+    <div class="flex flex-col md:flex-row justify-center gap-8 mt-6 text-gray-700">
+      <div class="flex items-center justify-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 12H8m8 0l-4 4m4-4l-4-4m12 4c0 6.627-5.373 12-12 12S0 18.627 0 12S5.373 0 12 0s12 5.373 12 12z"/>
+        </svg>
+        support@smartresult.com
+      </div>
+      <div class="flex items-center justify-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a11 11 0 0016 16l4-4a11 11 0 00-16-16z"/>
+        </svg>
+        +1 (123) 456-7890
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6 text-center">
+  <p>&copy; <span id="year"></span> SmartResult. All rights reserved.</p>
+</footer>
+
+<script>
+  // Auto-update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+</html>

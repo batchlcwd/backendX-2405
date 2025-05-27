@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Add Student</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10 px-4">
+
+<div class="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl p-8">
+  <h2 class="text-3xl font-bold text-center text-blue-800 mb-8">Add Student & Marks</h2>
+
+  <form id="studentForm" class="space-y-8">
+    <!-- Student Info -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-4">Student Information</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label class="block mb-1 font-medium text-gray-700">Name</label>
+          <input type="text" class="w-full border rounded-xl px-4 py-2" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-medium text-gray-700">Roll Number</label>
+          <input type="text" class="w-full border rounded-xl px-4 py-2" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-medium text-gray-700">Email</label>
+          <input type="email" class="w-full border rounded-xl px-4 py-2" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-medium text-gray-700">Gender</label>
+          <select class="w-full border rounded-xl px-4 py-2" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1 font-medium text-gray-700">Date of Birth</label>
+          <input type="date" class="w-full border rounded-xl px-4 py-2" required>
+        </div>
+        <div>
+          <label class="block mb-1 font-medium text-gray-700">School Name</label>
+          <input type="text" class="w-full border rounded-xl px-4 py-2" required>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marks Section -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-4">Subject Marks</h3>
+      <div class="space-y-6">
+        <!-- Repeat this block for 5 subjects -->
+        <div class="grid md:grid-cols-6 gap-4">
+          <input type="text" placeholder="Subject" class="col-span-2 border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Max Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Grade" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Remark" class="border rounded-xl px-3 py-2" required>
+        </div>
+        <div class="grid md:grid-cols-6 gap-4">
+          <input type="text" placeholder="Subject" class="col-span-2 border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Max Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Grade" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Remark" class="border rounded-xl px-3 py-2" required>
+        </div>
+        <div class="grid md:grid-cols-6 gap-4">
+          <input type="text" placeholder="Subject" class="col-span-2 border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Max Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Grade" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Remark" class="border rounded-xl px-3 py-2" required>
+        </div>
+        <div class="grid md:grid-cols-6 gap-4">
+          <input type="text" placeholder="Subject" class="col-span-2 border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Max Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Grade" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Remark" class="border rounded-xl px-3 py-2" required>
+        </div>
+        <div class="grid md:grid-cols-6 gap-4">
+          <input type="text" placeholder="Subject" class="col-span-2 border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="number" placeholder="Max Marks" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Grade" class="border rounded-xl px-3 py-2" required>
+          <input type="text" placeholder="Remark" class="border rounded-xl px-3 py-2" required>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="text-center">
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition">
+        Save Student & Result
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

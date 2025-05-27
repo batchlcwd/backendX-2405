@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Marksheet - SmartResult</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10 px-4">
+
+<div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl p-8">
+  <!-- Title -->
+  <div class="text-center mb-6">
+    <h1 class="text-3xl font-bold text-blue-800">Student Marksheet</h1>
+    <p class="text-gray-600">Academic Performance Summary</p>
+  </div>
+
+  <!-- Student Info -->
+  <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-700 mb-8">
+    <div><strong>Name:</strong> John Doe</div>
+    <div><strong>Roll Number:</strong> 123456</div>
+    <div><strong>Email:</strong> johndoe@example.com</div>
+    <div><strong>Gender:</strong> Male</div>
+    <div><strong>DOB:</strong> 2005-04-12</div>
+    <div><strong>School:</strong> Springfield High School</div>
+  </div>
+
+  <!-- Subject Marks Table -->
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-sm text-left border border-gray-300 rounded-lg overflow-hidden">
+      <thead class="bg-blue-600 text-white">
+      <tr>
+        <th class="px-4 py-2">Subject</th>
+        <th class="px-4 py-2">Marks</th>
+        <th class="px-4 py-2">Max Marks</th>
+        <th class="px-4 py-2">Grade</th>
+        <th class="px-4 py-2">Remark</th>
+      </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-200">
+      <tr>
+        <td class="px-4 py-2">Mathematics</td>
+        <td class="px-4 py-2">95</td>
+        <td class="px-4 py-2">100</td>
+        <td class="px-4 py-2">A+</td>
+        <td class="px-4 py-2">Excellent</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-2">Science</td>
+        <td class="px-4 py-2">90</td>
+        <td class="px-4 py-2">100</td>
+        <td class="px-4 py-2">A</td>
+        <td class="px-4 py-2">Very Good</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-2">English</td>
+        <td class="px-4 py-2">88</td>
+        <td class="px-4 py-2">100</td>
+        <td class="px-4 py-2">A</td>
+        <td class="px-4 py-2">Good</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-2">History</td>
+        <td class="px-4 py-2">82</td>
+        <td class="px-4 py-2">100</td>
+        <td class="px-4 py-2">B+</td>
+        <td class="px-4 py-2">Satisfactory</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-2">Computer</td>
+        <td class="px-4 py-2">93</td>
+        <td class="px-4 py-2">100</td>
+        <td class="px-4 py-2">A+</td>
+        <td class="px-4 py-2">Excellent</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Summary Section -->
+  <div class="mt-8 bg-gray-50 border rounded-xl p-6">
+    <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+      <div><strong>Total Marks:</strong> 448 / 500</div>
+      <div><strong>Percentage:</strong> 89.6%</div>
+      <div><strong>Overall Grade:</strong> A</div>
+      <div><strong>Feedback:</strong> Keep up the excellent work! You're doing great!</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="text-center text-xs text-gray-500 mt-10">
+    © 2025 SmartResult. All rights reserved.
+  </div>
+</div>
+
+</body>
+</html>
