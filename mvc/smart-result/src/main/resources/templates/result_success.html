@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Student Added Successfully</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+
+<div class="bg-white p-8 rounded-2xl shadow-lg max-w-md text-center">
+
+    <!-- Success Icon -->
+    <div class="flex justify-center items-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-6">
+        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+    </div>
+
+    <!-- Message -->
+    <h2 class="text-2xl font-bold text-gray-800 mb-2">Success!</h2>
+    <h2 class="text-2xl font-bold text-gray-800 mb-2">Student name : <span th:text="${studentForm.name}"></span></h2>
+    <p class="text-gray-600 mb-6">Student has been added successfully along with their marks.</p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a th:href="@{'/results/add'}" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md transition">Add Another</a>
+        <a th:href="@{'/results/view'}"  class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-5 py-2 rounded-md transition">View Students</a>
+    </div>
+</div>
+
+</body>
+</html>

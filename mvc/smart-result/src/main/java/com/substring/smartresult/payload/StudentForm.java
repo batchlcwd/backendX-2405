@@ -1,45 +1,21 @@
-package com.substring.smartresult.entities;
+package com.substring.smartresult.payload;
 
-import jakarta.persistence.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-public class Student {
+public class StudentForm {
 
-    @Id
-    private String id;
 
     private String name;
-
-    @Column(unique = true)
     private String rollNumber;
-
-
-    @Column(unique = true)
     private String email;
-
     private String schoolName;
-
     private LocalDate dob;
-
     private String gender;
 
-
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
-    private List<Mark> markList = new ArrayList<>();
-
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    private List<MarkForm> marks=new ArrayList<>();
 
     public String getName() {
         return name;
@@ -81,19 +57,19 @@ public class Student {
         this.dob = dob;
     }
 
-    public List<Mark> getMarkList() {
-        return markList;
-    }
-
-    public void setMarkList(List<Mark> markList) {
-        this.markList = markList;
-    }
-
     public String getGender() {
         return gender;
     }
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public List<MarkForm> getMarks() {
+        return marks;
+    }
+
+    public void setMarks(List<MarkForm> marks) {
+        this.marks = marks;
     }
 }

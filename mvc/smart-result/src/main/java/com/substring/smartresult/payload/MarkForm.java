@@ -1,31 +1,11 @@
-package com.substring.smartresult.entities;
+package com.substring.smartresult.payload;
 
-import jakarta.persistence.*;
-
-@Entity
-public class Mark {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+public class MarkForm {
     private String subject;
     private int marks;
     private int maxMarks;
     private String remark;
     private String grade;
-
-
-    @ManyToOne
-    private  Student student;
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getSubject() {
         return subject;
@@ -65,13 +45,5 @@ public class Mark {
 
     public void setGrade(String grade) {
         this.grade = grade;
-    }
-
-    public Student getStudent() {
-        return student;
-    }
-
-    public void setStudent(Student student) {
-        this.student = student;
     }
 }
