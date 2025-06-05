@@ -13,10 +13,13 @@
     <h2 class="text-2xl font-bold text-center text-blue-800 mb-6">View Your Result</h2>
 
     <!-- Form -->
-    <form id="resultForm" class="space-y-4">
+    <form th:action="@{'/results/view-result'}"  method="post" id="resultForm" class="space-y-4">
         <div>
             <label for="rollNumber" class="block text-gray-700 font-medium mb-1">Enter Roll Number</label>
+
+            <!--           enter roll number wali input field-->
             <input
+                    name="rollNumber"
                     type="text"
                     id="rollNumber"
                     placeholder="e.g. 123456"
@@ -32,32 +35,11 @@
         </button>
     </form>
 
-    <!-- Result Card (Hidden Initially) -->
-    <div id="resultCard" class="mt-8 hidden">
-        <div class="border rounded-xl p-4 shadow-md bg-gray-50">
-            <h3 class="text-xl font-semibold text-blue-700 mb-2">Result for Roll No: <span id="resultRoll"></span></h3>
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Class:</strong> 10th Grade</p>
-            <p><strong>Marks:</strong> 475 / 500</p>
-            <p><strong>Grade:</strong> A+</p>
-        </div>
-    </div>
+
 </div>
 
 <script>
-    const form = document.getElementById('resultForm');
-    const resultCard = document.getElementById('resultCard');
-    const resultRoll = document.getElementById('resultRoll');
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const rollNumber = document.getElementById('rollNumber').value;
-      resultRoll.textContent = rollNumber;
-
-      // Simulate showing a result (this is placeholder data)
-      resultCard.classList.remove('hidden');
-    });
 </script>
 </body>
 </html>

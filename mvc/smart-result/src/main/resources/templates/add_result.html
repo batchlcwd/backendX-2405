@@ -1,122 +1,284 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin - Add Student</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 py-10 px-4">
+  </head>
+  <body class="bg-gray-100 py-10 px-4">
+    <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl p-8">
+      <h2 class="text-3xl font-bold text-center text-blue-800 mb-8">
+        Add Student & Marks
+      </h2>
 
-<div class="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl p-8">
-    <h2 class="text-3xl font-bold text-center text-blue-800 mb-8">Add Student & Marks</h2>
-
-    <form
-            th:action="@{'/results/process-form'}"
-            th:object="${studentForm}"
-            method="post"
-            id="studentForm"
-            class="space-y-8">
+      <form
+        th:action="@{'/results/process-form'}"
+        th:object="${studentForm}"
+        method="post"
+        id="studentForm"
+        class="space-y-8"
+      >
         <!-- Student Info -->
         <div>
-            <h3 class="text-xl font-semibold text-gray-700 mb-4">Student Information</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                    <label class="block mb-1 font-medium text-gray-700">Name</label>
-                    <input
-                            type="text"
-                            class="w-full border rounded-xl px-4 py-2"
-                            th:field="*{name}"
-                            placeholder="Enter Student Name"
-                            required>
-                </div>
-                <div>
-                    <label class="block mb-1 font-medium text-gray-700">Roll Number</label>
-                    <input
-                            type="text"
-                            th:field="*{rollNumber}"
-                            class="w-full border rounded-xl px-4 py-2" required>
-                </div>
-                <div>
-                    <label class="block mb-1 font-medium text-gray-700">Email</label>
-                    <input
-
-                            th:field="*{email}"
-                            type="email" class="w-full border rounded-xl px-4 py-2" required>
-                </div>
-                <div>
-                    <label class="block mb-1 font-medium text-gray-700">Gender</label>
-                    <select th:field="*{gender}" class="w-full border rounded-xl px-4 py-2" required>
-                        <option value="">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block mb-1 font-medium text-gray-700">Date of Birth</label>
-                    <input th:field="*{dob}" type="date" class="w-full border rounded-xl px-4 py-2" required>
-                </div>
-                <div>
-                    <label class="block mb-1 font-medium text-gray-700">School Name</label>
-                    <input th:field="*{schoolName}" type="text" class="w-full border rounded-xl px-4 py-2" required>
-                </div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">
+            Student Information
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block mb-1 font-medium text-gray-700">Name</label>
+              <input
+                type="text"
+                class="w-full border rounded-xl px-4 py-2"
+                th:field="*{name}"
+                placeholder="Enter Student Name"
+                required
+              />
             </div>
+            <div>
+              <label class="block mb-1 font-medium text-gray-700"
+                >Roll Number</label
+              >
+              <input
+                type="text"
+                th:field="*{rollNumber}"
+                class="w-full border rounded-xl px-4 py-2"
+                required
+              />
+            </div>
+            <div>
+              <label class="block mb-1 font-medium text-gray-700">Email</label>
+              <input
+                th:field="*{email}"
+                type="email"
+                class="w-full border rounded-xl px-4 py-2"
+                required
+              />
+            </div>
+            <div>
+              <label class="block mb-1 font-medium text-gray-700">Gender</label>
+              <select
+                th:field="*{gender}"
+                class="w-full border rounded-xl px-4 py-2"
+                required
+              >
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block mb-1 font-medium text-gray-700"
+                >Date of Birth</label
+              >
+              <input
+                th:field="*{dob}"
+                type="date"
+                class="w-full border rounded-xl px-4 py-2"
+                required
+              />
+            </div>
+            <div>
+              <label class="block mb-1 font-medium text-gray-700"
+                >School Name</label
+              >
+              <input
+                th:field="*{schoolName}"
+                type="text"
+                class="w-full border rounded-xl px-4 py-2"
+                required
+              />
+            </div>
+          </div>
         </div>
 
         <!-- Marks Section -->
         <div>
-            <h3 class="text-xl font-semibold text-gray-700 mb-4">Subject Marks</h3>
-            <div class="space-y-6">
-                <!-- Repeat this block for 5 subjects -->
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">
+            Subject Marks
+          </h3>
+          <div
+            class="space-y-6 mark_fields_container"
+            id="mark_fields_container"
+          >
+            <!-- Repeat this block for 5 subjects -->
 
+            <div class="grid md:grid-cols-7 gap-4" id="mark_fields_0">
+              <input
+                name="marks[0].subject"
+                type="text"
+                placeholder="Subject"
+                class="col-span-2 border rounded-xl px-3 py-2"
+                required
+              />
 
-                <div class="grid md:grid-cols-6 gap-4">
-                    <input
-                            name="marks[0].subject" type="text" placeholder="Subject"
-                            class="col-span-2 border rounded-xl px-3 py-2" required>
+              <input
+                name="marks[0].marks"
+                type="number"
+                placeholder="Marks"
+                class="border rounded-xl px-3 py-2"
+                required
+              />
+              <input
+                name="marks[0].maxMarks"
+                type="number"
+                placeholder="Max Marks"
+                class="border rounded-xl px-3 py-2"
+                required
+              />
+              <input
+                name="marks[0].grade"
+                type="text"
+                placeholder="Grade"
+                class="border rounded-xl px-3 py-2"
+                required
+              />
+              <input
+                name="marks[0].remark"
+                type="text"
+                placeholder="Remark"
+                class="border rounded-xl px-3 py-2"
+                required
+              />
 
-                    <input name="marks[0].marks" type="number" placeholder="Marks" class="border rounded-xl px-3 py-2"
-                           required>
-                    <input name="marks[0].maxMarks" type="number" placeholder="Max Marks"
-                           class="border rounded-xl px-3 py-2" required>
-                    <input name="marks[0].grade" type="text" placeholder="Grade" class="border rounded-xl px-3 py-2"
-                           required>
-                    <input name="marks[0].remark" type="text" placeholder="Remark" class="border rounded-xl px-3 py-2"
-                           required>
-                </div>
-
-
-                <div class="grid md:grid-cols-6 gap-4">
-                    <input
-                            name="marks[1].subject" type="text" placeholder="Subject"
-                            class="col-span-2 border rounded-xl px-3 py-2" required>
-
-                    <input name="marks[1].marks" type="number" placeholder="Marks" class="border rounded-xl px-3 py-2"
-                           required>
-                    <input name="marks[1].maxMarks" type="number" placeholder="Max Marks"
-                           class="border rounded-xl px-3 py-2" required>
-                    <input name="marks[1].grade" type="text" placeholder="Grade" class="border rounded-xl px-3 py-2"
-                           required>
-                    <input name="marks[1].remark" type="text" placeholder="Remark" class="border rounded-xl px-3 py-2"
-                           required>
-                </div>
-
-
-
-
+              <button
+                disabled
+                type="button"
+                class="text-white disabled:bg-gray-300 bg-red-700 px-3 py-2 rounded"
+              >
+                Remove
+              </button>
             </div>
+
+            <div class="grid md:grid-cols-7 gap-4" id="mark_fields_1">
+              <input
+                name="marks[1].subject"
+                type="text"
+                placeholder="Subject"
+                class="col-span-2 border rounded-xl px-3 py-2"
+                required
+              />
+
+              <input
+                name="marks[1].marks"
+                type="number"
+                placeholder="Marks"
+                class="border rounded-xl px-3 py-2"
+                required
+              />
+              <input
+                name="marks[1].maxMarks"
+                type="number"
+                placeholder="Max Marks"
+                class="border rounded-xl px-3 py-2"
+                required
+              />
+              <input
+                name="marks[1].grade"
+                type="text"
+                placeholder="Grade"
+                class="border rounded-xl px-3 py-2"
+                required
+              />
+              <input
+                name="marks[1].remark"
+                type="text"
+                placeholder="Remark"
+                class="border rounded-xl px-3 py-2"
+                required
+              />
+
+              <button
+                disabled
+                type="button"
+                class="text-white disabled:bg-gray-300 bg-red-700 px-3 py-2 rounded"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-center items-center my-5">
+            <button
+              onclick="addRow()"
+              type="button"
+              class="text-white bg-orange-700 px-3 py-2 rounded"
+            >
+              Add Subject Mark
+            </button>
+          </div>
         </div>
 
         <!-- Submit -->
         <div class="text-center">
-            <button type="submit"
-                    class="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition">
-                Save Student & Result
-            </button>
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition"
+          >
+            Save Student & Result
+          </button>
         </div>
-    </form>
-</div>
+      </form>
+    </div>
 
-</body>
+    <script>
+      let index = 2;
+
+      function addRow() {
+        console.log("Adding new row");
+
+        const container = document.getElementById("mark_fields_container");
+
+        container.innerHTML =
+          container.innerHTML +
+          `
+           <div class="grid md:grid-cols-7 gap-4" id="mark_fields_${index}">
+                    <input
+                            name="marks[${index}].subject" type="text" placeholder="Subject"
+                            class="col-span-2 border rounded-xl px-3 py-2" required>
+
+                    <input name="marks[${index}].marks" type="number" placeholder="Marks" class="border rounded-xl px-3 py-2"
+                           required>
+                    <input name="marks[${index}].maxMarks" type="number" placeholder="Max Marks"
+                           class="border rounded-xl px-3 py-2" required>
+                    <input name="marks[${index}].grade" type="text" placeholder="Grade" class="border rounded-xl px-3 py-2"
+                           required>
+                    <input name="marks[${index}].remark" type="text" placeholder="Remark" class="border rounded-xl px-3 py-2"
+                           required>
+
+
+                    <button onclick="removeRow('mark_fields_${index}',${index})"  type="button" class="text-white bg-red-700 px-3 py-2 rounded"> Remove
+                    </button>
+                </div> `;
+
+        // previous row nika sakte hai.
+
+        const previousRow = document.getElementById(`mark_fields_${index - 1}`);
+        const button = previousRow.querySelector("button");
+        button.disabled = true;
+        button.classList.add("disabled:bg-gray-300", "cursor-not-allowed");
+
+        index++;
+      }
+
+
+
+      function removeRow(divId, index) {
+        const div = document.getElementById(divId);
+        div.parentNode.removeChild(div);
+
+
+        const previousRow = document.getElementById(`mark_fields_${index - 1}`);
+        const button = previousRow.querySelector("button");
+        button.disabled = false;
+        button.classList.add("bg-red-700");
+        button.classList.remove("disabled:bg-gray-300", "cursor-not-allowed");
+
+
+
+
+        index--;
+      }
+    </script>
+  </body>
 </html>

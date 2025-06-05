@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Student Marksheet - SmartResult</title>
+  <title>  Student Marksheet - SmartResult</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 py-10 px-4">
@@ -17,12 +17,12 @@
 
   <!-- Student Info -->
   <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-700 mb-8">
-    <div><strong>Name:</strong> John Doe</div>
-    <div><strong>Roll Number:</strong> 123456</div>
-    <div><strong>Email:</strong> johndoe@example.com</div>
-    <div><strong>Gender:</strong> Male</div>
-    <div><strong>DOB:</strong> 2005-04-12</div>
-    <div><strong>School:</strong> Springfield High School</div>
+    <div><strong>Name:</strong> <span th:text="${student.name}"></span></div>
+    <div><strong>Roll Number:</strong> <span th:text="${student.rollNumber}"></span></div>
+    <div><strong>Email:</strong> <span th:text="${student.email}"></span></div>
+    <div><strong>Gender:</strong> <span th:text="${student.gender}"></span></div>
+    <div><strong>DOB:</strong> <span th:text="${student.dob}"></span></div>
+    <div><strong>School:</strong><span th:text="${student.schoolName}"></span></div>
   </div>
 
   <!-- Subject Marks Table -->
@@ -38,41 +38,14 @@
       </tr>
       </thead>
       <tbody class="bg-white divide-y divide-gray-200">
-      <tr>
-        <td class="px-4 py-2">Mathematics</td>
-        <td class="px-4 py-2">95</td>
-        <td class="px-4 py-2">100</td>
-        <td class="px-4 py-2">A+</td>
-        <td class="px-4 py-2">Excellent</td>
+      <tr th:each="mark : ${marks}">
+        <td class="px-4 py-2" th:text="${mark.subject}"> </td>
+        <td class="px-4 py-2" th:text="${mark.marks}"></td>
+        <td class="px-4 py-2" th:text="${mark.maxMarks}">100</td>
+        <td class="px-4 py-2" th:text="${mark.grade}">A+</td>
+        <td class="px-4 py-2" data-th-text="${mark.remark}">Excellent</td>
       </tr>
-      <tr>
-        <td class="px-4 py-2">Science</td>
-        <td class="px-4 py-2">90</td>
-        <td class="px-4 py-2">100</td>
-        <td class="px-4 py-2">A</td>
-        <td class="px-4 py-2">Very Good</td>
-      </tr>
-      <tr>
-        <td class="px-4 py-2">English</td>
-        <td class="px-4 py-2">88</td>
-        <td class="px-4 py-2">100</td>
-        <td class="px-4 py-2">A</td>
-        <td class="px-4 py-2">Good</td>
-      </tr>
-      <tr>
-        <td class="px-4 py-2">History</td>
-        <td class="px-4 py-2">82</td>
-        <td class="px-4 py-2">100</td>
-        <td class="px-4 py-2">B+</td>
-        <td class="px-4 py-2">Satisfactory</td>
-      </tr>
-      <tr>
-        <td class="px-4 py-2">Computer</td>
-        <td class="px-4 py-2">93</td>
-        <td class="px-4 py-2">100</td>
-        <td class="px-4 py-2">A+</td>
-        <td class="px-4 py-2">Excellent</td>
-      </tr>
+
       </tbody>
     </table>
   </div>
@@ -80,11 +53,16 @@
   <!-- Summary Section -->
   <div class="mt-8 bg-gray-50 border rounded-xl p-6">
     <div class="grid md:grid-cols-2 gap-6 text-gray-700">
-      <div><strong>Total Marks:</strong> 448 / 500</div>
-      <div><strong>Percentage:</strong> 89.6%</div>
-      <div><strong>Overall Grade:</strong> A</div>
+      <div><strong>Total Marks:</strong> <span data-th-text="${totalMarks}"></span> /  <span data-th-text="${totalMaxMarks}"></span></div>
+      <div><strong>Percentage:</strong>  <span data-th-text="${percentage}"></span> %</div>
+      <div><strong>Overall Grade:</strong >  <span th:class="${totalGrade=='F'} ? 'text-red-700':'text-green-700'" class="font-bold text-4xl" data-th-text=${totalGrade}></span> </div>
       <div><strong>Feedback:</strong> Keep up the excellent work! You're doing great!</div>
     </div>
+  </div>
+
+  <div class="mt-8 flex justify-center space-x-4">
+    <a th:href="@{'/results/input'}" href="" class="px-3 text-white py-1 bg-blue-700 rounded">View Another Result</a>
+    <button onclick="printMarksheet()"  class="px-3 text-white py-1 bg-red-700 rounded">Print</button>
   </div>
 
   <!-- Footer -->
@@ -92,6 +70,17 @@
     © 2025 SmartResult. All rights reserved.
   </div>
 </div>
+
+
+<script>
+  console.log("Student Marksheet Loaded");
+
+    // Print functionality
+  function printMarksheet() {
+    window.print();
+  }
+
+</script>
 
 </body>
 </html>
