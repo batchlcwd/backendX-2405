@@ -1,6 +1,7 @@
 package com.substring.irctc.service;
 
 import com.substring.irctc.entity.Train;
+import com.substring.irctc.exceptions.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -32,14 +33,17 @@ public class TrainService {
 
     //get single
     public Train get(String trainNo) {
-        Train train1 = trainList.stream().filter(train -> train.getTainNo().equals(trainNo)).findFirst().get();
+        Train train1 =
+                trainList.stream().filter(train -> train.getTainNo().equals(trainNo))
+                        .findFirst()
+                        .orElseThrow(() -> new ResourceNotFoundException("Train not found in database !!"));
         return train1;
 
     }
 
     //delete
-    public void delete(String trainNo){
+    public void delete(String trainNo) {
         List<Train> list = this.trainList.stream().filter(train -> !train.getTainNo().equals(trainNo)).toList();
-        this.trainList=list;
+        this.trainList = list;
     }
 }

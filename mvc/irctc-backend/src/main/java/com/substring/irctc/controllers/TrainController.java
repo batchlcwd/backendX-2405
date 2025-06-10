@@ -1,11 +1,16 @@
 package com.substring.irctc.controllers;
 
+import com.substring.irctc.dto.ErrorResponse;
 import com.substring.irctc.entity.Train;
 import com.substring.irctc.service.TrainService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @RestController
 //Controller+ ResponseBody== RestController
@@ -44,13 +49,13 @@ public class TrainController {
     //add train
 
     @PostMapping
-    public Train add(@RequestBody Train train) {
-        return this.trainService.add(train);
+    public ResponseEntity<Train> add(@Valid @RequestBody Train train) {
+        return  new ResponseEntity<>(this.trainService.add(train), HttpStatus.CREATED);
     }
 
 
     @DeleteMapping("/{trainNo}")
-    public void delete(@PathVariable String trainNo){
+    public void delete(@PathVariable String trainNo) {
         this.trainService.delete(trainNo);
     }
 
@@ -79,7 +84,8 @@ public class TrainController {
 //        trainList.add(train2);
 //
 //
-////        data
+
+    /// /        data
 //        return trainList;
 //    }
 //
@@ -93,6 +99,16 @@ public class TrainController {
 //        train2.setCoches(12);
 //
 //        return train2;
+//
+//    }
+
+
+    //for example handing
+//    @ExceptionHandler(NoSuchElementException.class)
+//    public ErrorResponse handleNoSuchException(NoSuchElementException exception) {
+//        ErrorResponse response
+//                = new ErrorResponse("Train not found !! " + exception.getMessage(), "404", false);
+//        return response;
 //
 //    }
 

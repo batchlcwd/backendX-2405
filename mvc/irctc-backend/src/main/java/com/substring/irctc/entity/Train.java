@@ -1,9 +1,26 @@
 package com.substring.irctc.entity;
 
+import com.substring.irctc.annotations.ValidCoach;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+
 public class Train {
 
+
+    @NotEmpty(message = "train number is required !!")
+    @Size(min = 3,max = 20, message = "Invalid length of train no.")
+    @Pattern(regexp = "^\\d+$",message = "Invalid no , train no contains only numbers.")
     private String tainNo;
+
+    @Pattern(regexp = "^[A-Za-z][A-Za-z -]*[A-Za-z]$",message = "Invalid train name. letters, spaces and hyphens are allowed")
     private String name;
+
+//
+//    @Email(message = "Invalid email")
+//    private  String email;
+
+    @ValidCoach
     private int coches;
 
 
