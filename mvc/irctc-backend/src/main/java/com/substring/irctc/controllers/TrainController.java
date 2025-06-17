@@ -1,16 +1,21 @@
 package com.substring.irctc.controllers;
 
-import com.substring.irctc.dto.ErrorResponse;
+import com.substring.irctc.dto.PagedResponse;
+import com.substring.irctc.dto.TrainDTO;
+import com.substring.irctc.dto.TrainImageResponse;
 import com.substring.irctc.entity.Train;
+import com.substring.irctc.service.TrainImageService;
 import com.substring.irctc.service.TrainService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 @RestController
 //Controller+ ResponseBody== RestController
@@ -18,16 +23,32 @@ import java.util.NoSuchElementException;
 public class TrainController {
 
 
-    @Autowired
+
     private TrainService trainService;
+
+
+    private TrainImageService trainImageService;
+
+    public TrainController(TrainService trainService, TrainImageService trainImageService) {
+        this.trainService = trainService;
+        this.trainImageService = trainImageService;
+    }
 
 
     //get all
 
     //    @RequestMapping(value = "/",method = RequestMethod.GET)
     @GetMapping
-    public List<Train> all() {
-        return this.trainService.all();
+    public PagedResponse<TrainDTO> all(
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "10") int size,
+            @RequestParam(value = "sortBy", defaultValue = "name") String sortBy,
+            @RequestParam(value = "sortDir", defaultValue = "asc") String sortDir
+
+    ) {
+
+        return this.trainService.all(page, size, sortBy, sortDir);
+
     }
 
     // get single
@@ -41,16 +62,20 @@ public class TrainController {
 //        return this.trainService.get(trainNo);
 //    }
     @GetMapping("/{trainNo}")
-    public Train get(@PathVariable("trainNo") String trainNo) {
-        return this.trainService.get(trainNo);
+    public ResponseEntity<TrainDTO> get(@PathVariable("trainNo") String trainNo) {
+
+        //
+
+
+        return new ResponseEntity<>(this.trainService.get(trainNo), HttpStatus.OK);
     }
 
 
     //add train
 
     @PostMapping
-    public ResponseEntity<Train> add(@Valid @RequestBody Train train) {
-        return  new ResponseEntity<>(this.trainService.add(train), HttpStatus.CREATED);
+    public ResponseEntity<TrainDTO> add(@Valid @RequestBody TrainDTO trainDTO) {
+        return new ResponseEntity<>(this.trainService.add(trainDTO), HttpStatus.CREATED);
     }
 
 
@@ -111,5 +136,16 @@ public class TrainController {
 //        return response;
 //
 //    }
+
+
+    @PostMapping("/upload/{trainNo}")
+    public TrainImageResponse uploadTrainImage(
+            @PathVariable String trainNo,
+            @RequestParam("image") MultipartFile image
+    ) throws IOException {
+
+        return trainImageService.upload(image, trainNo);
+    }
+
 
 }

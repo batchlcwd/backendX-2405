@@ -1,18 +1,19 @@
-package com.substring.irctc.entity;
+package com.substring.irctc.dto;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-@Entity
-@Table(name = "trains")
-public class Train {
+public class TrainDTO {
 
-
+    @NotEmpty(message = "train number is required !!")
+    @Size(min = 3,max = 20, message = "Invalid length of train no.")
+    @Pattern(regexp = "^\\d+$",message = "Invalid no , train no contains only numbers.")
     @Id
     private String tainNo;
 
+    @Pattern(regexp = "^[A-Za-z][A-Za-z -]*[A-Za-z]$",message = "Invalid train name. letters, spaces and hyphens are allowed")
     private String name;
 
 //
@@ -21,30 +22,6 @@ public class Train {
 
 
     private String routeName;
-
-    @OneToOne(cascade = CascadeType.ALL,orphanRemoval = true)
-    private  TrainImage trainImage;
-
-
-    public Train(String tainNo, String name, String routeName) {
-        this.tainNo = tainNo;
-        this.name = name;
-        this.routeName = routeName;
-    }
-
-
-
-    public Train() {
-    }
-
-
-    public TrainImage getTrainImage() {
-        return trainImage;
-    }
-
-    public void setTrainImage(TrainImage trainImage) {
-        this.trainImage = trainImage;
-    }
 
     public String getTainNo() {
         return tainNo;
