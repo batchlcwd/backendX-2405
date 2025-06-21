@@ -1,27 +1,25 @@
 package com.substring.irctc.controllers;
 
-import com.substring.irctc.dto.PagedResponse;
-import com.substring.irctc.dto.TrainDTO;
-import com.substring.irctc.dto.TrainImageResponse;
-import com.substring.irctc.entity.Train;
+import com.substring.irctc.dto.*;
+import com.substring.irctc.entity.TrainImage;
 import com.substring.irctc.service.TrainImageService;
 import com.substring.irctc.service.TrainService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
+import org.apache.coyote.Response;
+import org.springframework.core.io.Resource;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.List;
+import java.net.MalformedURLException;
 
 @RestController
 //Controller+ ResponseBody== RestController
 @RequestMapping("/trains")
 public class TrainController {
-
 
 
     private TrainService trainService;
@@ -136,16 +134,38 @@ public class TrainController {
 //        return response;
 //
 //    }
-
-
-    @PostMapping("/upload/{trainNo}")
-    public TrainImageResponse uploadTrainImage(
+    @PostMapping("/{trainNo}/upload-image")
+    public ResponseEntity<?> uploadTrainImage(
             @PathVariable String trainNo,
             @RequestParam("image") MultipartFile image
     ) throws IOException {
 
-        return trainImageService.upload(image, trainNo);
+        String contentType = image.getContentType();
+
+        System.out.println(contentType);
+        if (contentType.toLowerCase().startsWith("image")) {
+            return new ResponseEntity<>(trainImageService.upload(image, trainNo), HttpStatus.CREATED);
+        } else {
+            return new ResponseEntity<>(new ErrorResponse("Image not uploaded", "403", false), HttpStatus.BAD_REQUEST);
+        }
+
+
     }
 
+    // serve karne ki api banaynege
+
+
+    @GetMapping("/{trainId}/image")
+    public ResponseEntity<Resource> serveTrainImage(
+            @PathVariable("trainId") String trainId
+    ) throws MalformedURLException {
+
+        TrainImageDataWithResource trainImageDataWithResource = trainImageService.loadImageByTrainNo(trainId);
+        TrainImage trainImage = trainImageDataWithResource.trainImage();
+        return ResponseEntity.ok()
+                .contentType(MediaType.parseMediaType(trainImage.getFileType()))
+                .body(trainImageDataWithResource.resource());
+
+    }
 
 }

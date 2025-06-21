@@ -1,5 +1,7 @@
 package com.substring.irctc.service;
 
+import com.substring.irctc.config.AppConstants;
+import com.substring.irctc.dto.TrainImageDataWithResource;
 import com.substring.irctc.dto.TrainImageResponse;
 import com.substring.irctc.entity.Train;
 import com.substring.irctc.entity.TrainImage;
@@ -8,10 +10,13 @@ import com.substring.irctc.repositories.TrainImageRepository;
 import com.substring.irctc.repositories.TrainRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -55,9 +60,33 @@ public class TrainImageService {
 
         Train savedTrain = trainRepository.save(train);
 
-        return TrainImageResponse.from(savedTrain.getTrainImage(), "https://localhost:8080");
+        return TrainImageResponse.from(savedTrain.getTrainImage(), AppConstants.BASE_URL,trainNo);
 
 
     }
 
+
+    public TrainImageDataWithResource loadImageByTrainNo(String trainId) throws MalformedURLException {
+
+        //get the train using tain no
+        Train train = trainRepository.findById(trainId).orElseThrow(() -> new ResourceNotFoundException("Train not found!!"));
+        TrainImage trainImage = train.getTrainImage();
+        if (trainImage == null) {
+            throw new ResourceNotFoundException("Image not found !!");
+        }
+
+        Path path = Paths.get(trainImage.getFileName());
+
+        if(!Files.exists(path)){
+            throw  new ResourceNotFoundException("Image not found !!");
+        }
+
+        UrlResource urlResource = new UrlResource(path.toUri());
+
+        TrainImageDataWithResource trainImageDataWithResource = new TrainImageDataWithResource(trainImage, urlResource);
+
+
+        return  trainImageDataWithResource;
+
+    }
 }

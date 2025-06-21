@@ -4,69 +4,52 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "trains")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Train {
 
 
     @Id
-    private String tainNo;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String number;
 
     private String name;
+
+    private Integer totalDistance;
+
+
+    @ManyToOne
+    @JoinColumn(name = "source_station_id")
+    private Station sourceStation;
+
+
+    @ManyToOne
+    @JoinColumn(name = "destination_station_id")
+    private Station destinationStation;
+
 
 //
 //    @Email(message = "Invalid email")
 //    private  String email;
 
 
-    private String routeName;
+    //train routes
 
-    @OneToOne(cascade = CascadeType.ALL,orphanRemoval = true)
-    private  TrainImage trainImage;
+    // schedules
 
-
-    public Train(String tainNo, String name, String routeName) {
-        this.tainNo = tainNo;
-        this.name = name;
-        this.routeName = routeName;
-    }
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    private TrainImage trainImage;
 
 
-
-    public Train() {
-    }
-
-
-    public TrainImage getTrainImage() {
-        return trainImage;
-    }
-
-    public void setTrainImage(TrainImage trainImage) {
-        this.trainImage = trainImage;
-    }
-
-    public String getTainNo() {
-        return tainNo;
-    }
-
-    public void setTainNo(String tainNo) {
-        this.tainNo = tainNo;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getRouteName() {
-        return routeName;
-    }
-
-    public void setRouteName(String routeName) {
-        this.routeName = routeName;
-    }
 }

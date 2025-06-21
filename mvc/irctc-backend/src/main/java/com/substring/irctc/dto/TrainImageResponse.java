@@ -14,12 +14,12 @@ public record TrainImageResponse(
 ) {
 
 
-    public static TrainImageResponse from(TrainImage image, String baseUrl) {
+    public static TrainImageResponse from(TrainImage image, String baseUrl,String trainNo) {
         return new TrainImageResponse(
                 image.getId(),
                 image.getFileName(),
                 image.getFileType(),
-                baseUrl + "/" + image.getFileName(),
+                baseUrl + "/trains/" + trainNo+"/image",
                 image.getSize(),
                 image.getUploadTime()
         );
