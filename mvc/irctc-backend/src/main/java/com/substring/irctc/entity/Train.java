@@ -9,6 +9,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "trains")
 @Getter
@@ -50,6 +52,13 @@ public class Train {
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     private TrainImage trainImage;
+
+
+    @OneToMany(mappedBy = "train")
+    private List<TrainRoute> routes;
+
+    @OneToMany(mappedBy = "train")
+    private  List<TrainSchedule> schedules;
 
 
 }

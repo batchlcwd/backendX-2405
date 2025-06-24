@@ -1,6 +1,10 @@
 package com.substring.irctc.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -9,18 +13,34 @@ import java.util.List;
 
 @Entity
 @Table(name = "bookings")
-public class Booking {
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class
+Booking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
 
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private  User user;
 
+    private  String pnr;
+
+    @ManyToOne
+    @JoinColumn(name = "train_schedule_id")
     private  TrainSchedule trainSchedule;
 
+    @ManyToOne
+    @JoinColumn(name = "source_station_id")
     private  Station sourceStation;
 
+    @ManyToOne
+    @JoinColumn(name = "destination_station_id")
     private  Station destinationStation;
 
     private LocalDate journeyDate;
@@ -35,6 +55,7 @@ public class Booking {
     @OneToMany(mappedBy = "booking")
     private List<BookingPassenger> passengers;
 
+    @OneToOne(mappedBy = "booking",cascade = CascadeType.ALL)
     private  Payment payment;
 
 

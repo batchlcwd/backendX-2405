@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -30,5 +31,8 @@ public class User {
 
     private  UserRole userRole=UserRole.ROLE_NORMAL;
 
+
+    @OneToMany(mappedBy = "user")
+    private List<Booking> bookings;
 
 }

@@ -1,9 +1,17 @@
 package com.substring.irctc.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "booking_passengers")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class BookingPassenger {
 
     @Id
