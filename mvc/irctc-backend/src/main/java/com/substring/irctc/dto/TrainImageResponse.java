@@ -14,7 +14,7 @@ public record TrainImageResponse(
 ) {
 
 
-    public static TrainImageResponse from(TrainImage image, String baseUrl,String trainNo) {
+    public static TrainImageResponse from(TrainImage image, String baseUrl,Long trainNo) {
         return new TrainImageResponse(
                 image.getId(),
                 image.getFileName(),

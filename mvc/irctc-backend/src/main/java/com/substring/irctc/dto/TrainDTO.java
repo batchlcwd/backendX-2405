@@ -19,10 +19,14 @@ public class TrainDTO {
 
     private Long id;
     @NotEmpty(message = "train number is required !!")
+
+
     @Size(min = 3, max = 20, message = "Invalid length of train no.")
     @Pattern(regexp = "^\\d+$", message = "Invalid no , train no contains only numbers.")
     @Id
     private String number;
+
+
 
     @Pattern(regexp = "^[A-Za-z][A-Za-z -]*[A-Za-z]$", message = "Invalid train name. letters, spaces and hyphens are allowed")
     private String name;
