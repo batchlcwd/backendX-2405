@@ -19,11 +19,9 @@ public class TrainSeat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @ManyToOne
     @JoinColumn(name = "train_schedule_id")
     private TrainSchedule trainSchedule;
-
 
     @Enumerated(EnumType.STRING)
     private CoachType coachType;
