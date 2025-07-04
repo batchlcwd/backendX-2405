@@ -1,12 +1,11 @@
 package com.substring.irctc.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "train_seats")
@@ -14,6 +13,7 @@ import java.math.BigDecimal;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+//dibba
 public class TrainSeat {
 
     @Id
@@ -28,9 +28,26 @@ public class TrainSeat {
 
     private Integer totalSeats;
 
+    //42-2=40=0
     private Integer availableSeats;
 
-    private BigDecimal price;
+    private Double price;
+
+    private Integer trainSeatOrder;
+
+    //1+2=3.... >42
+    private Integer seatNumberToAssign;
+
+    public boolean isChochFull() {
+        return availableSeats <= 0;
+    }
+
+    public boolean isSeatAvailable(int seatToBook) {
+        return seatToBook <= availableSeats;
+    }
+
+
+
 
 
 }
