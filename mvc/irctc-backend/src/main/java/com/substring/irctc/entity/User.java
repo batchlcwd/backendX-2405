@@ -2,8 +2,10 @@ package com.substring.irctc.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class User {
+public class User  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +23,7 @@ public class User {
 
     private String name;
 
+        //    username==email
     private String email;
 
     private String password;
@@ -29,10 +32,14 @@ public class User {
 
     private LocalDateTime createdAt;
 
-    private  UserRole userRole=UserRole.ROLE_NORMAL;
+//    private  UserRole userRole=UserRole.ROLE_NORMAL;
 
 
     @OneToMany(mappedBy = "user")
     private List<Booking> bookings;
+
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    List<Role> roles= new ArrayList<>();
 
 }
