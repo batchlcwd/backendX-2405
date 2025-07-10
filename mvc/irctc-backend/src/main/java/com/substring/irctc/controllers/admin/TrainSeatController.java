@@ -49,4 +49,6 @@ public class TrainSeatController {
         TrainSeatDto updatedSeat = trainSeatService.updateSeatInfo(seatId, trainSeatDto);
         return ResponseEntity.ok(updatedSeat);
     }
+
+
 }

@@ -6,6 +6,8 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,9 +17,12 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.security.SignatureException;
 
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
+    private static final Logger logger = LoggerFactory.getLogger(JwtAuthenticationFilter.class);
 
 
     private JwtHelper jwtHelper;
@@ -37,6 +42,10 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         //Bearer 213534cdslkhfafjwfghjsfgopjfpk[f
         String authorizationHeader = request.getHeader("Authorization");
+
+        logger.trace("Request to the JWT Filter : {}", authorizationHeader);
+
+
         String username = null;
         String token = null;
 
@@ -48,22 +57,26 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 token = authorizationHeader.substring(7); // Remove "Bearer " prefix
                 username = jwtHelper.getUsernameFromToken(token);
 
+                logger.trace("user name : {}", username);
+
 
                 if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
 
 
                     UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 
-                    if(jwtHelper.isTokenValid(token,userDetails)){
+                    if (jwtHelper.isTokenValid(token, userDetails)) {
 
-                       //SeucrityContext:
+                        //SeucrityContext:
 
-                        UsernamePasswordAuthenticationToken authentication=
-                                new UsernamePasswordAuthenticationToken(userDetails,null,userDetails.getAuthorities());
+                        UsernamePasswordAuthenticationToken authentication =
+                                new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
 
                         authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
 
                         SecurityContextHolder.getContext().setAuthentication(authentication);
+
+                        logger.trace("Authentication set in the Security Context");
 
                     }
 
@@ -71,19 +84,17 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 }
 
 
-            }
-            catch (IllegalArgumentException ex){
-                System.out.println("Unable to get JWT Token");
+            } catch (IllegalArgumentException ex) {
+                logger.error("Unable to get JWT Token : {}", ex);
                 ex.printStackTrace();
-            }catch (ExpiredJwtException ex){
-                System.out.println("JWT Token has expired");
+            } catch (ExpiredJwtException ex) {
+                logger.error("JWT Token has expired");
                 ex.printStackTrace();
-            }catch (MalformedJwtException ex){
-                System.out.println("Invalid JWT Token");
+            } catch (MalformedJwtException ex) {
+                logger.error("Invalid JWT Token");
                 ex.printStackTrace();
-            }
-            catch (Exception e) {
-                System.out.println("Invalid Token");
+            } catch (Exception e) {
+                logger.error("Invalid Token {}", e);
                 e.printStackTrace();
             }
 
