@@ -5,6 +5,8 @@ import io.swagger.v3.oas.models.info.Info;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class ProjectConfig {
@@ -14,23 +16,24 @@ public class ProjectConfig {
         return new ModelMapper();
     }
 
-
     @Bean
-    public OpenAPI openAPI() {
+    public WebMvcConfigurer webMvcConfigurer(){
 
-        return new OpenAPI()
-                .info(
-                        new Info()
-                                .title("IRCTC Clone API by BackendX")
-                                .version("1.0.0")
-                                .description("API documentation for IRCTC project")
-                                .termsOfService("https://www.irctc.co.in/terms-of-service")
-                                .contact(new io.swagger.v3.oas.models.info.Contact()
-                                        .name("IRCTC Support")
-                                        .url("https://www.irctc.co.in/contact-us")
-                                        .email("abc@gmail.com")
-                                ))
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+
+                registry.addMapping("/**")
+                        .allowedOriginPatterns("http://localhost:5173","http://localhost:4200")
+                        .allowedMethods("GET","POST","PUT","DELETE")
+                        .allowedHeaders("*")
+                        .allowCredentials(true)
                 ;
 
+
+
+            }
+        };
     }
+
 }

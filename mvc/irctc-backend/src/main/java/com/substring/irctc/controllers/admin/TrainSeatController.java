@@ -2,6 +2,8 @@ package com.substring.irctc.controllers.admin;
 
 import com.substring.irctc.dto.TrainSeatDto;
 import com.substring.irctc.service.TrainSeatService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,8 +30,13 @@ public class TrainSeatController {
 
 
     //get dibba of train schedule
+    @Operation(
+            summary = "get train seats of train schedule",
+            description = "This api get train seats[coaches] of train schedule"
+    )
     @GetMapping("/schedule/{scheduleId}")
-    public ResponseEntity<List<TrainSeatDto>> getSeatsByScheduleId(@PathVariable Long scheduleId) {
+    public ResponseEntity<List<TrainSeatDto>> getSeatsByScheduleId(
+            @Parameter(description = "Id of train schedule to get details") @PathVariable Long scheduleId) {
         List<TrainSeatDto> seats = trainSeatService.getSeatInfoByTrainScheduleId(scheduleId);
         return ResponseEntity.ok(seats);
     }

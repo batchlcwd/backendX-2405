@@ -1,4 +1,4 @@
-package com.substring.irctc.controllers;
+package com.substring.irctc.controllers.user;
 
 import com.substring.irctc.config.AppConstants;
 import com.substring.irctc.dto.FeedbackDto;
