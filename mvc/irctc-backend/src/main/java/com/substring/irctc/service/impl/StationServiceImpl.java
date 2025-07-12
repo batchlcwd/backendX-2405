@@ -34,10 +34,13 @@ public class StationServiceImpl implements StationService {
 
     @Override
     public PagedResponse<StationDto> listStations(int page, int size, String sortBy, String sortDir) {
+
         Sort sort = sortDir.trim().toLowerCase().equals("asc") ? Sort.by(sortBy).ascending() : Sort.by(sortBy).descending();
         Pageable pageable = PageRequest.of(page, size, sort);
         Page<Station> stations = stationRepo.findAll(pageable);
         Page<StationDto> stationDtos = stations.map(station -> modelMapper.map(station, StationDto.class));
+
+
         return PagedResponse.fromPage(stationDtos);
     }
 
@@ -57,7 +60,6 @@ public class StationServiceImpl implements StationService {
         station.setState(dto.getState());
         Station updatedStaion = stationRepo.save(station);
         return modelMapper.map(updatedStaion, StationDto.class);
-
 
 
     }
