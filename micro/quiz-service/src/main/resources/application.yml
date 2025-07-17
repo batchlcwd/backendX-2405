@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: quiz-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/quizdb
+server:
+  port: 9092
+
+

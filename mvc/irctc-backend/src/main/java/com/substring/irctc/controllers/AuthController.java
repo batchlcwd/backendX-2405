@@ -68,6 +68,9 @@ public class AuthController {
                     modelMapper.map(user,UserDto.class)
             );
 
+
+            // cookkie mein token ko bhej sakte hai.
+
             return new ResponseEntity<>(jwtResponse, org.springframework.http.HttpStatus.OK);
 
 

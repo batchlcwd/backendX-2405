@@ -43,6 +43,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         //Bearer 213534cdslkhfafjwfghjsfgopjfpk[f
         String authorizationHeader = request.getHeader("Authorization");
 
+        //token get karnge cookie
+
         logger.trace("Request to the JWT Filter : {}", authorizationHeader);
 
 
