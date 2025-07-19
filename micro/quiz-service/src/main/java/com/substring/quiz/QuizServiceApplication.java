@@ -23,22 +23,22 @@ public class QuizServiceApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Quiz quiz = Quiz.builder()
-				.id(UUID.randomUUID().toString())
-				.title("Python basic quiz")
-				.description("This is python basics quiz")
-				.maxMarks(100)
-				.timeLimit(30)
-				.createdBy("Durgesh")
-				.noOfQuestions(10)
-				.imageUrl("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
-				.live(true)
-				.passingMarks(30)
-				.build();
-
-
-		Quiz saved = quizRepository.save(quiz);
-		System.out.println("quiz saved with id "+saved.getId());
+//		Quiz quiz = Quiz.builder()
+//				.id(UUID.randomUUID().toString())
+//				.title("Python basic quiz")
+//				.description("This is python basics quiz")
+//				.maxMarks(100)
+//				.timeLimit(30)
+//				.createdBy("Durgesh")
+//				.noOfQuestions(10)
+//				.imageUrl("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+//				.live(true)
+//				.passingMarks(30)
+//				.build();
+//
+//
+//		Quiz saved = quizRepository.save(quiz);
+//		System.out.println("quiz saved with id "+saved.getId());
 
 
 	}
