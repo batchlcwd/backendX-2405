@@ -1,7 +1,10 @@
 package com.substring.irctc.service;
 
+import com.substring.irctc.dto.AvailableTrainResponse;
 import com.substring.irctc.dto.TrainDTO;
+import com.substring.irctc.dto.UserTrainSearchRequest;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface TrainService {
@@ -20,4 +23,9 @@ public interface TrainService {
 
     //delete train
     public void deleteTrain(Long id);
+
+
+    //    search trains for booking
+    List<AvailableTrainResponse> userTrainSearch(UserTrainSearchRequest request);
+
 }

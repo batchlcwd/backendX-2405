@@ -31,12 +31,7 @@ public class JwtHelper {
     // generate token
 
     public String generateToken(UserDetails userDetails) {
-        return Jwts.builder()
-                .setSubject(userDetails.getUsername())
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + JWT_VALIDITY))
-                .signWith(key, SignatureAlgorithm.HS512)
-                .compact();
+        return Jwts.builder().setSubject(userDetails.getUsername()).setIssuedAt(new Date()).setExpiration(new Date(System.currentTimeMillis() + JWT_VALIDITY)).signWith(key, SignatureAlgorithm.HS512).compact();
 
 
     }
@@ -56,28 +51,21 @@ public class JwtHelper {
     }
 
 
-
     // check token expiration
     private boolean isTokenExpired(String token) {
         return getClaims(token).getExpiration().before(new Date());
     }
 
 
-
     // get all claims from token
 
 
     private Claims getClaims(String token) {
-        return Jwts.parser()
-                .setSigningKey(key)
-                .build()
-                .parseClaimsJws(token)
-                .getBody();
+        return Jwts.parser().setSigningKey(key).build().parseClaimsJws(token).getBody();
 
     }
 
     //refresh token information:
-
 
 
 }

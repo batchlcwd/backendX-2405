@@ -1,16 +1,22 @@
 package com.substring.irctc.service.impl;
 
+import com.substring.irctc.dto.AvailableTrainResponse;
 import com.substring.irctc.dto.TrainDTO;
-import com.substring.irctc.entity.Station;
-import com.substring.irctc.entity.Train;
+import com.substring.irctc.dto.UserTrainSearchRequest;
+import com.substring.irctc.entity.*;
 import com.substring.irctc.exceptions.ResourceNotFoundException;
 import com.substring.irctc.repositories.StationRepo;
 import com.substring.irctc.repositories.TrainRepository;
+import com.substring.irctc.repositories.TrainScheduleRepository;
 import com.substring.irctc.service.TrainService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -22,10 +28,13 @@ public class TrainServiceImpl implements TrainService {
     private ModelMapper modelMapper;
     private TrainRepository trainRepository;
 
-    public TrainServiceImpl(StationRepo stationRepository, ModelMapper modelMapper, TrainRepository trainRepository) {
+    private TrainScheduleRepository trainScheduleRepository;
+
+    public TrainServiceImpl(StationRepo stationRepository, ModelMapper modelMapper, TrainRepository trainRepository, TrainScheduleRepository trainScheduleRepository) {
         this.stationRepository = stationRepository;
         this.modelMapper = modelMapper;
         this.trainRepository = trainRepository;
+        this.trainScheduleRepository = trainScheduleRepository;
     }
 
     @Override
@@ -72,6 +81,49 @@ public class TrainServiceImpl implements TrainService {
     public void deleteTrain(Long id) {
         Train existingTrain = trainRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Train not found with id: " + id));
         trainRepository.delete(existingTrain);
+    }
+
+    //    This method is for user to search for trains on specific date from source to destination with available seats
+    @Override
+    public List<AvailableTrainResponse> userTrainSearch(UserTrainSearchRequest request) {
+
+
+        List<Train> matchedTrains = this.trainRepository.findTrainBySourceAndDestinationInOrder(request.getSourceStationId(), request.getDestinationStationId());
+
+
+        List<AvailableTrainResponse> list = matchedTrains.stream().map(train -> {
+            TrainSchedule trainSchedule = trainScheduleRepository.findByTrainIdAndRunDate(train.getId(), request.getJourneyDate().atStartOfDay()).orElse(null);
+            if (trainSchedule == null) {
+                return null;
+            }
+
+            //train is scheduled for the given date
+            //CC==>40+40+40
+
+            Map<CoachType, Integer> seatMap = new HashMap<>();
+            Map<CoachType, Double> priceMap = new HashMap<>();
+
+            for (TrainSeat trainSeat : trainSchedule.getTrainSeats()) {
+
+                seatMap.merge(trainSeat.getCoachType(), trainSeat.getAvailableSeats(), Integer::sum);
+                priceMap.putIfAbsent(trainSeat.getCoachType(), trainSeat.getPrice());
+            }
+
+            return AvailableTrainResponse.builder()
+                    .trainId(train.getId())
+                    .trainNumber(train.getNumber())
+                    .trainName(train.getName())
+                    .departureTime(trainSchedule.getRunDate())
+                    .arrivalTime(trainSchedule.getRunDate())
+                    .seatsAvailable(seatMap)
+                    .priceByCoach(priceMap)
+                    .build();
+
+
+        }).filter(Objects::nonNull).toList();
+
+
+        return list;
     }
 
     // any more logic related to train service can be added here
