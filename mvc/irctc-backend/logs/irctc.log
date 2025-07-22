@@ -1782,3 +1782,502 @@
 2025-07-21 22:35:53 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
 2025-07-21 22:35:53 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
 2025-07-21 22:35:53 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:38:46 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:38:46 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:38:46 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 13 ms
+2025-07-21 22:38:46 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:38:51 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:38:51 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:38:51 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 14 ms
+2025-07-21 22:38:51 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:38:55 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:38:55 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:38:55 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:38:55 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:38:55 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:38:55 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:38:55 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:38:55 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:38:57 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:38:57 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:38:57 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 11 ms
+2025-07-21 22:38:57 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:38:58 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:38:58 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:38:58 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:38:58 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:39:00 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:39:00 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:39:00 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:39:00 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:39:38 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:39:38 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:39:38 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:39:38 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:39:39 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:39:39 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:39:39 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:39:39 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:39:40 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:39:40 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:39:40 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:39:40 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:39:42 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:39:42 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:39:42 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:39:42 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:40:33 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:40:33 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:40:33 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:40:33 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:40:33 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 4 ms
+2025-07-21 22:40:33 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:40:33 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:40:33 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:41:03 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:41:03 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:41:03 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:41:03 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:41:03 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:41:03 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:41:03 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:41:03 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:41:38 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:41:38 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:41:38 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:41:38 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:41:39 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:41:39 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:41:39 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:41:39 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:41:40 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:41:40 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:41:40 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 11 ms
+2025-07-21 22:41:40 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:42:19 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:19 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:19 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:42:19 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:42:19 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:42:19 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:42:19 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:42:19 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:42:33 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:33 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:42:33 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:42:33 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:42:34 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:34 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:34 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:42:34 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:42:34 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:42:34 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:42:34 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:42:34 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:42:54 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:54 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:42:54 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:42:54 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:42:56 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:56 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:56 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:42:56 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:42:56 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:42:56 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:42:56 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:42:56 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:42:58 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:58 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:42:58 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:42:58 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:42:59 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:59 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:42:59 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:42:59 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:42:59 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:42:59 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:42:59 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:42:59 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:43:54 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:43:54 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:43:54 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:43:54 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:43:55 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:43:55 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:43:55 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:43:55 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:43:55 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 4 ms
+2025-07-21 22:43:55 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:43:55 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:43:55 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:44:50 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:44:50 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:44:50 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:44:50 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:44:50 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:44:50 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:44:50 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:44:50 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:45:15 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:45:15 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:45:15 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:45:15 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:45:15 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:45:15 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:45:15 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:45:15 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:45:16 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:45:16 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:45:16 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:45:16 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:45:17 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:45:17 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:45:17 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:45:17 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:45:37 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:45:37 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:45:37 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:45:37 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:45:38 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:45:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:45:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:45:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:46:10 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:46:10 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:46:10 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:46:10 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:46:13 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:46:13 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:46:13 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:46:13 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:46:25 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:46:25 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:46:25 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:46:25 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:46:25 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:46:25 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:46:25 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:46:25 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:46:52 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:46:52 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:46:52 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution addRoute 
+2025-07-21 22:46:52 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 20 ms
+2025-07-21 22:46:52 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution addRoute 
+2025-07-21 22:46:54 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:46:54 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:46:54 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 12 ms
+2025-07-21 22:46:54 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:46:55 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:46:55 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:46:55 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:46:55 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:47:01 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:47:01 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:47:01 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:47:01 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:48:55 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:48:55 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:48:55 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:48:55 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:48:57 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:48:57 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:48:57 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:48:57 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:48:58 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:48:58 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:48:58 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:48:58 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:49:24 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:24 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:49:24 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:49:24 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:49:32 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:32 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:49:32 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:49:32 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:49:33 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:33 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:49:33 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:49:33 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:49:35 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:35 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:49:35 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:49:35 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:49:36 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:36 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:49:36 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:49:36 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:49:37 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:37 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:37 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:49:37 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:49:37 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:49:37 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:49:37 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:49:37 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:49:38 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:49:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:49:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:49:46 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:46 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:49:46 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:49:46 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:49:49 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:49 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:49:49 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:49:49 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:49:49 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:49 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:49:49 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:49:49 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:49:56 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:56 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:49:56 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:49:56 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:49:57 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:49:57 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:49:57 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:49:57 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:00 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:00 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:00 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 11 ms
+2025-07-21 22:50:00 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:01 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:01 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:01 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:01 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:50:01 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:50:01 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:50:01 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:50:01 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:04 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:04 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:04 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 11 ms
+2025-07-21 22:50:04 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:05 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:05 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:05 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:50:05 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:18 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:18 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:50:18 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:50:18 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:50:26 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:26 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:26 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:50:26 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:27 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:27 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:50:27 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:50:27 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:50:27 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:27 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:27 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:50:27 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:28 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:28 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:50:28 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:50:28 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:50:30 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:30 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:30 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:50:30 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:33 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:33 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:33 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:50:33 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:35 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:35 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:50:35 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:50:35 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:50:38 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:50:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:50:38 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:50:39 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:50:39 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:50:39 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 4 ms
+2025-07-21 22:50:39 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:51:58 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:51:58 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:51:58 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 17 ms
+2025-07-21 22:51:58 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:52:02 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:52:02 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:52:02 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:52:02 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:52:04 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:52:04 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:52:04 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 11 ms
+2025-07-21 22:52:04 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:52:06 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:52:06 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:52:06 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:52:06 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:52:09 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:52:09 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:52:09 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:52:09 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:52:10 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:52:10 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:52:10 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:52:10 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:54:25 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:54:25 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:54:25 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 15 ms
+2025-07-21 22:54:25 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:54:48 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:54:48 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:54:48 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:54:48 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:54:49 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:54:49 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:54:49 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:54:49 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:54:49 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:54:49 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:54:49 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:54:49 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:54:55 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:54:55 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:54:55 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 12 ms
+2025-07-21 22:54:55 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:54:59 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:54:59 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:54:59 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:54:59 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:55:05 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:05 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:55:05 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:55:05 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:55:09 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:09 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:55:09 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 11 ms
+2025-07-21 22:55:09 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:55:11 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:11 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:55:11 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 12 ms
+2025-07-21 22:55:11 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:55:13 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:13 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:13 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:55:13 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:55:13 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 4 ms
+2025-07-21 22:55:13 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:55:13 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:55:13 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:55:17 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:17 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:55:17 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:55:17 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:55:31 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:31 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:55:31 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:55:31 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:55:36 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:36 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:55:36 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:55:36 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:55:41 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:41 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:55:41 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:55:41 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:55:47 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:47 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:55:47 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:55:47 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:55:49 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:49 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:55:49 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-07-21 22:55:49 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:55:57 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:57 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:55:57 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:55:57 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:55:57 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:55:57 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:55:57 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 11 ms
+2025-07-21 22:55:57 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:56:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:56:05 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:56:05 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:56:05 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:56:06 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:56:06 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:56:06 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:56:06 INFO  [http-nio-8081-exec-3] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:56:07 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:56:07 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:56:07 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:56:07 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:56:14 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:56:14 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:56:14 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 16 ms
+2025-07-21 22:56:14 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:56:21 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:56:21 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:56:21 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:56:21 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:56:22 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:56:22 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:56:22 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:56:22 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:56:23 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:56:23 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:56:23 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:56:23 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:57:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:57:36 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:57:36 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 5 ms
+2025-07-21 22:57:36 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:57:38 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:57:38 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:57:38 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:57:38 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:57:38 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:57:38 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:57:38 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:57:38 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:57:41 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:57:41 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:57:41 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:57:41 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:57:47 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:57:47 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:57:47 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:57:47 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:57:48 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:57:48 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:57:48 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:57:48 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:58:01 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:58:01 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:58:01 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution createTrain 
+2025-07-21 22:58:01 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 22 ms
+2025-07-21 22:58:01 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution createTrain 
+2025-07-21 22:58:03 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:58:03 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:58:03 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:58:03 INFO  [http-nio-8081-exec-10] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:58:16 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:58:16 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:58:16 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 7 ms
+2025-07-21 22:58:16 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:58:17 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:58:17 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-07-21 22:58:17 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 6 ms
+2025-07-21 22:58:17 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-07-21 22:58:19 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:58:19 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-07-21 22:58:19 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 8 ms
+2025-07-21 22:58:19 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-07-21 22:58:23 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-07-21 22:58:23 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getRoutesByTrain 
+2025-07-21 22:58:23 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-07-21 22:58:23 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getRoutesByTrain 
+2025-07-21 22:58:37 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-21 22:58:37 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-21 22:58:37 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-21 22:58:37 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-21 22:58:37 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

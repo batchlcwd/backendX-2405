@@ -6,8 +6,12 @@ import com.substring.quiz.dto.QuizDto;
 import com.substring.quiz.repositories.QuizRepository;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.reactive.function.client.WebClientResponseException;
 
 import java.util.List;
 import java.util.UUID;
@@ -23,10 +27,13 @@ public class QuizServiceImpl implements QuizService {
 
     private final RestTemplate restTemplate;
 
-    public QuizServiceImpl(QuizRepository quizRepository, ModelMapper modelMapper, RestTemplate restTemplate) {
+    private final CategoryService categoryService;
+
+    public QuizServiceImpl(QuizRepository quizRepository, ModelMapper modelMapper, RestTemplate restTemplate, CategoryService categoryService) {
         this.quizRepository = quizRepository;
         this.modelMapper = modelMapper;
         this.restTemplate = restTemplate;
+        this.categoryService = categoryService;
     }
 
     @Override
@@ -79,7 +86,22 @@ public class QuizServiceImpl implements QuizService {
     @Override
     public List<QuizDto> findAll() {
         List<Quiz> all = quizRepository.findAll();
-        return all.stream().map(quiz -> modelMapper.map(quiz, QuizDto.class)).toList();
+
+
+        // getting category of all quiz
+
+
+        List<QuizDto> quizDtos = all.stream().map(quiz -> {
+            String categoryId = quiz.getCategoryId();
+            QuizDto quizDto = modelMapper.map(quiz, QuizDto.class);
+            //call to quiz service using webclient
+            CategoryDto categoryDto = this.categoryService.findById(categoryId);
+            quizDto.setCategoryDto(categoryDto);
+            return quizDto;
+        }).toList();
+
+
+        return quizDtos;
     }
 
     @Override
@@ -87,11 +109,17 @@ public class QuizServiceImpl implements QuizService {
         Quiz quiz = quizRepository.findById(quizId).orElseThrow(() -> new RuntimeException("Quiz not found"));
 
         QuizDto quizDto = modelMapper.map(quiz, QuizDto.class);
+
+
         String categoryId = quiz.getCategoryId();
         String url = "http://localhost:9091/api/v1/categories/" + categoryId;
         logger.info(url);
         // call to category service
         CategoryDto category = restTemplate.getForObject(url, CategoryDto.class);
+        //Thread waits for response
+        logger.info("category exists: {}", category.getTitle());
+        logger.info("Call completed");
+
         quizDto.setCategoryDto(category);
         return quizDto;
     }

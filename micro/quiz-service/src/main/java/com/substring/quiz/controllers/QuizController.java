@@ -53,4 +53,6 @@ public class QuizController {
     public ResponseEntity<List<QuizDto>> findByCategory(@PathVariable("categoryId") String categoryId) {
         return new ResponseEntity<>(quizService.findByCategory(categoryId), HttpStatus.OK);
     }
+
+
 }
