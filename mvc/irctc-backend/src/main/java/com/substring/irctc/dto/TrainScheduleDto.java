@@ -16,7 +16,7 @@ public class TrainScheduleDto {
 
     private Long trainId;
 
-    private LocalDateTime runDate;
+    private LocalDate runDate;
 
     private  Integer availableSeats;
 
