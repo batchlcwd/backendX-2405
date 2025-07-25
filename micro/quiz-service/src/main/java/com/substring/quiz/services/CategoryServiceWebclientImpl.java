@@ -12,7 +12,7 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 import java.util.List;
 
 @Service
-public class CategoryServiceImpl implements CategoryService {
+public class CategoryServiceWebclientImpl implements CategoryService {
 
     private final RestTemplate restTemplate;
 
@@ -20,9 +20,9 @@ public class CategoryServiceImpl implements CategoryService {
 
     private ModelMapper modelMapper;
 
-    private final Logger logger = org.slf4j.LoggerFactory.getLogger(CategoryServiceImpl.class);
+    private final Logger logger = org.slf4j.LoggerFactory.getLogger(CategoryServiceWebclientImpl.class);
 
-    public CategoryServiceImpl(RestTemplate restTemplate, WebClient webClient, ModelMapper modelMapper) {
+    public CategoryServiceWebclientImpl(RestTemplate restTemplate, WebClient webClient, ModelMapper modelMapper) {
         this.restTemplate = restTemplate;
         this.webClient = webClient;
         this.modelMapper = modelMapper;

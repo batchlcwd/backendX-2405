@@ -4,6 +4,7 @@ import com.substring.irctc.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -80,6 +81,29 @@ public class GloablExceptionHandler {
         ResponseEntity<Map<String, String>> error = new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
         return error;
 
+
+    }
+
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity<ErrorResponse> handleHttpMessageNotReadableException(HttpMessageNotReadableException exception) {
+
+        ErrorResponse response
+                = new ErrorResponse("Request Body is not in proper format", "400", false);
+
+        ResponseEntity<ErrorResponse> error = new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        return error;
+
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ErrorResponse> handleException(Exception exception) {
+
+        ErrorResponse response
+                = new ErrorResponse("Something went wrong", "500", false);
+
+        ResponseEntity<ErrorResponse> error = new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        return error;
 
     }
 

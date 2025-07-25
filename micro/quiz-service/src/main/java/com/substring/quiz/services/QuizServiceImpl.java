@@ -4,6 +4,7 @@ import com.substring.quiz.collections.Quiz;
 import com.substring.quiz.dto.CategoryDto;
 import com.substring.quiz.dto.QuizDto;
 import com.substring.quiz.repositories.QuizRepository;
+import feign.FeignException;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.springframework.http.HttpStatus;
@@ -29,11 +30,14 @@ public class QuizServiceImpl implements QuizService {
 
     private final CategoryService categoryService;
 
-    public QuizServiceImpl(QuizRepository quizRepository, ModelMapper modelMapper, RestTemplate restTemplate, CategoryService categoryService) {
+    private final CategoryFeignService categoryFeignService;
+
+    public QuizServiceImpl(QuizRepository quizRepository, ModelMapper modelMapper, RestTemplate restTemplate, CategoryService categoryService, CategoryFeignService categoryFeignService) {
         this.quizRepository = quizRepository;
         this.modelMapper = modelMapper;
         this.restTemplate = restTemplate;
         this.categoryService = categoryService;
+        this.categoryFeignService = categoryFeignService;
     }
 
     @Override
@@ -127,7 +131,19 @@ public class QuizServiceImpl implements QuizService {
     @Override
     public List<QuizDto> findByCategory(String categoryId) {
         List<Quiz> all = quizRepository.findByCategoryId(categoryId);
-        return all.stream().map(quiz -> modelMapper.map(quiz, QuizDto.class)).toList();
+        return all.stream().map(quiz -> {
+            QuizDto quizDto = modelMapper.map(quiz, QuizDto.class);
+            ///  call category service to get category and put in category dto
+            CategoryDto categoryDto = null;
+            try {
+                categoryDto = categoryFeignService.findById(quizDto.getCategoryId());
+            }catch (FeignException.NotFound ex){
+                logger.error("category not found");
+            }
+            quizDto.setCategoryDto(categoryDto);
+            return quizDto;
+
+        }).toList();
 
 
     }
