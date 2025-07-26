@@ -47,7 +47,7 @@ public class QuizServiceImpl implements QuizService {
         quiz.setId(UUID.randomUUID().toString());
 
         // validate category:
-        String url = "http://localhost:9091/api/v1/categories/" + quizDto.getCategoryId();
+        String url = "http://CATEGORY-SERVICE/api/v1/categories/" + quizDto.getCategoryId();
         logger.info(url);
         // call to category service
         CategoryDto category = restTemplate.getForObject(url, CategoryDto.class);
@@ -116,7 +116,7 @@ public class QuizServiceImpl implements QuizService {
 
 
         String categoryId = quiz.getCategoryId();
-        String url = "http://localhost:9091/api/v1/categories/" + categoryId;
+        String url = "http://CATEGORY-SERVICE/api/v1/categories/" + categoryId;
         logger.info(url);
         // call to category service
         CategoryDto category = restTemplate.getForObject(url, CategoryDto.class);

@@ -71,6 +71,8 @@ public class AuthController {
 
             // cookkie mein token ko bhej sakte hai.
 
+            //set token cookie.
+
             return new ResponseEntity<>(jwtResponse, org.springframework.http.HttpStatus.OK);
 
 
