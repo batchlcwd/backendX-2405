@@ -1,3 +1,4 @@
 # Ignore MongoDB and Postgres data folders
 docker/mongo-data/
 docker/postgres-data/
+mvc/irctc_copy/

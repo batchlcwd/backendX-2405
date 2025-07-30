@@ -154,6 +154,7 @@ public class TrainServiceImpl implements TrainService {
                             .seatsAvailable(seatMap)
                             .priceByCoach(priceMap)
                             .scheduleDate(trainSchedule.getRunDate())
+                            .trainScheduleId(trainSchedule.getId())
                             .build();
                 })
                 .filter(Objects::nonNull)  // Remove null responses (invalid trains)

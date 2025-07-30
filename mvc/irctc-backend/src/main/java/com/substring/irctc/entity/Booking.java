@@ -52,7 +52,7 @@ Booking {
 
     private LocalDateTime createdAt;
 
-    @OneToMany(mappedBy = "booking")
+    @OneToMany(mappedBy = "booking",cascade = CascadeType.ALL)
     private List<BookingPassenger> passengers;
 
     @OneToOne(mappedBy = "booking",cascade = CascadeType.ALL)
