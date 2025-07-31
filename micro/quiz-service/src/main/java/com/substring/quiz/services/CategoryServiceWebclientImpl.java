@@ -28,7 +28,7 @@ public class CategoryServiceWebclientImpl implements CategoryService {
         this.restTemplate = restTemplate;
         this.webClientBuilder = webClientBuilder;
         this.modelMapper = modelMapper;
-        this.webClient = webClientBuilder.baseUrl("http://CATEGORY-SERVICE").build();
+        this.webClient = webClientBuilder.baseUrl("lb://CATEGORY-SERVICE").build();
 
     }
 
