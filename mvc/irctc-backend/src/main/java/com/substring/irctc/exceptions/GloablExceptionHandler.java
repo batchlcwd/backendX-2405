@@ -1,6 +1,9 @@
 package com.substring.irctc.exceptions;
 
 import com.substring.irctc.dto.ErrorResponse;
+import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.Jwt;
+import io.jsonwebtoken.JwtException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +14,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.security.SignatureException;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.HashMap;
 import java.util.Map;
@@ -96,11 +100,40 @@ public class GloablExceptionHandler {
 
     }
 
+
+    @ExceptionHandler(io.jsonwebtoken.SignatureException.class)
+    public ResponseEntity<ErrorResponse> handleSignatureException(io.jsonwebtoken.SignatureException exception) {
+
+        ErrorResponse response
+                = new ErrorResponse("Invalid Token", "400", false);
+
+        exception.printStackTrace();
+
+        ResponseEntity<ErrorResponse> error = new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        return error;
+
+    }
+
+    @ExceptionHandler(ExpiredJwtException.class)
+    public ResponseEntity<ErrorResponse> handleExpiredJwtException(ExpiredJwtException exception) {
+
+        ErrorResponse response
+                = new ErrorResponse("Token Expired", "400", false);
+
+        exception.printStackTrace();
+
+        ResponseEntity<ErrorResponse> error = new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        return error;
+
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleException(Exception exception) {
 
         ErrorResponse response
                 = new ErrorResponse("Something went wrong", "500", false);
+
+        exception.printStackTrace();
 
         ResponseEntity<ErrorResponse> error = new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         return error;

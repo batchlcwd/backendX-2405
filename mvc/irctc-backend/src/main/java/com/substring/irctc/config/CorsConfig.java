@@ -1,7 +1,5 @@
 package com.substring.irctc.config;
 
-import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.info.Info;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,31 +7,32 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class ProjectConfig {
+public class CorsConfig {
+
 
     @Bean
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
 
+
     @Bean
-    public WebMvcConfigurer webMvcConfigurer(){
+    public WebMvcConfigurer corsConfigurer() {
 
         return new WebMvcConfigurer() {
+
             @Override
             public void addCorsMappings(CorsRegistry registry) {
 
                 registry.addMapping("/**")
-                        .allowedOriginPatterns("http://localhost:5173","http://localhost:4200")
-                        .allowedMethods("GET","POST","PUT","DELETE")
-                        .allowedHeaders("*")
-                        .allowCredentials(true)
-                ;
-
+                        .allowedOrigins("http://localhost:3000", "http://localhost:4200") // allowed origins
+                        .allowedMethods("GET", "POST", "PUT", "DELETE") // Http methods
+                        .allowedHeaders("*") // allow any header
+                        .allowCredentials(true);//allow cookies if needed
 
 
             }
         };
-    }
 
+    }
 }

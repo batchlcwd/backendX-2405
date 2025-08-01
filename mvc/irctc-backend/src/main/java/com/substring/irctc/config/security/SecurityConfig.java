@@ -1,8 +1,10 @@
 package com.substring.irctc.config.security;
 
+import com.substring.irctc.config.CorsConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -17,6 +19,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.net.URL;
 import java.util.Arrays;
+import java.util.List;
 
 @Configuration
 //@EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -32,35 +35,39 @@ public class SecurityConfig {
     }
 
 
+
     @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
+    public CorsConfigurationSource configurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(Arrays.asList("http://localhost:4200")); // Frontend origin
+        config.setAllowedOrigins(Arrays.asList("http://localhost:3000", "http://localhost:4200")); // Frontend origin
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));
-        config.setAllowCredentials(true); // If using cookies or JWTs
+        config.setAllowedHeaders(List.of("*"));
+        config.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", config); // Apply to all paths
+        source.registerCorsConfiguration("/**", config);
         return source;
-    }
 
+    }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
 
-        httpSecurity.csrf(e -> e.disable())
-                .cors(e -> e.configurationSource(corsConfigurationSource()))
+
+
+        httpSecurity.csrf(Customizer.withDefaults())
+                .cors(e-> e.configurationSource(configurationSource()))
                 .authorizeHttpRequests(request ->
                         request.requestMatchers(
                                         "/auth/login",
                                         "/auth/register",
+                                        "/auth/refresh-token",
                                         "/swagger-ui/**",
                                         "/v3/api-docs/**",
                                         "/webjars/**").
                                 permitAll()
                                 .requestMatchers("/admin/**").hasRole("ADMIN")
-                                .requestMatchers("/user/**").permitAll()
+                                .requestMatchers("/user/**").hasRole("USER")
                                 .anyRequest()
                                 .authenticated()
 
