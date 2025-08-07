@@ -38,6 +38,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
 
+        try {
+            Thread.currentThread().sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         //har ek request se pahle.
         // cookie get karnge
 

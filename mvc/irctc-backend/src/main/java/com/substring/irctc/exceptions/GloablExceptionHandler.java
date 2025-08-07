@@ -4,6 +4,7 @@ import com.substring.irctc.dto.ErrorResponse;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwt;
 import io.jsonwebtoken.JwtException;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -50,8 +51,8 @@ public class GloablExceptionHandler {
 
     }
 
-    @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
-    public ResponseEntity<ErrorResponse> handleSQLIntegrityConstraintViolationException(SQLIntegrityConstraintViolationException exception) {
+    @ExceptionHandler(DataIntegrityViolationException.class)
+    public ResponseEntity<ErrorResponse> handleSQLIntegrityConstraintViolationException(DataIntegrityViolationException exception) {
 
         String message = exception.getMessage().contains("Duplicate entry") ? "You are trying to provide fields that are already in database. " : exception.getMessage();
 
@@ -101,18 +102,6 @@ public class GloablExceptionHandler {
     }
 
 
-    @ExceptionHandler(io.jsonwebtoken.SignatureException.class)
-    public ResponseEntity<ErrorResponse> handleSignatureException(io.jsonwebtoken.SignatureException exception) {
-
-        ErrorResponse response
-                = new ErrorResponse("Invalid Token", "400", false);
-
-        exception.printStackTrace();
-
-        ResponseEntity<ErrorResponse> error = new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
-        return error;
-
-    }
 
     @ExceptionHandler(ExpiredJwtException.class)
     public ResponseEntity<ErrorResponse> handleExpiredJwtException(ExpiredJwtException exception) {
@@ -127,6 +116,19 @@ public class GloablExceptionHandler {
 
     }
 
+
+    @ExceptionHandler(JwtException.class)
+    public ResponseEntity<ErrorResponse> handleSignatureException(JwtException exception) {
+
+        ErrorResponse response
+                = new ErrorResponse("Invalid Token " + exception.getMessage(), "400", false);
+
+        exception.printStackTrace();
+
+        ResponseEntity<ErrorResponse> error = new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        return error;
+
+    }
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleException(Exception exception) {
 
