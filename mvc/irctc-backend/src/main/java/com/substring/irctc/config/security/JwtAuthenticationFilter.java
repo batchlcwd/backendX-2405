@@ -8,7 +8,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -39,7 +41,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 
         try {
-            Thread.currentThread().sleep(1000);
+            Thread.currentThread().sleep(450);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -92,18 +94,19 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 }
 
 
-            } catch (IllegalArgumentException ex) {
-                logger.error("Unable to get JWT Token : {}", ex);
-                ex.printStackTrace();
             } catch (ExpiredJwtException ex) {
                 logger.error("JWT Token has expired");
+                request.setAttribute("jwtExpiredError","JWT expired");
                 ex.printStackTrace();
+
             } catch (MalformedJwtException ex) {
                 logger.error("Invalid JWT Token");
                 ex.printStackTrace();
-            } catch (Exception e) {
-                logger.error("Invalid Token {}", e);
-                e.printStackTrace();
+
+            } catch (IllegalArgumentException ex) {
+                logger.error("Unable to get JWT Token : {}", ex);
+                ex.printStackTrace();
+
             }
 
 

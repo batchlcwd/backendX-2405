@@ -18,7 +18,7 @@ import java.util.Map;
 public class JwtHelper {
 
 
-    private static final long ACCESS_TOKEN_VALIDITY = 5*60 * 1000; // 5 minutes
+    private static final long ACCESS_TOKEN_VALIDITY = 30 * 1000; // 5 minutes
     private static final long REFRESH_TOKEN_VALIDITY = 60*60 * 1000; // 30 minutes
 
     private static final String SECRET = "asohgfasogfasiogfhaosfakshfgoafghasihfgoasghiasfgiowhtioawhtosagbkasbgoasghgiasghasoghaskgbfasoghoasghisa";

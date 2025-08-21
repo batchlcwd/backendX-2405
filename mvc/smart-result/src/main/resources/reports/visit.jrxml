@@ -1,0 +1,74 @@
+<jasperReport name="visit" language="java" columnCount="1" pageWidth="595" pageHeight="600" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1f30651a-4fc1-4e35-af6f-f95fbf442fef">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="name" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="phone" class="java.lang.String"/>
+	<field name="desig" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+
+	<!-- Title Section without Bold Style -->
+	<title height="100" splitType="Stretch">
+		<element kind="staticText" uuid="ed98eff8-cb43-4362-bdb7-6d491fef8ce1" x="70" y="10" width="420" height="40" fontName="Arial" fontSize="24.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Substring Technologies]]></text>
+		</element>
+		<element kind="staticText" uuid="706f2da2-915f-4bc4-97e8-a23ddebe27c5" x="100" y="50" width="360" height="20" fontName="Arial" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[633/p56 Chinhat Lucknow, 226028 INDIA]]></text>
+		</element>
+		<element kind="staticText" uuid="4639dd99-0eb3-4e41-bfab-ebac2ad52737" x="97" y="70" width="360" height="20" fontName="Arial" fontSize="10.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[+919839466732, durgesh@substringtechnolgies.com]]></text>
+		</element>
+	</title>
+
+	<!-- Detail Section with Structured Layout -->
+	<detail>
+		<band height="400" splitType="Stretch">
+			<!-- Separator Line (for better structure) -->
+			<element kind="line" uuid="00851b1b-786d-456f-b2d8-d57b8ea48d8e" x="15" y="120" width="560" height="1" forecolor="#A9A9A9"/>
+
+			<!-- Name Field -->
+			<element kind="staticText" uuid="c17f957e-c7cf-4fa1-b2c9-265a5d40a0f5" x="20" y="130" width="120" height="30" fontName="Arial" fontSize="14.0">
+				<text><![CDATA[Name:]]></text>
+			</element>
+			<element kind="textField" uuid="ae74d09b-3f3f-42b8-84b1-da24a3ea2a4d" x="140" y="130" width="400" height="30" fontName="Arial" fontSize="14.0">
+				<expression><![CDATA[$F{name}]]></expression>
+			</element>
+
+			<!-- Email Field -->
+			<element kind="staticText" uuid="a9652c77-f3ed-4d97-88f8-fe24ca489f9a" x="20" y="180" width="120" height="30" fontName="Arial" fontSize="14.0">
+				<text><![CDATA[Email:]]></text>
+			</element>
+			<element kind="textField" uuid="107beb46-6b28-4b49-b607-b92ed1188e44" x="140" y="180" width="400" height="30" fontName="Arial" fontSize="14.0">
+				<expression><![CDATA[$F{email}]]></expression>
+			</element>
+
+			<!-- Phone Field -->
+			<element kind="staticText" uuid="68d71ef8-5b83-403f-bf2a-c046ad10ca89" x="20" y="230" width="120" height="30" fontName="Arial" fontSize="14.0">
+				<text><![CDATA[Phone:]]></text>
+			</element>
+			<element kind="textField" uuid="2c01778d-72c5-4d4b-84e1-eee99152d0a1" x="140" y="230" width="400" height="30" fontName="Arial" fontSize="14.0">
+				<expression><![CDATA[$F{phone}]]></expression>
+			</element>
+
+			<!-- Designation Field -->
+			<element kind="staticText" uuid="346b0c90-bdb9-4aed-97e5-c5e950eed868" x="20" y="280" width="120" height="30" fontName="Arial" fontSize="14.0">
+				<text><![CDATA[Designation:]]></text>
+			</element>
+			<element kind="textField" uuid="f23f9914-71b0-46b4-9a9d-b543314a99e2" x="140" y="280" width="400" height="30" fontName="Arial" fontSize="14.0">
+				<expression><![CDATA[$F{desig}]]></expression>
+			</element>
+
+			<!-- Address Field -->
+			<element kind="staticText" uuid="e3745ce3-4861-4df7-a157-742697107956" x="20" y="330" width="120" height="30" fontName="Arial" fontSize="14.0">
+				<text><![CDATA[Address:]]></text>
+			</element>
+			<element kind="textField" uuid="b643f342-8562-444e-bf4c-ae046ac2737b" x="140" y="330" width="400" height="30" fontName="Arial" fontSize="14.0">
+				<expression><![CDATA[$F{address}]]></expression>
+			</element>
+
+			<!-- Footer Line (optional, for structure) -->
+			<element kind="line" uuid="edf1b7ed-6b5e-4fb7-a182-4b89c3c84e29" x="15" y="380" width="560" height="1" forecolor="#A9A9A9"/>
+		</band>
+	</detail>
+</jasperReport>

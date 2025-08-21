@@ -1,3 +1,4 @@
+
 package com.api.gateway.server;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -14,7 +15,6 @@ public class GatewayConfig {
                 .route("category-service", route -> route.path("/category/**")
                         .filters(f->
                                 f.rewritePath("/category/?(?<remaining>.*)","/${remaining}")
-
                         )
                         .uri("lb://CATEGORY-SERVICE")
                 )

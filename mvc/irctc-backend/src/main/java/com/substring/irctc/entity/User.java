@@ -24,6 +24,7 @@ public class User  {
     private String name;
 
         //    username==email
+    @Column(unique = true)
     private String email;
 
     private String password;

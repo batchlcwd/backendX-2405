@@ -19,7 +19,16 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         response.setContentType("application/json");
-        response.getWriter().write("{\"error\": \"Unauthorized\", \"message\": \"" + authException.getMessage() + "\"}");
+
+        String errorAttribute = (String) request.getAttribute("jwtExpiredError");
+
+        if (errorAttribute != null) {
+            response.getWriter().write("{\"error\": \"Unauthorized\", \"message\": \"" + errorAttribute + "\"}");
+
+        } else {
+            response.getWriter().write("{\"error\": \"Unauthorized\", \"message\": \"" + authException.getMessage() + "\"}");
+
+        }
 
 
     }
