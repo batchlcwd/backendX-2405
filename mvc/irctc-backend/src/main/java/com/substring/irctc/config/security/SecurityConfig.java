@@ -3,6 +3,8 @@ package com.substring.irctc.config.security;
 import com.substring.irctc.config.CorsConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -67,8 +69,9 @@ public class SecurityConfig {
                                         "/v3/api-docs/**",
                                         "/webjars/**").
                                 permitAll()
+                                .requestMatchers(HttpMethod.GET,"/admin/stations/**").hasAnyRole("NORMAL","ADMIN")
                                 .requestMatchers("/admin/**").hasRole("ADMIN")
-                                .requestMatchers("/user/**").hasRole("USER")
+                                .requestMatchers("/user/**").hasRole("NORMAL")
                                 .anyRequest()
                                 .authenticated()
 

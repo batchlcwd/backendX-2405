@@ -1,6 +1,8 @@
 package com.substring.quiz.services;
 
 import com.substring.quiz.dto.CategoryDto;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.springframework.http.HttpStatus;
@@ -33,25 +35,29 @@ public class CategoryServiceWebclientImpl implements CategoryService {
     }
 
     @Override
+    @CircuitBreaker(name = "quizCB", fallbackMethod = "quizFallback")
+
     public CategoryDto findById(String categoryId) {
-        try {
-            CategoryDto category = this.webClient
-                    .get()
-                    .uri("/api/v1/categories/{categoryId}", categoryId)
-                    .retrieve()
-                    .bodyToMono(CategoryDto.class)
-                    .block();
-            return category;
-        } catch (WebClientResponseException ex) {
-            if (ex.getStatusCode().equals(HttpStatus.NOT_FOUND)) {
-                logger.error("category not found");
-            } else if (ex.getStatusCode().equals(HttpStatus.INTERNAL_SERVER_ERROR)) {
-                logger.info("Internal server error");
-            }
-            ex.printStackTrace();
-        }
-        return null;
+
+        CategoryDto category = this.webClient
+                .get()
+                .uri("/api/v1/categories/{categoryId}", categoryId)
+                .retrieve()
+                .bodyToMono(CategoryDto.class)
+                .block();
+        return category;
+
     }
+
+
+    public CategoryDto quizFallback(String categoryId, Throwable t) {
+
+        logger.error("Category not found");
+        CategoryDto categoryDto = new CategoryDto();
+        categoryDto.setTitle("Fallback category");
+        return categoryDto;
+    }
+
 
     @Override
     public List<CategoryDto> findAll() {
