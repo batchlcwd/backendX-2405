@@ -5,6 +5,7 @@ import com.substring.quiz.dto.CategoryDto;
 import com.substring.quiz.dto.QuizDto;
 import com.substring.quiz.repositories.QuizRepository;
 import feign.FeignException;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.springframework.http.HttpStatus;
@@ -88,6 +89,7 @@ public class QuizServiceImpl implements QuizService {
     }
 
     @Override
+
     public List<QuizDto> findAll() {
         List<Quiz> all = quizRepository.findAll();
 
@@ -108,15 +110,15 @@ public class QuizServiceImpl implements QuizService {
         return quizDtos;
     }
 
+
     @Override
+    @CircuitBreaker(name = "quizCB", fallbackMethod = "quizFallback")
     public QuizDto findById(String quizId) {
         Quiz quiz = quizRepository.findById(quizId).orElseThrow(() -> new RuntimeException("Quiz not found"));
-
         QuizDto quizDto = modelMapper.map(quiz, QuizDto.class);
-
-
         String categoryId = quiz.getCategoryId();
-        String url = "lb://CATEGORY-SERVICE/api/v1/categories/" + categoryId;
+
+        String url = "lb://CATEGORY-SERVICE/api/v1/categories/afafa" + categoryId;
         logger.info(url);
         // call to category service
         CategoryDto category = restTemplate.getForObject(url, CategoryDto.class);
@@ -128,6 +130,15 @@ public class QuizServiceImpl implements QuizService {
         return quizDto;
     }
 
+    public  QuizDto quizFallback(String quizId,Throwable t) {
+
+        logger.error("Category not found");
+        CategoryDto categoryDto = new CategoryDto();
+        categoryDto.setTitle("Fallback category");
+        return new QuizDto();
+    }
+
+
     @Override
     public List<QuizDto> findByCategory(String categoryId) {
         List<Quiz> all = quizRepository.findByCategoryId(categoryId);
@@ -137,7 +148,7 @@ public class QuizServiceImpl implements QuizService {
             CategoryDto categoryDto = null;
             try {
                 categoryDto = categoryFeignService.findById(quizDto.getCategoryId());
-            }catch (FeignException.NotFound ex){
+            } catch (FeignException.NotFound ex) {
                 logger.error("category not found");
             }
             quizDto.setCategoryDto(categoryDto);

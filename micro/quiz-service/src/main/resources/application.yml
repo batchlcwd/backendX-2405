@@ -8,11 +8,20 @@ spring:
     active: dev
   config:
     import: configserver:http://localhost:9094
+  cloud:
+    function:
+      web:
+        path: "/functions"
 
 
 server:
   port: 9092
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 eureka:
   client:
@@ -21,14 +30,15 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
-resilience4j:
-  circuitbreaker:
+resilience4j.circuitbreaker:
     instances:
       quizCB:
+        registerHealthIndicator: true
+        slidingWindowType: COUNT_BASED
         slidingWindowSize: 10
         permittedNumberOfCallsInHalfOpenState: 2
         failureRateThreshold: 50
-        waitDurationInOpenState: 10000
-
+        minimum-number-of-calls: 10
+        maxWaitDurationInHalfOpenState: 5000
 
 

@@ -1,0 +1,1028 @@
+2025-08-29 21:22:40 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-29 21:22:40 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 77386 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-08-29 21:22:40 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-29 21:22:41 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-29 21:22:41 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 11 JPA repository interfaces.
+2025-08-29 21:22:41 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-08-29 21:22:41 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-08-29 21:22:41 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-29 21:22:41 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-08-29 21:22:41 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-29 21:22:41 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1001 ms
+2025-08-29 21:22:41 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-29 21:22:41 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-08-29 21:22:41 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-29 21:22:42 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-29 21:22:42 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-29 21:22:42 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c65f00e
+2025-08-29 21:22:42 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-29 21:22:42 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-29 21:22:42 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-29 21:22:42 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-29 21:22:42 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-29 21:22:43 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29 21:22:43 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-08-29 21:22:43 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-08-29 21:22:43 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-29 21:22:43 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-29 21:22:44 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-08-29 21:22:44 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-08-29 21:22:44 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.957 seconds (process running for 4.335)
+2025-08-29 21:22:44 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:22:44 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:22:44 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:33:30 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-29 21:33:30 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-29 21:33:30 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-08-29 21:33:30 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2MTQyMDA3LCJleHAiOjE3NTYxNDIwMzd9.COC4lKbdsawhTPj9e2jYSB1sSHe-zgyoeTsVumxDQ_FIqc0tF4Wn74L0b4BdkefxfpFXgDvUUc4rX-jGJ9s5fA
+2025-08-29 21:33:30 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:33:31 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2MTQyMDA3LCJleHAiOjE3NTYxNDIwMzd9.COC4lKbdsawhTPj9e2jYSB1sSHe-zgyoeTsVumxDQ_FIqc0tF4Wn74L0b4BdkefxfpFXgDvUUc4rX-jGJ9s5fA
+2025-08-29 21:33:31 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:33:35 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 21:37:50 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-29 21:37:50 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-29 21:37:50 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29 21:37:50 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-29 21:37:50 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-29 21:37:51 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-29 21:37:52 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 83820 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-08-29 21:37:52 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-29 21:37:52 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-29 21:37:52 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 11 JPA repository interfaces.
+2025-08-29 21:37:52 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-08-29 21:37:52 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-08-29 21:37:52 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-29 21:37:52 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-08-29 21:37:53 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-29 21:37:53 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 968 ms
+2025-08-29 21:37:53 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-29 21:37:53 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-08-29 21:37:53 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-29 21:37:53 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-29 21:37:53 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-29 21:37:53 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2211e731
+2025-08-29 21:37:53 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-29 21:37:53 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-29 21:37:53 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-29 21:37:53 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-29 21:37:54 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-29 21:37:54 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29 21:37:54 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-08-29 21:37:54 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-08-29 21:37:54 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-29 21:37:55 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-29 21:37:55 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-08-29 21:37:55 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-08-29 21:37:55 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.798 seconds (process running for 4.022)
+2025-08-29 21:37:55 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:37:55 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:37:55 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:39:16 INFO  [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-29 21:39:16 INFO  [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-29 21:39:16 INFO  [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-08-29 21:39:17 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 21:39:25 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 21:39:41 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDgzNzY1LCJleHAiOjE3NTY0ODM3OTV9.lznYXpQT2_4GnBFdGb-igPK5AYHk4Ov9VeS6_cr8DuePNECmqZulq3jqQBj_XkD8YzfmXJ9WLiOI9yoL3tGQ4A
+2025-08-29 21:39:41 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:39:41 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:40:16 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-29 21:40:16 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-29 21:40:16 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29 21:40:16 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-29 21:40:16 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-29 21:40:17 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-29 21:40:17 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 84896 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-08-29 21:40:17 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-29 21:40:18 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-29 21:40:18 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 11 JPA repository interfaces.
+2025-08-29 21:40:18 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-08-29 21:40:18 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-08-29 21:40:18 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-29 21:40:18 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-08-29 21:40:18 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-29 21:40:18 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1030 ms
+2025-08-29 21:40:19 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-29 21:40:19 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-08-29 21:40:19 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-29 21:40:19 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-29 21:40:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-29 21:40:19 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dd591b9
+2025-08-29 21:40:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-29 21:40:19 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-29 21:40:19 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-29 21:40:19 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-29 21:40:20 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-29 21:40:20 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29 21:40:20 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-08-29 21:40:20 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-08-29 21:40:20 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-29 21:40:20 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-29 21:40:21 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-08-29 21:40:21 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-08-29 21:40:21 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.776 seconds (process running for 4.002)
+2025-08-29 21:40:21 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:40:21 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:40:21 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 21:40:23 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-29 21:40:23 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-29 21:40:23 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-08-29 21:40:24 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDgzNzY1LCJleHAiOjE3NTY0ODM3OTV9.lznYXpQT2_4GnBFdGb-igPK5AYHk4Ov9VeS6_cr8DuePNECmqZulq3jqQBj_XkD8YzfmXJ9WLiOI9yoL3tGQ4A
+2025-08-29 21:40:24 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:40:32 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 21:40:38 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDgzODMzLCJleHAiOjE3NTY0ODM4NjN9.-X83tzKD4Q6z-wChPf6bNZl5fvxAS-dplqUBdrHULBBcrr7gZ2_E2voqq6TTow5hiAV7NXr9ENOWWPv01LERcg
+2025-08-29 21:40:38 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:40:38 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:41:26 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDgzODMzLCJleHAiOjE3NTY0ODM4NjN9.-X83tzKD4Q6z-wChPf6bNZl5fvxAS-dplqUBdrHULBBcrr7gZ2_E2voqq6TTow5hiAV7NXr9ENOWWPv01LERcg
+2025-08-29 21:41:26 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:48:20 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDgzNDE1LCJleHAiOjE3NTY0ODM0NDV9.NM4BeYUHlT1KDIzbQ2n98s0VNB049TmfQ9wgBBSCf9GQmxnU_KEJ7n_Hug5PNAQe-9L-VDwueRPjL3ubNQqU3g
+2025-08-29 21:48:20 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:48:20 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDgzNDE1LCJleHAiOjE3NTY0ODM0NDV9.NM4BeYUHlT1KDIzbQ2n98s0VNB049TmfQ9wgBBSCf9GQmxnU_KEJ7n_Hug5PNAQe-9L-VDwueRPjL3ubNQqU3g
+2025-08-29 21:48:20 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:48:20 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDgzNDE1LCJleHAiOjE3NTY0ODM0NDV9.NM4BeYUHlT1KDIzbQ2n98s0VNB049TmfQ9wgBBSCf9GQmxnU_KEJ7n_Hug5PNAQe-9L-VDwueRPjL3ubNQqU3g
+2025-08-29 21:48:20 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:48:21 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzAwLCJleHAiOjE3NTY0ODQzMzB9.bGdr8obB15XwljDXoi0dNjeFCOFzlEwYVvEc8Qg2V8Ov8C3ImkstK-2Lk3__9HsyidmajgEH1PRBYwkInzChog
+2025-08-29 21:48:21 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:48:21 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:48:33 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzAwLCJleHAiOjE3NTY0ODQzMzB9.bGdr8obB15XwljDXoi0dNjeFCOFzlEwYVvEc8Qg2V8Ov8C3ImkstK-2Lk3__9HsyidmajgEH1PRBYwkInzChog
+2025-08-29 21:48:33 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:48:33 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:49:14 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzAwLCJleHAiOjE3NTY0ODQzMzB9.bGdr8obB15XwljDXoi0dNjeFCOFzlEwYVvEc8Qg2V8Ov8C3ImkstK-2Lk3__9HsyidmajgEH1PRBYwkInzChog
+2025-08-29 21:49:14 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:49:15 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzAwLCJleHAiOjE3NTY0ODQzMzB9.bGdr8obB15XwljDXoi0dNjeFCOFzlEwYVvEc8Qg2V8Ov8C3ImkstK-2Lk3__9HsyidmajgEH1PRBYwkInzChog
+2025-08-29 21:49:15 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:49:15 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzU1LCJleHAiOjE3NTY0ODQzODV9.THoJ3VcNzWs7VmWOI_ale9ZNPI8JGiZ4F-Spunp4tT24rUpz0xACmoz078v-pO0valGLmWrbIWGpjEQP8Pj32Q
+2025-08-29 21:49:15 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:49:15 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:49:23 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzU1LCJleHAiOjE3NTY0ODQzODV9.THoJ3VcNzWs7VmWOI_ale9ZNPI8JGiZ4F-Spunp4tT24rUpz0xACmoz078v-pO0valGLmWrbIWGpjEQP8Pj32Q
+2025-08-29 21:49:23 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:49:23 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:49:32 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzU1LCJleHAiOjE3NTY0ODQzODV9.THoJ3VcNzWs7VmWOI_ale9ZNPI8JGiZ4F-Spunp4tT24rUpz0xACmoz078v-pO0valGLmWrbIWGpjEQP8Pj32Q
+2025-08-29 21:49:32 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:49:32 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:49:34 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzU1LCJleHAiOjE3NTY0ODQzODV9.THoJ3VcNzWs7VmWOI_ale9ZNPI8JGiZ4F-Spunp4tT24rUpz0xACmoz078v-pO0valGLmWrbIWGpjEQP8Pj32Q
+2025-08-29 21:49:34 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:49:34 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:49:39 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzU1LCJleHAiOjE3NTY0ODQzODV9.THoJ3VcNzWs7VmWOI_ale9ZNPI8JGiZ4F-Spunp4tT24rUpz0xACmoz078v-pO0valGLmWrbIWGpjEQP8Pj32Q
+2025-08-29 21:49:39 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:49:39 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:51:49 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzU1LCJleHAiOjE3NTY0ODQzODV9.THoJ3VcNzWs7VmWOI_ale9ZNPI8JGiZ4F-Spunp4tT24rUpz0xACmoz078v-pO0valGLmWrbIWGpjEQP8Pj32Q
+2025-08-29 21:51:49 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:51:49 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0MzU1LCJleHAiOjE3NTY0ODQzODV9.THoJ3VcNzWs7VmWOI_ale9ZNPI8JGiZ4F-Spunp4tT24rUpz0xACmoz078v-pO0valGLmWrbIWGpjEQP8Pj32Q
+2025-08-29 21:51:49 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:51:50 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTA5LCJleHAiOjE3NTY0ODQ1Mzl9.kGumnB0f9hbAxWNkFvjWu9hGqbxmFnz4g7-8cfb3CsrRXzxTAJdxX71JFcrOgMoihTwZFArvQd9ENMc7QOdRWQ
+2025-08-29 21:51:50 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:51:50 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:11 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTA5LCJleHAiOjE3NTY0ODQ1Mzl9.kGumnB0f9hbAxWNkFvjWu9hGqbxmFnz4g7-8cfb3CsrRXzxTAJdxX71JFcrOgMoihTwZFArvQd9ENMc7QOdRWQ
+2025-08-29 21:52:11 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:11 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:15 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTA5LCJleHAiOjE3NTY0ODQ1Mzl9.kGumnB0f9hbAxWNkFvjWu9hGqbxmFnz4g7-8cfb3CsrRXzxTAJdxX71JFcrOgMoihTwZFArvQd9ENMc7QOdRWQ
+2025-08-29 21:52:15 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:15 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:30 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTA5LCJleHAiOjE3NTY0ODQ1Mzl9.kGumnB0f9hbAxWNkFvjWu9hGqbxmFnz4g7-8cfb3CsrRXzxTAJdxX71JFcrOgMoihTwZFArvQd9ENMc7QOdRWQ
+2025-08-29 21:52:30 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:52:30 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTA5LCJleHAiOjE3NTY0ODQ1Mzl9.kGumnB0f9hbAxWNkFvjWu9hGqbxmFnz4g7-8cfb3CsrRXzxTAJdxX71JFcrOgMoihTwZFArvQd9ENMc7QOdRWQ
+2025-08-29 21:52:30 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:52:31 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:52:31 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:31 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:32 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:52:32 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:32 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:34 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:52:34 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:34 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:36 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:52:36 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:36 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:40 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:52:40 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:40 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:40 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:52:40 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:40 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:52:59 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:52:59 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:52:59 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:53:20 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:53:20 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:53:20 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NTUwLCJleHAiOjE3NTY0ODQ1ODB9.Ap7_MWhaD2x1hd0MjHNU2__fhKfVYsTB3A8CHerUPsF4xA5ZdjnDEjRIGRStO7lQQfO0vBG1aYZtU9LO6TK5LA
+2025-08-29 21:53:20 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:53:21 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjAwLCJleHAiOjE3NTY0ODQ2MzB9.TM0c7mgqTfOhsg3ByqloRLSxuYymaAhtE98KL1SY9iwQ4Er0lYu_EUX_Sptkj9po9yc4FoUCruQzeIAFcmUhFg
+2025-08-29 21:53:21 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:53:21 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:53:34 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjAwLCJleHAiOjE3NTY0ODQ2MzB9.TM0c7mgqTfOhsg3ByqloRLSxuYymaAhtE98KL1SY9iwQ4Er0lYu_EUX_Sptkj9po9yc4FoUCruQzeIAFcmUhFg
+2025-08-29 21:53:34 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:53:34 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:53:57 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjAwLCJleHAiOjE3NTY0ODQ2MzB9.TM0c7mgqTfOhsg3ByqloRLSxuYymaAhtE98KL1SY9iwQ4Er0lYu_EUX_Sptkj9po9yc4FoUCruQzeIAFcmUhFg
+2025-08-29 21:53:57 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:53:57 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjAwLCJleHAiOjE3NTY0ODQ2MzB9.TM0c7mgqTfOhsg3ByqloRLSxuYymaAhtE98KL1SY9iwQ4Er0lYu_EUX_Sptkj9po9yc4FoUCruQzeIAFcmUhFg
+2025-08-29 21:53:57 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:53:58 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjAwLCJleHAiOjE3NTY0ODQ2MzB9.TM0c7mgqTfOhsg3ByqloRLSxuYymaAhtE98KL1SY9iwQ4Er0lYu_EUX_Sptkj9po9yc4FoUCruQzeIAFcmUhFg
+2025-08-29 21:53:58 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:53:58 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjM4LCJleHAiOjE3NTY0ODQ2Njh9.KHkslLn5VbYKiHrPSAJEkh36UFlRp92APJUTtNKoCiN3GtB6NH3UCpwnvFlPm9h9iRxUdBJohw_9vCwxjcn3ag
+2025-08-29 21:53:58 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:53:58 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:53:59 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjM4LCJleHAiOjE3NTY0ODQ2Njh9.KHkslLn5VbYKiHrPSAJEkh36UFlRp92APJUTtNKoCiN3GtB6NH3UCpwnvFlPm9h9iRxUdBJohw_9vCwxjcn3ag
+2025-08-29 21:53:59 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:53:59 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:54:21 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjM4LCJleHAiOjE3NTY0ODQ2Njh9.KHkslLn5VbYKiHrPSAJEkh36UFlRp92APJUTtNKoCiN3GtB6NH3UCpwnvFlPm9h9iRxUdBJohw_9vCwxjcn3ag
+2025-08-29 21:54:21 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:54:21 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:54:37 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjM4LCJleHAiOjE3NTY0ODQ2Njh9.KHkslLn5VbYKiHrPSAJEkh36UFlRp92APJUTtNKoCiN3GtB6NH3UCpwnvFlPm9h9iRxUdBJohw_9vCwxjcn3ag
+2025-08-29 21:54:37 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:54:38 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NjM4LCJleHAiOjE3NTY0ODQ2Njh9.KHkslLn5VbYKiHrPSAJEkh36UFlRp92APJUTtNKoCiN3GtB6NH3UCpwnvFlPm9h9iRxUdBJohw_9vCwxjcn3ag
+2025-08-29 21:54:38 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:55:12 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 21:55:13 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NzEyLCJleHAiOjE3NTY0ODQ3NDJ9.yKTSw2PFnGNHcVagxrZ_3I72rTARgMuBoLumLFPWuBxYgNcnARyjfF3pYxQhGHxC3EBsxgHElImZju1yh1HqTw
+2025-08-29 21:55:13 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:55:13 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:55:21 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NzEyLCJleHAiOjE3NTY0ODQ3NDJ9.yKTSw2PFnGNHcVagxrZ_3I72rTARgMuBoLumLFPWuBxYgNcnARyjfF3pYxQhGHxC3EBsxgHElImZju1yh1HqTw
+2025-08-29 21:55:21 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:55:21 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:55:27 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NzEyLCJleHAiOjE3NTY0ODQ3NDJ9.yKTSw2PFnGNHcVagxrZ_3I72rTARgMuBoLumLFPWuBxYgNcnARyjfF3pYxQhGHxC3EBsxgHElImZju1yh1HqTw
+2025-08-29 21:55:27 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:55:27 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:55:33 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NzEyLCJleHAiOjE3NTY0ODQ3NDJ9.yKTSw2PFnGNHcVagxrZ_3I72rTARgMuBoLumLFPWuBxYgNcnARyjfF3pYxQhGHxC3EBsxgHElImZju1yh1HqTw
+2025-08-29 21:55:33 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:55:33 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:56:23 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NzEyLCJleHAiOjE3NTY0ODQ3NDJ9.yKTSw2PFnGNHcVagxrZ_3I72rTARgMuBoLumLFPWuBxYgNcnARyjfF3pYxQhGHxC3EBsxgHElImZju1yh1HqTw
+2025-08-29 21:56:23 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:56:24 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0NzEyLCJleHAiOjE3NTY0ODQ3NDJ9.yKTSw2PFnGNHcVagxrZ_3I72rTARgMuBoLumLFPWuBxYgNcnARyjfF3pYxQhGHxC3EBsxgHElImZju1yh1HqTw
+2025-08-29 21:56:24 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:56:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0Nzg0LCJleHAiOjE3NTY0ODQ4MTR9.dUKz9nK0UqIxYKIG2XiZUa0hGVsUbyLwNc10P3hX79eKV8Rda8nwRilW8xRuMYF3BJR4zsjvkeGAayhfE18jGA
+2025-08-29 21:56:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:56:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:56:36 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 21:56:36 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0Nzk2LCJleHAiOjE3NTY0ODQ4MjZ9.pZpR_gwxdT5JDC2viIdPsA1aWEWu19MYEWMu1RParOOIzIeOkw4qwi5MH1syTVGeXG6yXymWSBMl3SekJ41JSg
+2025-08-29 21:56:36 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:56:36 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:57:03 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0Nzk2LCJleHAiOjE3NTY0ODQ4MjZ9.pZpR_gwxdT5JDC2viIdPsA1aWEWu19MYEWMu1RParOOIzIeOkw4qwi5MH1syTVGeXG6yXymWSBMl3SekJ41JSg
+2025-08-29 21:57:03 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:57:03 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:57:09 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0Nzk2LCJleHAiOjE3NTY0ODQ4MjZ9.pZpR_gwxdT5JDC2viIdPsA1aWEWu19MYEWMu1RParOOIzIeOkw4qwi5MH1syTVGeXG6yXymWSBMl3SekJ41JSg
+2025-08-29 21:57:09 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:57:10 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0Nzk2LCJleHAiOjE3NTY0ODQ4MjZ9.pZpR_gwxdT5JDC2viIdPsA1aWEWu19MYEWMu1RParOOIzIeOkw4qwi5MH1syTVGeXG6yXymWSBMl3SekJ41JSg
+2025-08-29 21:57:10 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:57:10 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODMwLCJleHAiOjE3NTY0ODQ4NjB9.RxtakwUOQ9dC4rLarjq6-wNgvXK5u9WJmLqpEbEikgW1r03YgxIBAudjByAsoTVTnp8NU9Pyu0DQOPqPW7hwwQ
+2025-08-29 21:57:10 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:57:10 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:57:14 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODMwLCJleHAiOjE3NTY0ODQ4NjB9.RxtakwUOQ9dC4rLarjq6-wNgvXK5u9WJmLqpEbEikgW1r03YgxIBAudjByAsoTVTnp8NU9Pyu0DQOPqPW7hwwQ
+2025-08-29 21:57:14 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:57:14 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:57:20 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODMwLCJleHAiOjE3NTY0ODQ4NjB9.RxtakwUOQ9dC4rLarjq6-wNgvXK5u9WJmLqpEbEikgW1r03YgxIBAudjByAsoTVTnp8NU9Pyu0DQOPqPW7hwwQ
+2025-08-29 21:57:20 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:57:20 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:57:22 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODMwLCJleHAiOjE3NTY0ODQ4NjB9.RxtakwUOQ9dC4rLarjq6-wNgvXK5u9WJmLqpEbEikgW1r03YgxIBAudjByAsoTVTnp8NU9Pyu0DQOPqPW7hwwQ
+2025-08-29 21:57:22 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:57:22 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:57:50 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODMwLCJleHAiOjE3NTY0ODQ4NjB9.RxtakwUOQ9dC4rLarjq6-wNgvXK5u9WJmLqpEbEikgW1r03YgxIBAudjByAsoTVTnp8NU9Pyu0DQOPqPW7hwwQ
+2025-08-29 21:57:50 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:57:51 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODMwLCJleHAiOjE3NTY0ODQ4NjB9.RxtakwUOQ9dC4rLarjq6-wNgvXK5u9WJmLqpEbEikgW1r03YgxIBAudjByAsoTVTnp8NU9Pyu0DQOPqPW7hwwQ
+2025-08-29 21:57:51 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:57:51 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODMwLCJleHAiOjE3NTY0ODQ4NjB9.RxtakwUOQ9dC4rLarjq6-wNgvXK5u9WJmLqpEbEikgW1r03YgxIBAudjByAsoTVTnp8NU9Pyu0DQOPqPW7hwwQ
+2025-08-29 21:57:51 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:57:51 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODcxLCJleHAiOjE3NTY0ODQ5MDF9.8jHRc1AfoTH5a4cxICKpx6DnCNYlhJ_RR5gpM55kg9O78wDMteovM7FfXXcNDH3Vt7odMBreFUi0dfQTDP63Pg
+2025-08-29 21:57:51 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:57:51 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:58:24 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODcxLCJleHAiOjE3NTY0ODQ5MDF9.8jHRc1AfoTH5a4cxICKpx6DnCNYlhJ_RR5gpM55kg9O78wDMteovM7FfXXcNDH3Vt7odMBreFUi0dfQTDP63Pg
+2025-08-29 21:58:24 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:58:24 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0ODcxLCJleHAiOjE3NTY0ODQ5MDF9.8jHRc1AfoTH5a4cxICKpx6DnCNYlhJ_RR5gpM55kg9O78wDMteovM7FfXXcNDH3Vt7odMBreFUi0dfQTDP63Pg
+2025-08-29 21:58:24 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:58:24 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTA0LCJleHAiOjE3NTY0ODQ5MzR9.p14X-hXvQzIiE0M1RAdYg_pBYXWXOEUxpI39e3mgWRX9Ow3RqZhHa0cHXuSAA7ot0vld2Uh_GklNDE9ixutZ1A
+2025-08-29 21:58:25 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:58:25 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:58:28 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTA0LCJleHAiOjE3NTY0ODQ5MzR9.p14X-hXvQzIiE0M1RAdYg_pBYXWXOEUxpI39e3mgWRX9Ow3RqZhHa0cHXuSAA7ot0vld2Uh_GklNDE9ixutZ1A
+2025-08-29 21:58:28 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:58:28 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:58:35 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTA0LCJleHAiOjE3NTY0ODQ5MzR9.p14X-hXvQzIiE0M1RAdYg_pBYXWXOEUxpI39e3mgWRX9Ow3RqZhHa0cHXuSAA7ot0vld2Uh_GklNDE9ixutZ1A
+2025-08-29 21:58:35 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:58:35 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:59:07 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTA0LCJleHAiOjE3NTY0ODQ5MzR9.p14X-hXvQzIiE0M1RAdYg_pBYXWXOEUxpI39e3mgWRX9Ow3RqZhHa0cHXuSAA7ot0vld2Uh_GklNDE9ixutZ1A
+2025-08-29 21:59:07 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:59:08 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTA0LCJleHAiOjE3NTY0ODQ5MzR9.p14X-hXvQzIiE0M1RAdYg_pBYXWXOEUxpI39e3mgWRX9Ow3RqZhHa0cHXuSAA7ot0vld2Uh_GklNDE9ixutZ1A
+2025-08-29 21:59:08 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 21:59:08 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTQ4LCJleHAiOjE3NTY0ODQ5Nzh9.bOuQIqrp6zsiI1oKpR2YVqcslnpHZJ6vRAvqa2Ur0GYV0L00reqfLIpeFPkwcLBoqZ9YRsFWNcVmrvSp3qsj4w
+2025-08-29 21:59:08 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:59:08 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 21:59:12 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTQ4LCJleHAiOjE3NTY0ODQ5Nzh9.bOuQIqrp6zsiI1oKpR2YVqcslnpHZJ6vRAvqa2Ur0GYV0L00reqfLIpeFPkwcLBoqZ9YRsFWNcVmrvSp3qsj4w
+2025-08-29 21:59:12 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 21:59:12 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:00:14 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTQ4LCJleHAiOjE3NTY0ODQ5Nzh9.bOuQIqrp6zsiI1oKpR2YVqcslnpHZJ6vRAvqa2Ur0GYV0L00reqfLIpeFPkwcLBoqZ9YRsFWNcVmrvSp3qsj4w
+2025-08-29 22:00:14 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:00:14 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg0OTQ4LCJleHAiOjE3NTY0ODQ5Nzh9.bOuQIqrp6zsiI1oKpR2YVqcslnpHZJ6vRAvqa2Ur0GYV0L00reqfLIpeFPkwcLBoqZ9YRsFWNcVmrvSp3qsj4w
+2025-08-29 22:00:14 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:00:15 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDE0LCJleHAiOjE3NTY0ODUwNDR9.LRfJsiggouC4Tx832m8i_4wKc-kvHdVYfKv589Tu4CuJPh6JC2aSfJ7t_DbhXspsH1oPmFhHfsVxn4s22NgPQg
+2025-08-29 22:00:15 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:00:15 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:00:45 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDE0LCJleHAiOjE3NTY0ODUwNDR9.LRfJsiggouC4Tx832m8i_4wKc-kvHdVYfKv589Tu4CuJPh6JC2aSfJ7t_DbhXspsH1oPmFhHfsVxn4s22NgPQg
+2025-08-29 22:00:45 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:00:45 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDE0LCJleHAiOjE3NTY0ODUwNDR9.LRfJsiggouC4Tx832m8i_4wKc-kvHdVYfKv589Tu4CuJPh6JC2aSfJ7t_DbhXspsH1oPmFhHfsVxn4s22NgPQg
+2025-08-29 22:00:45 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:00:46 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDQ1LCJleHAiOjE3NTY0ODUwNzV9.uD-647gFjSPWb3IbYd-3OxuvDKM_0wPgnAcvhXBDSlLLPNUeGy1c_IaafQ5UFZorR_joWLj-54PsB3csM9GreA
+2025-08-29 22:00:46 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:00:46 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:01:06 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDQ1LCJleHAiOjE3NTY0ODUwNzV9.uD-647gFjSPWb3IbYd-3OxuvDKM_0wPgnAcvhXBDSlLLPNUeGy1c_IaafQ5UFZorR_joWLj-54PsB3csM9GreA
+2025-08-29 22:01:06 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:01:06 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:01:07 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDQ1LCJleHAiOjE3NTY0ODUwNzV9.uD-647gFjSPWb3IbYd-3OxuvDKM_0wPgnAcvhXBDSlLLPNUeGy1c_IaafQ5UFZorR_joWLj-54PsB3csM9GreA
+2025-08-29 22:01:07 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:01:07 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:01:11 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDQ1LCJleHAiOjE3NTY0ODUwNzV9.uD-647gFjSPWb3IbYd-3OxuvDKM_0wPgnAcvhXBDSlLLPNUeGy1c_IaafQ5UFZorR_joWLj-54PsB3csM9GreA
+2025-08-29 22:01:11 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:01:11 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:01:12 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDQ1LCJleHAiOjE3NTY0ODUwNzV9.uD-647gFjSPWb3IbYd-3OxuvDKM_0wPgnAcvhXBDSlLLPNUeGy1c_IaafQ5UFZorR_joWLj-54PsB3csM9GreA
+2025-08-29 22:01:12 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:01:12 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:01:13 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDQ1LCJleHAiOjE3NTY0ODUwNzV9.uD-647gFjSPWb3IbYd-3OxuvDKM_0wPgnAcvhXBDSlLLPNUeGy1c_IaafQ5UFZorR_joWLj-54PsB3csM9GreA
+2025-08-29 22:01:13 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:01:13 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:01:15 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDQ1LCJleHAiOjE3NTY0ODUwNzV9.uD-647gFjSPWb3IbYd-3OxuvDKM_0wPgnAcvhXBDSlLLPNUeGy1c_IaafQ5UFZorR_joWLj-54PsB3csM9GreA
+2025-08-29 22:01:15 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:01:16 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MDQ1LCJleHAiOjE3NTY0ODUwNzV9.uD-647gFjSPWb3IbYd-3OxuvDKM_0wPgnAcvhXBDSlLLPNUeGy1c_IaafQ5UFZorR_joWLj-54PsB3csM9GreA
+2025-08-29 22:01:16 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:04:46 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 22:04:47 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Mjg3LCJleHAiOjE3NTY0ODUzMTd9.iLTbkOOeE6BnijDbgxke4l-diBOxvRke_J9--4c8D6F_IKFSqx-VdvQjcHhL8iAVdTIzKDxry9Tf6e6sBqilCg
+2025-08-29 22:04:47 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:04:47 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:05:50 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Mjg3LCJleHAiOjE3NTY0ODUzMTd9.iLTbkOOeE6BnijDbgxke4l-diBOxvRke_J9--4c8D6F_IKFSqx-VdvQjcHhL8iAVdTIzKDxry9Tf6e6sBqilCg
+2025-08-29 22:05:50 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:05:51 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Mjg3LCJleHAiOjE3NTY0ODUzMTd9.iLTbkOOeE6BnijDbgxke4l-diBOxvRke_J9--4c8D6F_IKFSqx-VdvQjcHhL8iAVdTIzKDxry9Tf6e6sBqilCg
+2025-08-29 22:05:51 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:05:51 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MzUxLCJleHAiOjE3NTY0ODUzODF9.6J8Jg-5Ik5WRx5wY4jJDi3WT0JC9JhtfrvCxuYXqUgqe8TfUKyVPmjewJI8C0FwLRwB30K6qIfxtwNZhlzGk4w
+2025-08-29 22:05:51 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:05:51 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:05:55 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MzUxLCJleHAiOjE3NTY0ODUzODF9.6J8Jg-5Ik5WRx5wY4jJDi3WT0JC9JhtfrvCxuYXqUgqe8TfUKyVPmjewJI8C0FwLRwB30K6qIfxtwNZhlzGk4w
+2025-08-29 22:05:55 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:05:55 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:05:57 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MzUxLCJleHAiOjE3NTY0ODUzODF9.6J8Jg-5Ik5WRx5wY4jJDi3WT0JC9JhtfrvCxuYXqUgqe8TfUKyVPmjewJI8C0FwLRwB30K6qIfxtwNZhlzGk4w
+2025-08-29 22:05:57 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:05:57 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:06:03 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MzUxLCJleHAiOjE3NTY0ODUzODF9.6J8Jg-5Ik5WRx5wY4jJDi3WT0JC9JhtfrvCxuYXqUgqe8TfUKyVPmjewJI8C0FwLRwB30K6qIfxtwNZhlzGk4w
+2025-08-29 22:06:03 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:06:03 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:06:09 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MzUxLCJleHAiOjE3NTY0ODUzODF9.6J8Jg-5Ik5WRx5wY4jJDi3WT0JC9JhtfrvCxuYXqUgqe8TfUKyVPmjewJI8C0FwLRwB30K6qIfxtwNZhlzGk4w
+2025-08-29 22:06:09 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:06:09 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:06:34 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MzUxLCJleHAiOjE3NTY0ODUzODF9.6J8Jg-5Ik5WRx5wY4jJDi3WT0JC9JhtfrvCxuYXqUgqe8TfUKyVPmjewJI8C0FwLRwB30K6qIfxtwNZhlzGk4w
+2025-08-29 22:06:34 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:06:35 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1MzUxLCJleHAiOjE3NTY0ODUzODF9.6J8Jg-5Ik5WRx5wY4jJDi3WT0JC9JhtfrvCxuYXqUgqe8TfUKyVPmjewJI8C0FwLRwB30K6qIfxtwNZhlzGk4w
+2025-08-29 22:06:35 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:06:35 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Mzk1LCJleHAiOjE3NTY0ODU0MjV9.30ikWXEW2ubt6sSO7WhXEj2SzRBXyi0gyVSZN7eU3sqJv2uIF5GexRAIG6LKMF5mMmqkZhm5uNOJI2XQaAv_4w
+2025-08-29 22:06:35 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:06:35 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:06:36 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Mzk1LCJleHAiOjE3NTY0ODU0MjV9.30ikWXEW2ubt6sSO7WhXEj2SzRBXyi0gyVSZN7eU3sqJv2uIF5GexRAIG6LKMF5mMmqkZhm5uNOJI2XQaAv_4w
+2025-08-29 22:06:36 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:06:36 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:06:57 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Mzk1LCJleHAiOjE3NTY0ODU0MjV9.30ikWXEW2ubt6sSO7WhXEj2SzRBXyi0gyVSZN7eU3sqJv2uIF5GexRAIG6LKMF5mMmqkZhm5uNOJI2XQaAv_4w
+2025-08-29 22:06:57 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:06:57 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:07:13 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Mzk1LCJleHAiOjE3NTY0ODU0MjV9.30ikWXEW2ubt6sSO7WhXEj2SzRBXyi0gyVSZN7eU3sqJv2uIF5GexRAIG6LKMF5mMmqkZhm5uNOJI2XQaAv_4w
+2025-08-29 22:07:13 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:07:14 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Mzk1LCJleHAiOjE3NTY0ODU0MjV9.30ikWXEW2ubt6sSO7WhXEj2SzRBXyi0gyVSZN7eU3sqJv2uIF5GexRAIG6LKMF5mMmqkZhm5uNOJI2XQaAv_4w
+2025-08-29 22:07:14 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:07:14 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NDM0LCJleHAiOjE3NTY0ODU0NjR9.3ojs7fJcdCRLlzBW7IRrlean0R4fF9p2eyF8shOo-00KQ8_Nsw246Sc79nsJV3puWNFuuhDBvsMlFufAl0gfCQ
+2025-08-29 22:07:14 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:07:14 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:08:02 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NDM0LCJleHAiOjE3NTY0ODU0NjR9.3ojs7fJcdCRLlzBW7IRrlean0R4fF9p2eyF8shOo-00KQ8_Nsw246Sc79nsJV3puWNFuuhDBvsMlFufAl0gfCQ
+2025-08-29 22:08:02 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:08:03 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NDM0LCJleHAiOjE3NTY0ODU0NjR9.3ojs7fJcdCRLlzBW7IRrlean0R4fF9p2eyF8shOo-00KQ8_Nsw246Sc79nsJV3puWNFuuhDBvsMlFufAl0gfCQ
+2025-08-29 22:08:03 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:08:03 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NDgzLCJleHAiOjE3NTY0ODU1MTN9.7Hoaq_wCFHl9NkOClQbK2c6XnEiwCi6GeEVqekzWB2HZxsw-KWpsA7WHAxjCSNnoJOQ7jOIR-yA9PkNF6dYh6w
+2025-08-29 22:08:03 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:08:03 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:08:07 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NDgzLCJleHAiOjE3NTY0ODU1MTN9.7Hoaq_wCFHl9NkOClQbK2c6XnEiwCi6GeEVqekzWB2HZxsw-KWpsA7WHAxjCSNnoJOQ7jOIR-yA9PkNF6dYh6w
+2025-08-29 22:08:07 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:08:07 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:08:07 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-08-29 22:08:07 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - Time taken 55 ms
+2025-08-29 22:08:07 INFO  [http-nio-8081-exec-8] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-08-29 22:08:08 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NDgzLCJleHAiOjE3NTY0ODU1MTN9.7Hoaq_wCFHl9NkOClQbK2c6XnEiwCi6GeEVqekzWB2HZxsw-KWpsA7WHAxjCSNnoJOQ7jOIR-yA9PkNF6dYh6w
+2025-08-29 22:08:08 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:08:08 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:08:38 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NDgzLCJleHAiOjE3NTY0ODU1MTN9.7Hoaq_wCFHl9NkOClQbK2c6XnEiwCi6GeEVqekzWB2HZxsw-KWpsA7WHAxjCSNnoJOQ7jOIR-yA9PkNF6dYh6w
+2025-08-29 22:08:38 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:08:39 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NDgzLCJleHAiOjE3NTY0ODU1MTN9.7Hoaq_wCFHl9NkOClQbK2c6XnEiwCi6GeEVqekzWB2HZxsw-KWpsA7WHAxjCSNnoJOQ7jOIR-yA9PkNF6dYh6w
+2025-08-29 22:08:39 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:08:42 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 22:08:42 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTIyLCJleHAiOjE3NTY0ODU1NTJ9.JD6ZiCAm0l6Jqq9bY8e2fSsjVgWbO5uIs1Z4tCIS-AgFoSW08XzbLJduWB87BYJXAp5DuotHgeUwFdZ3Ty2ucQ
+2025-08-29 22:08:42 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:08:42 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:09:00 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTIyLCJleHAiOjE3NTY0ODU1NTJ9.JD6ZiCAm0l6Jqq9bY8e2fSsjVgWbO5uIs1Z4tCIS-AgFoSW08XzbLJduWB87BYJXAp5DuotHgeUwFdZ3Ty2ucQ
+2025-08-29 22:09:00 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:09:00 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:09:07 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTIyLCJleHAiOjE3NTY0ODU1NTJ9.JD6ZiCAm0l6Jqq9bY8e2fSsjVgWbO5uIs1Z4tCIS-AgFoSW08XzbLJduWB87BYJXAp5DuotHgeUwFdZ3Ty2ucQ
+2025-08-29 22:09:07 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:09:07 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:09:34 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTIyLCJleHAiOjE3NTY0ODU1NTJ9.JD6ZiCAm0l6Jqq9bY8e2fSsjVgWbO5uIs1Z4tCIS-AgFoSW08XzbLJduWB87BYJXAp5DuotHgeUwFdZ3Ty2ucQ
+2025-08-29 22:09:34 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:09:34 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTIyLCJleHAiOjE3NTY0ODU1NTJ9.JD6ZiCAm0l6Jqq9bY8e2fSsjVgWbO5uIs1Z4tCIS-AgFoSW08XzbLJduWB87BYJXAp5DuotHgeUwFdZ3Ty2ucQ
+2025-08-29 22:09:34 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:09:35 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTc0LCJleHAiOjE3NTY0ODU2MDR9.Zunryk-ObT8TYpsUD2qXA84X3ng-fMpWsjEiXWilKxE_lj4ZCJkVyBbXKqRJhSxMiYshnBQWkN-8ji5PSliZew
+2025-08-29 22:09:35 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:09:35 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:09:35 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-08-29 22:09:35 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-08-29 22:09:35 INFO  [http-nio-8081-exec-7] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-08-29 22:09:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTc0LCJleHAiOjE3NTY0ODU2MDR9.Zunryk-ObT8TYpsUD2qXA84X3ng-fMpWsjEiXWilKxE_lj4ZCJkVyBbXKqRJhSxMiYshnBQWkN-8ji5PSliZew
+2025-08-29 22:09:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:09:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:09:46 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTc0LCJleHAiOjE3NTY0ODU2MDR9.Zunryk-ObT8TYpsUD2qXA84X3ng-fMpWsjEiXWilKxE_lj4ZCJkVyBbXKqRJhSxMiYshnBQWkN-8ji5PSliZew
+2025-08-29 22:09:46 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:09:46 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:09:48 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTc0LCJleHAiOjE3NTY0ODU2MDR9.Zunryk-ObT8TYpsUD2qXA84X3ng-fMpWsjEiXWilKxE_lj4ZCJkVyBbXKqRJhSxMiYshnBQWkN-8ji5PSliZew
+2025-08-29 22:09:48 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:09:48 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:09:49 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTc0LCJleHAiOjE3NTY0ODU2MDR9.Zunryk-ObT8TYpsUD2qXA84X3ng-fMpWsjEiXWilKxE_lj4ZCJkVyBbXKqRJhSxMiYshnBQWkN-8ji5PSliZew
+2025-08-29 22:09:49 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:09:49 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:10:52 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTc0LCJleHAiOjE3NTY0ODU2MDR9.Zunryk-ObT8TYpsUD2qXA84X3ng-fMpWsjEiXWilKxE_lj4ZCJkVyBbXKqRJhSxMiYshnBQWkN-8ji5PSliZew
+2025-08-29 22:10:52 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:10:52 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NTc0LCJleHAiOjE3NTY0ODU2MDR9.Zunryk-ObT8TYpsUD2qXA84X3ng-fMpWsjEiXWilKxE_lj4ZCJkVyBbXKqRJhSxMiYshnBQWkN-8ji5PSliZew
+2025-08-29 22:10:52 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:10:53 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NjUyLCJleHAiOjE3NTY0ODU2ODJ9.qkxzeJFUIAc6i2AxHiIljA9poe2MByI2zBMKmPzUdz2dGxdqCbP7Fq95nbspwFojD-R3APV-mYU8I_FK8eJDOw
+2025-08-29 22:10:53 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:10:53 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:11:12 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NjUyLCJleHAiOjE3NTY0ODU2ODJ9.qkxzeJFUIAc6i2AxHiIljA9poe2MByI2zBMKmPzUdz2dGxdqCbP7Fq95nbspwFojD-R3APV-mYU8I_FK8eJDOw
+2025-08-29 22:11:12 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:11:12 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:11:16 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NjUyLCJleHAiOjE3NTY0ODU2ODJ9.qkxzeJFUIAc6i2AxHiIljA9poe2MByI2zBMKmPzUdz2dGxdqCbP7Fq95nbspwFojD-R3APV-mYU8I_FK8eJDOw
+2025-08-29 22:11:16 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:11:16 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:11:29 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NjUyLCJleHAiOjE3NTY0ODU2ODJ9.qkxzeJFUIAc6i2AxHiIljA9poe2MByI2zBMKmPzUdz2dGxdqCbP7Fq95nbspwFojD-R3APV-mYU8I_FK8eJDOw
+2025-08-29 22:11:29 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:11:29 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1NjUyLCJleHAiOjE3NTY0ODU2ODJ9.qkxzeJFUIAc6i2AxHiIljA9poe2MByI2zBMKmPzUdz2dGxdqCbP7Fq95nbspwFojD-R3APV-mYU8I_FK8eJDOw
+2025-08-29 22:11:29 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:11:30 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Njg5LCJleHAiOjE3NTY0ODU3MTl9.-XnakkjsvSVJObv5sbsMmIc6JuhKWuJJ4Xxtb75HU0GlW-3onPTEGacBy8MBXyG-txuaFlV2DqH7qw8iZNsX9A
+2025-08-29 22:11:30 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:11:30 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:11:34 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Njg5LCJleHAiOjE3NTY0ODU3MTl9.-XnakkjsvSVJObv5sbsMmIc6JuhKWuJJ4Xxtb75HU0GlW-3onPTEGacBy8MBXyG-txuaFlV2DqH7qw8iZNsX9A
+2025-08-29 22:11:34 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:11:34 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:11:34 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-08-29 22:11:34 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-08-29 22:11:34 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-08-29 22:11:35 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Njg5LCJleHAiOjE3NTY0ODU3MTl9.-XnakkjsvSVJObv5sbsMmIc6JuhKWuJJ4Xxtb75HU0GlW-3onPTEGacBy8MBXyG-txuaFlV2DqH7qw8iZNsX9A
+2025-08-29 22:11:35 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:11:35 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:13:14 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Njg5LCJleHAiOjE3NTY0ODU3MTl9.-XnakkjsvSVJObv5sbsMmIc6JuhKWuJJ4Xxtb75HU0GlW-3onPTEGacBy8MBXyG-txuaFlV2DqH7qw8iZNsX9A
+2025-08-29 22:13:14 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:13:14 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Njg5LCJleHAiOjE3NTY0ODU3MTl9.-XnakkjsvSVJObv5sbsMmIc6JuhKWuJJ4Xxtb75HU0GlW-3onPTEGacBy8MBXyG-txuaFlV2DqH7qw8iZNsX9A
+2025-08-29 22:13:14 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:13:15 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Nzk0LCJleHAiOjE3NTY0ODU4MjR9.Dl0rKxeVommmQB6X9Bcp4ZbyParhe8pN0QscJnC0QS5ITShu2k2hdhr1CwGpArwdnInULbyF6Uc4sunKVneFfw
+2025-08-29 22:13:15 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:13:15 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:13:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Nzk0LCJleHAiOjE3NTY0ODU4MjR9.Dl0rKxeVommmQB6X9Bcp4ZbyParhe8pN0QscJnC0QS5ITShu2k2hdhr1CwGpArwdnInULbyF6Uc4sunKVneFfw
+2025-08-29 22:13:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:13:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:14:08 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Nzk0LCJleHAiOjE3NTY0ODU4MjR9.Dl0rKxeVommmQB6X9Bcp4ZbyParhe8pN0QscJnC0QS5ITShu2k2hdhr1CwGpArwdnInULbyF6Uc4sunKVneFfw
+2025-08-29 22:14:08 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:14:09 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1Nzk0LCJleHAiOjE3NTY0ODU4MjR9.Dl0rKxeVommmQB6X9Bcp4ZbyParhe8pN0QscJnC0QS5ITShu2k2hdhr1CwGpArwdnInULbyF6Uc4sunKVneFfw
+2025-08-29 22:14:09 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:14:09 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1ODQ5LCJleHAiOjE3NTY0ODU4Nzl9.S0S7I0pCgmpFul7PzkiaCCfJwXGnjnaBXTBLxR5PQajcD7gYNM1H6Xs5l3KYsmDQv7NN5Dx389VrLmUlR5WkIw
+2025-08-29 22:14:09 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:14:09 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:14:37 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1ODQ5LCJleHAiOjE3NTY0ODU4Nzl9.S0S7I0pCgmpFul7PzkiaCCfJwXGnjnaBXTBLxR5PQajcD7gYNM1H6Xs5l3KYsmDQv7NN5Dx389VrLmUlR5WkIw
+2025-08-29 22:14:37 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:14:37 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:16:03 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1ODQ5LCJleHAiOjE3NTY0ODU4Nzl9.S0S7I0pCgmpFul7PzkiaCCfJwXGnjnaBXTBLxR5PQajcD7gYNM1H6Xs5l3KYsmDQv7NN5Dx389VrLmUlR5WkIw
+2025-08-29 22:16:03 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:16:04 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1ODQ5LCJleHAiOjE3NTY0ODU4Nzl9.S0S7I0pCgmpFul7PzkiaCCfJwXGnjnaBXTBLxR5PQajcD7gYNM1H6Xs5l3KYsmDQv7NN5Dx389VrLmUlR5WkIw
+2025-08-29 22:16:04 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:16:04 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1OTY0LCJleHAiOjE3NTY0ODU5OTR9.b89n-kCt-SiDIw4NLWU-XoWeqXb0yE8wOyr-urpZ8cMIcZUwN8h233OqjAEHT25D0WHnmsWAs3d_VsN-3MUzYw
+2025-08-29 22:16:04 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:16:04 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:16:39 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1OTY0LCJleHAiOjE3NTY0ODU5OTR9.b89n-kCt-SiDIw4NLWU-XoWeqXb0yE8wOyr-urpZ8cMIcZUwN8h233OqjAEHT25D0WHnmsWAs3d_VsN-3MUzYw
+2025-08-29 22:16:39 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:16:40 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg1OTY0LCJleHAiOjE3NTY0ODU5OTR9.b89n-kCt-SiDIw4NLWU-XoWeqXb0yE8wOyr-urpZ8cMIcZUwN8h233OqjAEHT25D0WHnmsWAs3d_VsN-3MUzYw
+2025-08-29 22:16:40 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:16:40 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MDAwLCJleHAiOjE3NTY0ODYwMzB9.jegWCTVcHUnvF22q2_tCY_Q2oDxT_PomJ7WzAapg8YmAL1VKe_v8i-7vELjUnW-NiXmc7UZL26UAUKJh2BSZTg
+2025-08-29 22:16:40 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:16:40 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:16:53 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 22:16:53 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MDEzLCJleHAiOjE3NTY0ODYwNDN9.QqLdqlBg0oXY0hKGJj_xJ56yM4dWw1OEDkJmxrKTsFsNwy5StGiG1rwm0pF89CGeCAwVe0OsE_r0NOpW_r1OUw
+2025-08-29 22:16:53 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:16:53 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:17:06 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MDEzLCJleHAiOjE3NTY0ODYwNDN9.QqLdqlBg0oXY0hKGJj_xJ56yM4dWw1OEDkJmxrKTsFsNwy5StGiG1rwm0pF89CGeCAwVe0OsE_r0NOpW_r1OUw
+2025-08-29 22:17:06 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:17:06 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:17:06 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-08-29 22:17:06 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - Time taken 9 ms
+2025-08-29 22:17:06 INFO  [http-nio-8081-exec-1] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-08-29 22:17:07 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MDEzLCJleHAiOjE3NTY0ODYwNDN9.QqLdqlBg0oXY0hKGJj_xJ56yM4dWw1OEDkJmxrKTsFsNwy5StGiG1rwm0pF89CGeCAwVe0OsE_r0NOpW_r1OUw
+2025-08-29 22:17:07 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:17:07 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:19:49 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-29 22:19:49 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-29 22:19:49 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29 22:19:49 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-29 22:19:49 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-29 22:19:51 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-29 22:19:51 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 5847 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-08-29 22:19:51 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-29 22:19:52 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-29 22:19:52 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 11 JPA repository interfaces.
+2025-08-29 22:19:52 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-08-29 22:19:52 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-08-29 22:19:52 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-29 22:19:52 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-08-29 22:19:52 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-29 22:19:52 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 951 ms
+2025-08-29 22:19:52 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-29 22:19:52 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-08-29 22:19:53 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-29 22:19:53 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-29 22:19:53 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-29 22:19:53 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f17dd06
+2025-08-29 22:19:53 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-29 22:19:53 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-29 22:19:53 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-29 22:19:53 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-29 22:19:53 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-29 22:19:54 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29 22:19:54 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-08-29 22:19:54 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-08-29 22:19:54 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-29 22:19:54 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-29 22:19:55 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-08-29 22:19:55 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-08-29 22:19:55 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.834 seconds (process running for 4.056)
+2025-08-29 22:19:55 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 22:19:55 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 22:19:55 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-08-29 22:20:10 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-29 22:20:10 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-29 22:20:10 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-08-29 22:20:11 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MDEzLCJleHAiOjE3NTY0ODYwNDN9.QqLdqlBg0oXY0hKGJj_xJ56yM4dWw1OEDkJmxrKTsFsNwy5StGiG1rwm0pF89CGeCAwVe0OsE_r0NOpW_r1OUw
+2025-08-29 22:20:11 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:20:12 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MDEzLCJleHAiOjE3NTY0ODYwNDN9.QqLdqlBg0oXY0hKGJj_xJ56yM4dWw1OEDkJmxrKTsFsNwy5StGiG1rwm0pF89CGeCAwVe0OsE_r0NOpW_r1OUw
+2025-08-29 22:20:12 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:22:30 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 22:22:31 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MzUwLCJleHAiOjE3NTY0ODYzODB9.t2mSvKutsJ5Z3KOM109HJ1D9lDKZZuMV4fKJFDIWdyThtlfm7AoEVYBv5FPzCqHRuS-mmlZLVz9F-yW8siCk8A
+2025-08-29 22:22:31 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MzUwLCJleHAiOjE3NTY0ODYzODB9.t2mSvKutsJ5Z3KOM109HJ1D9lDKZZuMV4fKJFDIWdyThtlfm7AoEVYBv5FPzCqHRuS-mmlZLVz9F-yW8siCk8A
+2025-08-29 22:22:31 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:22:31 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:22:31 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:22:31 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:23:03 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MzUwLCJleHAiOjE3NTY0ODYzODB9.t2mSvKutsJ5Z3KOM109HJ1D9lDKZZuMV4fKJFDIWdyThtlfm7AoEVYBv5FPzCqHRuS-mmlZLVz9F-yW8siCk8A
+2025-08-29 22:23:03 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MzUwLCJleHAiOjE3NTY0ODYzODB9.t2mSvKutsJ5Z3KOM109HJ1D9lDKZZuMV4fKJFDIWdyThtlfm7AoEVYBv5FPzCqHRuS-mmlZLVz9F-yW8siCk8A
+2025-08-29 22:23:03 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:23:03 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:23:03 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MzUwLCJleHAiOjE3NTY0ODYzODB9.t2mSvKutsJ5Z3KOM109HJ1D9lDKZZuMV4fKJFDIWdyThtlfm7AoEVYBv5FPzCqHRuS-mmlZLVz9F-yW8siCk8A
+2025-08-29 22:23:03 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MzUwLCJleHAiOjE3NTY0ODYzODB9.t2mSvKutsJ5Z3KOM109HJ1D9lDKZZuMV4fKJFDIWdyThtlfm7AoEVYBv5FPzCqHRuS-mmlZLVz9F-yW8siCk8A
+2025-08-29 22:23:04 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:23:04 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:23:04 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2MzUwLCJleHAiOjE3NTY0ODYzODB9.t2mSvKutsJ5Z3KOM109HJ1D9lDKZZuMV4fKJFDIWdyThtlfm7AoEVYBv5FPzCqHRuS-mmlZLVz9F-yW8siCk8A
+2025-08-29 22:23:04 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:23:04 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:23:04 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:23:04 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:23:04 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:23:05 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:23:05 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:23:05 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:23:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:23:05 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:23:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:23:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:23:05 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:23:21 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:23:21 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:23:21 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:23:21 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:23:21 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:23:21 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:24:15 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:24:15 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:24:15 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:24:15 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:24:16 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2Mzg0LCJleHAiOjE3NTY0ODY0MTR9.zjsUXlDzfxsmTVKRwZGtxlAIx1FXOhW8nAZM4JXyPJ1J9uDSDMlfLiNBGT1g8yLH3EkiGttyYO7oDqFU1eIMZg
+2025-08-29 22:24:16 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:26:06 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 22:26:07 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTY2LCJleHAiOjE3NTY0ODY1OTZ9.FPsZaKv7SxO6z5bVGJqX9cpVsTaXUfOf90SnFcaQ7_qSeDzBYhG_eNG0103cxOJOKIbLMPdpZ4RhFMWMeOQRmg
+2025-08-29 22:26:07 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTY2LCJleHAiOjE3NTY0ODY1OTZ9.FPsZaKv7SxO6z5bVGJqX9cpVsTaXUfOf90SnFcaQ7_qSeDzBYhG_eNG0103cxOJOKIbLMPdpZ4RhFMWMeOQRmg
+2025-08-29 22:26:07 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:07 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:07 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:07 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:38 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTY2LCJleHAiOjE3NTY0ODY1OTZ9.FPsZaKv7SxO6z5bVGJqX9cpVsTaXUfOf90SnFcaQ7_qSeDzBYhG_eNG0103cxOJOKIbLMPdpZ4RhFMWMeOQRmg
+2025-08-29 22:26:38 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTY2LCJleHAiOjE3NTY0ODY1OTZ9.FPsZaKv7SxO6z5bVGJqX9cpVsTaXUfOf90SnFcaQ7_qSeDzBYhG_eNG0103cxOJOKIbLMPdpZ4RhFMWMeOQRmg
+2025-08-29 22:26:38 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:26:38 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:26:39 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTY2LCJleHAiOjE3NTY0ODY1OTZ9.FPsZaKv7SxO6z5bVGJqX9cpVsTaXUfOf90SnFcaQ7_qSeDzBYhG_eNG0103cxOJOKIbLMPdpZ4RhFMWMeOQRmg
+2025-08-29 22:26:39 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:26:39 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:39 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:39 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:39 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:39 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:39 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:43 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:43 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:43 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:43 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:43 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:43 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:44 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:48 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:48 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:26:48 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:48 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:26:48 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:26:48 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:27:59 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:27:59 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:27:59 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:27:59 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:28:00 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NTk5LCJleHAiOjE3NTY0ODY2Mjl9.M7aK08q78FpJuDroAEFZ472r4_vlJjLKArwjvJmKAuQz2f6wpK0kGaQJCNIyg1tYtIaHGF5iYUaIWfSzqN3AJQ
+2025-08-29 22:28:00 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:28:00 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NjgwLCJleHAiOjE3NTY0ODY3MTB9.DWA98DPIsp9Oc1gnSUjF20e1dXScrAgmYBJBuESvi0pP2uVQy5x2WbeIy9FgymT5hVqQ7g_a4RGLChyd-JLRIw
+2025-08-29 22:28:00 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NjgwLCJleHAiOjE3NTY0ODY3MTB9.DWA98DPIsp9Oc1gnSUjF20e1dXScrAgmYBJBuESvi0pP2uVQy5x2WbeIy9FgymT5hVqQ7g_a4RGLChyd-JLRIw
+2025-08-29 22:28:00 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:28:00 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:28:00 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:28:00 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:10 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NjgwLCJleHAiOjE3NTY0ODY3MTB9.DWA98DPIsp9Oc1gnSUjF20e1dXScrAgmYBJBuESvi0pP2uVQy5x2WbeIy9FgymT5hVqQ7g_a4RGLChyd-JLRIw
+2025-08-29 22:29:10 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NjgwLCJleHAiOjE3NTY0ODY3MTB9.DWA98DPIsp9Oc1gnSUjF20e1dXScrAgmYBJBuESvi0pP2uVQy5x2WbeIy9FgymT5hVqQ7g_a4RGLChyd-JLRIw
+2025-08-29 22:29:10 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:29:10 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:29:11 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NjgwLCJleHAiOjE3NTY0ODY3MTB9.DWA98DPIsp9Oc1gnSUjF20e1dXScrAgmYBJBuESvi0pP2uVQy5x2WbeIy9FgymT5hVqQ7g_a4RGLChyd-JLRIw
+2025-08-29 22:29:11 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:29:11 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:11 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:11 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:11 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:11 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:11 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:34 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:34 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:34 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:34 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:34 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:34 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:36 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:36 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:36 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:51 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:51 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:51 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:29:51 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:29:52 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzUxLCJleHAiOjE3NTY0ODY3ODF9.4hfxfVc22Jxie24QKh0d1-xI4Vna4LbpZoMwRnDv_gDyR48jCGZrJCzTFvNlxNx1MBazh3BXR8uZAtSk5iZMtA
+2025-08-29 22:29:52 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:29:52 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzkyLCJleHAiOjE3NTY0ODY4MjJ9.TjpYrk_QB8-H3nIevtSIz37Gg_FuSRt-61Bfyi9AkvbwHM04A_wXfzP7gDVe5HZAtulCMyvcnflDSKALps0BXw
+2025-08-29 22:29:52 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzkyLCJleHAiOjE3NTY0ODY4MjJ9.TjpYrk_QB8-H3nIevtSIz37Gg_FuSRt-61Bfyi9AkvbwHM04A_wXfzP7gDVe5HZAtulCMyvcnflDSKALps0BXw
+2025-08-29 22:29:52 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:52 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:52 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:52 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:55 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzkyLCJleHAiOjE3NTY0ODY4MjJ9.TjpYrk_QB8-H3nIevtSIz37Gg_FuSRt-61Bfyi9AkvbwHM04A_wXfzP7gDVe5HZAtulCMyvcnflDSKALps0BXw
+2025-08-29 22:29:55 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzkyLCJleHAiOjE3NTY0ODY4MjJ9.TjpYrk_QB8-H3nIevtSIz37Gg_FuSRt-61Bfyi9AkvbwHM04A_wXfzP7gDVe5HZAtulCMyvcnflDSKALps0BXw
+2025-08-29 22:29:55 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:55 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:29:55 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:29:55 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:30:26 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzkyLCJleHAiOjE3NTY0ODY4MjJ9.TjpYrk_QB8-H3nIevtSIz37Gg_FuSRt-61Bfyi9AkvbwHM04A_wXfzP7gDVe5HZAtulCMyvcnflDSKALps0BXw
+2025-08-29 22:30:26 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:30:26 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2NzkyLCJleHAiOjE3NTY0ODY4MjJ9.TjpYrk_QB8-H3nIevtSIz37Gg_FuSRt-61Bfyi9AkvbwHM04A_wXfzP7gDVe5HZAtulCMyvcnflDSKALps0BXw
+2025-08-29 22:30:26 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:30:27 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2ODI2LCJleHAiOjE3NTY0ODY4NTZ9.CILHxLb6M_9nCK22-uAhL_dXgcLU06iQelWLWZRZmBLoax2f7ivB7qQETmkVxINtpNzDMeDKE_ltkXJAcBspow
+2025-08-29 22:30:27 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:30:27 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:30:27 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-08-29 22:30:27 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - Time taken 77 ms
+2025-08-29 22:30:27 INFO  [http-nio-8081-exec-9] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-08-29 22:30:28 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2ODI2LCJleHAiOjE3NTY0ODY4NTZ9.CILHxLb6M_9nCK22-uAhL_dXgcLU06iQelWLWZRZmBLoax2f7ivB7qQETmkVxINtpNzDMeDKE_ltkXJAcBspow
+2025-08-29 22:30:28 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:30:28 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2ODI2LCJleHAiOjE3NTY0ODY4NTZ9.CILHxLb6M_9nCK22-uAhL_dXgcLU06iQelWLWZRZmBLoax2f7ivB7qQETmkVxINtpNzDMeDKE_ltkXJAcBspow
+2025-08-29 22:30:28 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:30:28 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:30:28 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:30:31 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2ODI2LCJleHAiOjE3NTY0ODY4NTZ9.CILHxLb6M_9nCK22-uAhL_dXgcLU06iQelWLWZRZmBLoax2f7ivB7qQETmkVxINtpNzDMeDKE_ltkXJAcBspow
+2025-08-29 22:30:31 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2ODI2LCJleHAiOjE3NTY0ODY4NTZ9.CILHxLb6M_9nCK22-uAhL_dXgcLU06iQelWLWZRZmBLoax2f7ivB7qQETmkVxINtpNzDMeDKE_ltkXJAcBspow
+2025-08-29 22:30:31 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:30:31 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:30:31 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:30:31 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:32:23 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2ODI2LCJleHAiOjE3NTY0ODY4NTZ9.CILHxLb6M_9nCK22-uAhL_dXgcLU06iQelWLWZRZmBLoax2f7ivB7qQETmkVxINtpNzDMeDKE_ltkXJAcBspow
+2025-08-29 22:32:23 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2ODI2LCJleHAiOjE3NTY0ODY4NTZ9.CILHxLb6M_9nCK22-uAhL_dXgcLU06iQelWLWZRZmBLoax2f7ivB7qQETmkVxINtpNzDMeDKE_ltkXJAcBspow
+2025-08-29 22:32:23 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:32:23 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:32:23 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2ODI2LCJleHAiOjE3NTY0ODY4NTZ9.CILHxLb6M_9nCK22-uAhL_dXgcLU06iQelWLWZRZmBLoax2f7ivB7qQETmkVxINtpNzDMeDKE_ltkXJAcBspow
+2025-08-29 22:32:23 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:32:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTQzLCJleHAiOjE3NTY0ODY5NzN9.qzrn3dISH2op7KMo604epGvrqLsl7QEEZ1MEv-9ZUUhW6x-6Bx8lJ--LdcwVcoKbHn1mZ-szhNkeQteFIT2egQ
+2025-08-29 22:32:24 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTQzLCJleHAiOjE3NTY0ODY5NzN9.qzrn3dISH2op7KMo604epGvrqLsl7QEEZ1MEv-9ZUUhW6x-6Bx8lJ--LdcwVcoKbHn1mZ-szhNkeQteFIT2egQ
+2025-08-29 22:32:24 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:32:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:32:24 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:32:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:33:11 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTQzLCJleHAiOjE3NTY0ODY5NzN9.qzrn3dISH2op7KMo604epGvrqLsl7QEEZ1MEv-9ZUUhW6x-6Bx8lJ--LdcwVcoKbHn1mZ-szhNkeQteFIT2egQ
+2025-08-29 22:33:11 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTQzLCJleHAiOjE3NTY0ODY5NzN9.qzrn3dISH2op7KMo604epGvrqLsl7QEEZ1MEv-9ZUUhW6x-6Bx8lJ--LdcwVcoKbHn1mZ-szhNkeQteFIT2egQ
+2025-08-29 22:33:11 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:33:11 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:33:11 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTQzLCJleHAiOjE3NTY0ODY5NzN9.qzrn3dISH2op7KMo604epGvrqLsl7QEEZ1MEv-9ZUUhW6x-6Bx8lJ--LdcwVcoKbHn1mZ-szhNkeQteFIT2egQ
+2025-08-29 22:33:11 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:33:12 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:12 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:12 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:33:12 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:33:12 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:33:12 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:33:14 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:15 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:33:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:33:15 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:33:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:33:34 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:34 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:34 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:33:34 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:33:34 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:33:34 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:33:58 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:58 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:58 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:33:58 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:33:58 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg2OTkxLCJleHAiOjE3NTY0ODcwMjF9.lA1QlCHIrqBlG74zkCYAWOU9egdIorF8Tq8YCbjioIAu6I9l9nGq74VPwQkbV5QJYF-y-OakTatDRni-CDgozw
+2025-08-29 22:33:58 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:33:59 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:33:59 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:33:59 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:33:59 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:33:59 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:33:59 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:00 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:00 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:00 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:00 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:00 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:00 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:05 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:11 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:11 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:11 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:11 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:11 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:11 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:18 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:18 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:18 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:18 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-08-29 22:34:18 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - Time taken 11 ms
+2025-08-29 22:34:18 INFO  [http-nio-8081-exec-5] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-08-29 22:34:19 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:19 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:34:19 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:19 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:34:19 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:34:19 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:14 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:36:14 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:36:14 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:36:14 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:36:15 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MDM4LCJleHAiOjE3NTY0ODcwNjh9.IdxgLBLP5o3Femkho1HX6xGoVK0BMYH9bK93T3QijulzrOjMaF5t_KX2VPlopWAopCtAIFL2_hI_wZxthy0t8A
+2025-08-29 22:36:15 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:36:15 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:15 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:15 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:15 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:15 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:15 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:20 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:20 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:20 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:20 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:20 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:20 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:27 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:27 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:27 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:27 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:27 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:27 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:32 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:32 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:32 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:32 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:32 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:32 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:36 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:36 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:44 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:44 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:44 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:44 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:44 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:44 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:47 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:47 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:47 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:36:47 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:36:47 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MTc1LCJleHAiOjE3NTY0ODcyMDV9.m9MgQbhn6IB_dwjklVyyEdcxHiGolkChsAZbE6qjRBxVUMXf6kAal2JF5SPTO8--BwU3n7QrH8PmcEDOBOZ8rA
+2025-08-29 22:36:47 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:36:48 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjA3LCJleHAiOjE3NTY0ODcyMzd9.QaZRN9FUSN0rOxTZDkWes-4wEBQnTMEvPWE5vEe3RbYWL41saznQdOU8HDF5Nl1-DZh7TMYz6tgWy_yuPJs4yg
+2025-08-29 22:36:48 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjA3LCJleHAiOjE3NTY0ODcyMzd9.QaZRN9FUSN0rOxTZDkWes-4wEBQnTMEvPWE5vEe3RbYWL41saznQdOU8HDF5Nl1-DZh7TMYz6tgWy_yuPJs4yg
+2025-08-29 22:36:48 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:48 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:48 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:48 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:53 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjA3LCJleHAiOjE3NTY0ODcyMzd9.QaZRN9FUSN0rOxTZDkWes-4wEBQnTMEvPWE5vEe3RbYWL41saznQdOU8HDF5Nl1-DZh7TMYz6tgWy_yuPJs4yg
+2025-08-29 22:36:53 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjA3LCJleHAiOjE3NTY0ODcyMzd9.QaZRN9FUSN0rOxTZDkWes-4wEBQnTMEvPWE5vEe3RbYWL41saznQdOU8HDF5Nl1-DZh7TMYz6tgWy_yuPJs4yg
+2025-08-29 22:36:53 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:53 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:36:53 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:36:53 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:27 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjA3LCJleHAiOjE3NTY0ODcyMzd9.QaZRN9FUSN0rOxTZDkWes-4wEBQnTMEvPWE5vEe3RbYWL41saznQdOU8HDF5Nl1-DZh7TMYz6tgWy_yuPJs4yg
+2025-08-29 22:37:27 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjA3LCJleHAiOjE3NTY0ODcyMzd9.QaZRN9FUSN0rOxTZDkWes-4wEBQnTMEvPWE5vEe3RbYWL41saznQdOU8HDF5Nl1-DZh7TMYz6tgWy_yuPJs4yg
+2025-08-29 22:37:27 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:37:27 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:37:28 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjA3LCJleHAiOjE3NTY0ODcyMzd9.QaZRN9FUSN0rOxTZDkWes-4wEBQnTMEvPWE5vEe3RbYWL41saznQdOU8HDF5Nl1-DZh7TMYz6tgWy_yuPJs4yg
+2025-08-29 22:37:28 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:37:28 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:28 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:28 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:28 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:28 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:28 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:36 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:36 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:36 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:36 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:36 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:36 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:41 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:41 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:41 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:41 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:41 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:41 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:50 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:50 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:50 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:50 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:50 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:50 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:57 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:57 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:37:57 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:57 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:37:57 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:37:57 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:02 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:38:02 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:38:02 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:38:02 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:38:02 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjQ4LCJleHAiOjE3NTY0ODcyNzh9.A0tDFgYuLS45gJYXlgdqpQXGtGakX_d7yxQEat3ix4sLt6pG8eHDRY-MtcOS0NSUamw0LOBvYTMRSwByZ6gaqg
+2025-08-29 22:38:02 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:38:03 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:03 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:03 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:03 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:03 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:03 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:09 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:09 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:09 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:09 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:09 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:09 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:18 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:18 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:18 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:18 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:18 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:18 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:24 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:24 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:24 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:24 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:24 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:24 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:43 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:43 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:43 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:38:43 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:38:43 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MjgyLCJleHAiOjE3NTY0ODczMTJ9.19SvnVA-HWQr6fWgZZTmXHKBi1YdV40IZoKuGxnH198vGcPLdpHx5DDZQHX40eL17dTkkYA73PfBiRoBkDpRUg
+2025-08-29 22:38:43 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:44 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:48 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:38:48 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:38:48 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:48 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:38:48 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:38:48 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:39:16 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:39:16 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:39:16 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:39:16 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:39:16 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzIzLCJleHAiOjE3NTY0ODczNTN9.PgbUhr-AcKk1CPB3GCEAtw95cvHHGdXLU0fKRHh1bWeBuVYDuEN-sZh-PQNJgViFd8XDNwTIU_RovbJlMMlt8w
+2025-08-29 22:39:16 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:39:17 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzU2LCJleHAiOjE3NTY0ODczODZ9.7o4y261ijjPEcFsOBjG-mLOGNH9ik1w7S5FCYuHRMZuaF7_urMn1DOD0jUJEGjQEcDshr7jgZkKuFYyMqlvZPA
+2025-08-29 22:39:17 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzU2LCJleHAiOjE3NTY0ODczODZ9.7o4y261ijjPEcFsOBjG-mLOGNH9ik1w7S5FCYuHRMZuaF7_urMn1DOD0jUJEGjQEcDshr7jgZkKuFYyMqlvZPA
+2025-08-29 22:39:17 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:39:17 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:39:17 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:39:17 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:39:32 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzU2LCJleHAiOjE3NTY0ODczODZ9.7o4y261ijjPEcFsOBjG-mLOGNH9ik1w7S5FCYuHRMZuaF7_urMn1DOD0jUJEGjQEcDshr7jgZkKuFYyMqlvZPA
+2025-08-29 22:39:32 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:39:32 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzU2LCJleHAiOjE3NTY0ODczODZ9.7o4y261ijjPEcFsOBjG-mLOGNH9ik1w7S5FCYuHRMZuaF7_urMn1DOD0jUJEGjQEcDshr7jgZkKuFYyMqlvZPA
+2025-08-29 22:39:32 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:39:32 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:39:32 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:45:19 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzU2LCJleHAiOjE3NTY0ODczODZ9.7o4y261ijjPEcFsOBjG-mLOGNH9ik1w7S5FCYuHRMZuaF7_urMn1DOD0jUJEGjQEcDshr7jgZkKuFYyMqlvZPA
+2025-08-29 22:45:19 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzU2LCJleHAiOjE3NTY0ODczODZ9.7o4y261ijjPEcFsOBjG-mLOGNH9ik1w7S5FCYuHRMZuaF7_urMn1DOD0jUJEGjQEcDshr7jgZkKuFYyMqlvZPA
+2025-08-29 22:45:19 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:45:19 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:45:20 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3MzU2LCJleHAiOjE3NTY0ODczODZ9.7o4y261ijjPEcFsOBjG-mLOGNH9ik1w7S5FCYuHRMZuaF7_urMn1DOD0jUJEGjQEcDshr7jgZkKuFYyMqlvZPA
+2025-08-29 22:45:20 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-08-29 22:45:20 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3NzIwLCJleHAiOjE3NTY0ODc3NTB9.BBl7SUZE-Wu7XiDupTDcRBD3EIV6vaDgjvNyhfXXnpj6sdTM93-d4ys-dzjIixFo9FLuNV3apiW8VmX-RCTN1g
+2025-08-29 22:45:20 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3NzIwLCJleHAiOjE3NTY0ODc3NTB9.BBl7SUZE-Wu7XiDupTDcRBD3EIV6vaDgjvNyhfXXnpj6sdTM93-d4ys-dzjIixFo9FLuNV3apiW8VmX-RCTN1g
+2025-08-29 22:45:20 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:45:20 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:45:20 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:45:20 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:45:28 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3NzIwLCJleHAiOjE3NTY0ODc3NTB9.BBl7SUZE-Wu7XiDupTDcRBD3EIV6vaDgjvNyhfXXnpj6sdTM93-d4ys-dzjIixFo9FLuNV3apiW8VmX-RCTN1g
+2025-08-29 22:45:28 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3NzIwLCJleHAiOjE3NTY0ODc3NTB9.BBl7SUZE-Wu7XiDupTDcRBD3EIV6vaDgjvNyhfXXnpj6sdTM93-d4ys-dzjIixFo9FLuNV3apiW8VmX-RCTN1g
+2025-08-29 22:45:28 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:45:28 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:45:28 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:45:28 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:45:32 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-08-29 22:45:33 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3NzMzLCJleHAiOjE3NTY0ODc3NjN9.0D3sQKKcznmDvk_wB6o5Q5_EO9UzxM6Jbpu1rx2IpnY2jl8TJDGm8kZ-UPZ1-PUy-fv6v3BNcNILP4bgg30N3g
+2025-08-29 22:45:33 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:45:33 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3NzMzLCJleHAiOjE3NTY0ODc3NjN9.0D3sQKKcznmDvk_wB6o5Q5_EO9UzxM6Jbpu1rx2IpnY2jl8TJDGm8kZ-UPZ1-PUy-fv6v3BNcNILP4bgg30N3g
+2025-08-29 22:45:33 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-08-29 22:45:33 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:45:33 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-08-29 22:49:11 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-29 22:49:11 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-29 22:49:11 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-29 22:49:11 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-29 22:49:11 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

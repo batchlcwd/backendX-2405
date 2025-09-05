@@ -1,6 +1,7 @@
 package com.substring.quiz.services;
 
 import com.substring.quiz.dto.CategoryDto;
+
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
 import org.modelmapper.ModelMapper;
@@ -35,7 +36,6 @@ public class CategoryServiceWebclientImpl implements CategoryService {
     }
 
     @Override
-    @CircuitBreaker(name = "quizCB", fallbackMethod = "quizFallback")
 
     public CategoryDto findById(String categoryId) {
 
@@ -50,13 +50,6 @@ public class CategoryServiceWebclientImpl implements CategoryService {
     }
 
 
-    public CategoryDto quizFallback(String categoryId, Throwable t) {
-
-        logger.error("Category not found");
-        CategoryDto categoryDto = new CategoryDto();
-        categoryDto.setTitle("Fallback category");
-        return categoryDto;
-    }
 
 
     @Override
