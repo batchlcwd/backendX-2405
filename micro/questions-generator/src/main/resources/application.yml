@@ -1,25 +1,28 @@
+server:
+  port: 9097
 spring:
+  ai:
+    openai:
+      api-key: ${API_KEY}
   application:
-    name: quiz-service
+    name: questions-generator
   data:
     mongodb:
-      uri: mongodb://localhost:27017/quizdb
+      uri: mongodb://localhost:27017/questionsdb
   profiles:
     active: dev
   config:
     import: configserver:http://localhost:9094
   cloud:
     function:
+      definition: getQuizBinding
       web:
         path: "/functions"
     stream:
       bindings:
-        quizCreatedBinding-out-0:
+        getQuizBinding-in-0:
           destination: quiz-created
           group: ${spring.application.name}
-
-
-
 
   rabbitmq:
     host: localhost
@@ -29,8 +32,6 @@ spring:
     connection-timeout: 10s
 
 
-server:
-  port: 9092
 
 management:
   endpoints:
@@ -46,13 +47,13 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 resilience4j.circuitbreaker:
-  instances:
-    quizCB:
-      registerHealthIndicator: true
-      slidingWindowType: COUNT_BASED
-      slidingWindowSize: 10
-      permittedNumberOfCallsInHalfOpenState: 2
-      failureRateThreshold: 50
-      minimum-number-of-calls: 10
-      maxWaitDurationInHalfOpenState: 5000
+    instances:
+      quizCB:
+        registerHealthIndicator: true
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 10
+        permittedNumberOfCallsInHalfOpenState: 2
+        failureRateThreshold: 50
+        minimum-number-of-calls: 10
+        maxWaitDurationInHalfOpenState: 5000
 

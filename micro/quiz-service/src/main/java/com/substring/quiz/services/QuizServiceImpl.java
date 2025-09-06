@@ -8,6 +8,7 @@ import feign.FeignException;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
+import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
@@ -33,12 +34,15 @@ public class QuizServiceImpl implements QuizService {
 
     private final CategoryFeignService categoryFeignService;
 
-    public QuizServiceImpl(QuizRepository quizRepository, ModelMapper modelMapper, RestTemplate restTemplate, CategoryService categoryService, CategoryFeignService categoryFeignService) {
+    private StreamBridge streamBridge;
+
+    public QuizServiceImpl(QuizRepository quizRepository, ModelMapper modelMapper, RestTemplate restTemplate, CategoryService categoryService, CategoryFeignService categoryFeignService, StreamBridge streamBridge) {
         this.quizRepository = quizRepository;
         this.modelMapper = modelMapper;
         this.restTemplate = restTemplate;
         this.categoryService = categoryService;
         this.categoryFeignService = categoryFeignService;
+        this.streamBridge = streamBridge;
     }
 
     @Override
@@ -57,9 +61,24 @@ public class QuizServiceImpl implements QuizService {
         Quiz savedQuiz = quizRepository.save(quiz);
         QuizDto quizDto1 = modelMapper.map(savedQuiz, QuizDto.class);
         quizDto1.setCategoryDto(category);
+
+
+        publicQuizCreatedEvent(quizDto1);
+
         return quizDto1;
 
 
+    }
+
+
+    //event public
+    private void publicQuizCreatedEvent(QuizDto quizDto) {
+        logger.info("Quiz created going to publish quiz created event:");
+        var success = this.streamBridge.send("quizCreatedBinding-out-0", quizDto);
+        if (success)
+            logger.info("event is sent to broker");
+        else
+            logger.info("event is not sent to  broker");
     }
 
     @Override
@@ -130,7 +149,7 @@ public class QuizServiceImpl implements QuizService {
         return quizDto;
     }
 
-    public  QuizDto quizFallback(String quizId,Throwable t) {
+    public QuizDto quizFallback(String quizId, Throwable t) {
 
         logger.error("Category not found");
         CategoryDto categoryDto = new CategoryDto();

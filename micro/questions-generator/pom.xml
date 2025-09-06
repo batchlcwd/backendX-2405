@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.substring.quiz</groupId>
-	<artifactId>quiz-service</artifactId>
+	<artifactId>questions-generator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>quiz-service</name>
+	<name>questions-generator</name>
 	<description>This is quiz service used for managing quizzes</description>
 	<url/>
 	<licenses>
@@ -84,10 +84,6 @@
 			<artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
 		</dependency>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-function-web</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -100,9 +96,17 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-openai</artifactId>
+        </dependency>
 
 
-		<dependency>
+
+
+
+
+        <dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
