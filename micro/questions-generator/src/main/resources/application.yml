@@ -16,6 +16,7 @@ spring:
   cloud:
     function:
       definition: getQuizBinding
+
       web:
         path: "/functions"
     stream:
@@ -23,6 +24,10 @@ spring:
         getQuizBinding-in-0:
           destination: quiz-created
           group: ${spring.application.name}
+        getQuizBinding-out-0:
+          destination: acknowledge-quiz
+          group: ${spring.application.name}
+
 
   rabbitmq:
     host: localhost

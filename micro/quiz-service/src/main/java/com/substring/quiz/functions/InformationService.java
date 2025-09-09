@@ -28,6 +28,16 @@ public class InformationService {
     }
 
 
+    // receive acknowledgement
+    @Bean
+    public Consumer<String> acknowledgeInformation() {
+        return information->{
+            System.out.println("acknowledgement received");
+            System.out.println(information);
+        };
+    }
+
+
 }
 
 

@@ -63,7 +63,8 @@ public class QuizServiceImpl implements QuizService {
         quizDto1.setCategoryDto(category);
 
 
-        publicQuizCreatedEvent(quizDto1);
+        //quiz created event ko publish kar diya
+        publishQuizCreatedEvent(quizDto1);
 
         return quizDto1;
 
@@ -72,10 +73,10 @@ public class QuizServiceImpl implements QuizService {
 
 
     //event public
-    private void publicQuizCreatedEvent(QuizDto quizDto) {
+    private void publishQuizCreatedEvent(QuizDto quizDto) {
         logger.info("Quiz created going to publish quiz created event:");
-        var success = this.streamBridge.send("quizCreatedBinding-out-0", quizDto);
-        if (success)
+        var status = this.streamBridge.send("quizCreatedBinding-out-0", quizDto);
+        if (status)
             logger.info("event is sent to broker");
         else
             logger.info("event is not sent to  broker");

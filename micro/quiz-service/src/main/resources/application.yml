@@ -12,10 +12,14 @@ spring:
     function:
       web:
         path: "/functions"
+      definition: acknowledgeInformation
     stream:
       bindings:
         quizCreatedBinding-out-0:
           destination: quiz-created
+          group: ${spring.application.name}
+        acknowledgeInformation-in-0:
+          destination: acknowledge-quiz
           group: ${spring.application.name}
 
 
