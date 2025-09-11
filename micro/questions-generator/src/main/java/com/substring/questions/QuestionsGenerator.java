@@ -1,10 +1,12 @@
-package com.substring.quiz;
+package com.substring.questions;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableFeignClients
@@ -13,12 +15,17 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 public class QuestionsGenerator implements CommandLineRunner {
 
 
-	public static void main(String[] args) {
-		SpringApplication.run(QuestionsGenerator.class, args);
-	}
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
+    }
 
-	@Override
-	public void run(String... args) throws Exception {
+    public static void main(String[] args) {
+        SpringApplication.run(QuestionsGenerator.class, args);
+    }
 
-	}
+    @Override
+    public void run(String... args) throws Exception {
+
+    }
 }

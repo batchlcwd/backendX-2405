@@ -1,18 +1,20 @@
-package com.substring.quiz.functions;
+package com.substring.questions.functions;
 
-import jdk.jfr.Name;
+import com.substring.questions.services.QuestionGenerator;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.function.Consumer;
 import java.util.function.Function;
-import java.util.function.Supplier;
 import java.util.logging.Logger;
 
 @Slf4j
 @Configuration
 public class QuizService {
+
+    @Autowired
+    private QuestionGenerator questionGenerator;
     private Logger logger=Logger.getLogger(QuizService.class.getName());
 
     @Bean(name = "getQuizBinding")
@@ -22,6 +24,7 @@ public class QuizService {
             System.out.println("Quiz created event received:");
             System.out.println(quizDto.getTitle());
             System.out.println(quizDto.getId());
+            this.questionGenerator.generateAndSaveQuestions(quizDto);
             return "Quiz created successfully";
 
         };

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.substring.quiz</groupId>
-	<artifactId>questions-generator</artifactId>
+	<artifactId>questionDtos-generator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>questions-generator</name>
+	<name>questionDtos-generator</name>
 	<description>This is quiz service used for managing quizzes</description>
 	<url/>
 	<licenses>
@@ -103,7 +103,7 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+            <artifactId>spring-cloud-stream-binder-kafka</artifactId>
         </dependency>
 
 

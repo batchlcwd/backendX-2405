@@ -1,3 +1,5 @@
+
+
 server:
   port: 9097
 spring:
@@ -20,6 +22,15 @@ spring:
       web:
         path: "/functions"
     stream:
+      defaultBinder: KafkaBinder
+      binders:
+        KafkaBinder:
+          type: kafka
+      kafka:
+        binder:
+          brokers:
+            - localhost:9098
+
       bindings:
         getQuizBinding-in-0:
           destination: quiz-created
@@ -29,12 +40,7 @@ spring:
           group: ${spring.application.name}
 
 
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-    connection-timeout: 10s
+
 
 
 
@@ -52,13 +58,13 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 resilience4j.circuitbreaker:
-    instances:
-      quizCB:
-        registerHealthIndicator: true
-        slidingWindowType: COUNT_BASED
-        slidingWindowSize: 10
-        permittedNumberOfCallsInHalfOpenState: 2
-        failureRateThreshold: 50
-        minimum-number-of-calls: 10
-        maxWaitDurationInHalfOpenState: 5000
+  instances:
+    quizCB:
+      registerHealthIndicator: true
+      slidingWindowType: COUNT_BASED
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      minimum-number-of-calls: 10
+      maxWaitDurationInHalfOpenState: 5000
 

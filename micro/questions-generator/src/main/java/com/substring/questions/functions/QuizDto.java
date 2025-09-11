@@ -1,4 +1,4 @@
-package com.substring.quiz.functions;
+package com.substring.questions.functions;
 
 import lombok.*;
 

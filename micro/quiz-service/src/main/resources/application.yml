@@ -1,3 +1,5 @@
+server:
+  port: 9092
 spring:
   application:
     name: quiz-service
@@ -14,6 +16,18 @@ spring:
         path: "/functions"
       definition: acknowledgeInformation
     stream:
+      defaultBinder: KafkaBinder
+      binders:
+        KafkaBinder:
+          type: kafka
+      kafka:
+        binder:
+          brokers:
+            - localhost:9098
+
+
+
+
       bindings:
         quizCreatedBinding-out-0:
           destination: quiz-created
@@ -25,16 +39,10 @@ spring:
 
 
 
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-    connection-timeout: 10s
 
 
-server:
-  port: 9092
+
+
 
 management:
   endpoints:
