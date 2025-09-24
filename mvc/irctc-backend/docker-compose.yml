@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  mysql-db:
+    restart: always
+    image: mysql:8.0
+    container_name: mysql-db
+    ports:
+      - "3309:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: irctcdb
+    networks:
+      - irctc-network
+    volumes:
+      - mysql-db-data:/var/lib/mysql
+
+  boot-app:
+#    Dockerfile that is present in same directory
+    build: .
+    image: irctc-backend   # ✅ Optional, name your built image
+    container_name: irctc-backend
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/irctcdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root1234
+    depends_on:
+      - mysql-db
+    networks:
+      - irctc-network
+
+networks:
+  irctc-network:
+    driver: bridge
+volumes:
+  mysql-db-data:

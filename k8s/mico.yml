@@ -1,0 +1,407 @@
+# Namespace (optional but recommended)
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: quiz-app
+
+---
+# Secret for sensitive values (example for config-server Git)
+apiVersion: v1
+kind: Secret
+metadata:
+  name: config-git-credentials
+  namespace: quiz-app
+type: Opaque
+stringData:
+  GIT_USERNAME: your-username
+  GIT_PASSWORD: your-token-or-password
+
+---
+# CONFIG-SERVER
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-server-config
+  namespace: quiz-app
+data:
+  SPRING_APPLICATION_NAME: config-server
+  SERVER_PORT: "8888"
+  # Spring Cloud Config (Git backend example)
+  SPRING_PROFILES_ACTIVE: git
+  SPRING_CLOUD_CONFIG_SERVER_GIT_URI: https://github.com/your-org/your-config-repo.git
+  SPRING_CLOUD_CONFIG_SERVER_GIT_DEFAULT_LABEL: main
+  # Optional: local clone perf
+  SPRING_CLOUD_CONFIG_SERVER_GIT_CLONE_ON_START: "true"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: config-server
+  namespace: quiz-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: config-server
+  template:
+    metadata:
+      labels:
+        app: config-server
+    spec:
+      containers:
+        - name: config-server
+          image: your-registry/config-server:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8888
+          envFrom:
+            - configMapRef:
+                name: config-server-config
+            - secretRef:
+                name: config-git-credentials
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8888
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8888
+            initialDelaySeconds: 20
+            periodSeconds: 20
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: config-server
+  namespace: quiz-app
+spec:
+  selector:
+    app: config-server
+  ports:
+    - port: 8888
+      targetPort: 8888
+
+---
+# SERVICE-REGISTRY (Eureka Server)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: service-registry-config
+  namespace: quiz-app
+data:
+  SPRING_APPLICATION_NAME: service-registry
+  SERVER_PORT: "8761"
+  EUREKA_CLIENT_REGISTER_WITH_EUREKA: "false"
+  EUREKA_CLIENT_FETCH_REGISTRY: "false"
+  EUREKA_SERVER_ENABLE_SELF_PRESERVATION: "false"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-registry
+  namespace: quiz-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-registry
+  template:
+    metadata:
+      labels:
+        app: service-registry
+    spec:
+      containers:
+        - name: service-registry
+          image: your-registry/service-registry:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8761
+          envFrom:
+            - configMapRef:
+                name: service-registry-config
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8761
+            initialDelaySeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8761
+            initialDelaySeconds: 20
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-registry
+  namespace: quiz-app
+spec:
+  selector:
+    app: service-registry
+  ports:
+    - port: 8761
+      targetPort: 8761
+
+---
+# API-GATEWAY
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-gateway-config
+  namespace: quiz-app
+data:
+  SPRING_APPLICATION_NAME: api-gateway
+  SERVER_PORT: "8080"
+  # Point to config-server and Eureka
+  SPRING_CLOUD_CONFIG_URI: http://config-server:8888
+  EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka
+  # Ex: SPRING_PROFILES_ACTIVE: prod
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-gateway
+  namespace: quiz-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: api-gateway
+  template:
+    metadata:
+      labels:
+        app: api-gateway
+    spec:
+      containers:
+        - name: api-gateway
+          image: your-registry/api-gateway:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: api-gateway-config
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8080
+            initialDelaySeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8080
+            initialDelaySeconds: 20
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-gateway
+  namespace: quiz-app
+spec:
+  type: LoadBalancer # or NodePort if your cluster doesn't support LB
+  selector:
+    app: api-gateway
+  ports:
+    - port: 80
+      targetPort: 8080
+
+---
+# CATEGORY-SERVICE
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: category-service-config
+  namespace: quiz-app
+data:
+  SPRING_APPLICATION_NAME: category-service
+  SERVER_PORT: "8081"
+  SPRING_CLOUD_CONFIG_URI: http://config-server:8888
+  EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka
+  # Example DB config via env (use Secret for passwords)
+  SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/categories
+  SPRING_DATASOURCE_USERNAME: categories_user
+  # SPRING_DATASOURCE_PASSWORD should come from a Secret
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: category-service
+  namespace: quiz-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: category-service
+  template:
+    metadata:
+      labels:
+        app: category-service
+    spec:
+      containers:
+        - name: category-service
+          image: your-registry/category-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081
+          envFrom:
+            - configMapRef:
+                name: category-service-config
+            # - secretRef:
+            #     name: category-service-secrets
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8081
+            initialDelaySeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8081
+            initialDelaySeconds: 20
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: category-service
+  namespace: quiz-app
+spec:
+  selector:
+    app: category-service
+  ports:
+    - port: 8081
+      targetPort: 8081
+
+---
+# QUESTIONS-GENERATOR
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: questions-generator-config
+  namespace: quiz-app
+data:
+  SPRING_APPLICATION_NAME: questions-generator
+  SERVER_PORT: "8082"
+  SPRING_CLOUD_CONFIG_URI: http://config-server:8888
+  EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: questions-generator
+  namespace: quiz-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: questions-generator
+  template:
+    metadata:
+      labels:
+        app: questions-generator
+    spec:
+      containers:
+        - name: questions-generator
+          image: your-registry/questions-generator:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8082
+          envFrom:
+            - configMapRef:
+                name: questions-generator-config
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8082
+            initialDelaySeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8082
+            initialDelaySeconds: 20
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: questions-generator
+  namespace: quiz-app
+spec:
+  selector:
+    app: questions-generator
+  ports:
+    - port: 8082
+      targetPort: 8082
+
+---
+# QUIZ-SERVICE
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quiz-service-config
+  namespace: quiz-app
+data:
+  SPRING_APPLICATION_NAME: quiz-service
+  SERVER_PORT: "8083"
+  SPRING_CLOUD_CONFIG_URI: http://config-server:8888
+  EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quiz-service
+  namespace: quiz-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: quiz-service
+  template:
+    metadata:
+      labels:
+        app: quiz-service
+    spec:
+      containers:
+        - name: quiz-service
+          image: your-registry/quiz-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8083
+          envFrom:
+            - configMapRef:
+                name: quiz-service-config
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8083
+            initialDelaySeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8083
+            initialDelaySeconds: 20
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: quiz-service
+  namespace: quiz-app
+spec:
+  selector:
+    app: quiz-service
+  ports:
+    - port: 8083
+      targetPort: 8083

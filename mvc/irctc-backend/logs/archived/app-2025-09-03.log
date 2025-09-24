@@ -1,0 +1,616 @@
+2025-09-03 21:44:57 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 21:44:57 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 19926 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 21:44:57 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 21:44:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 21:44:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 11 JPA repository interfaces.
+2025-09-03 21:44:58 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 21:44:58 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:44:58 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 21:44:58 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 21:44:58 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 21:44:58 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 800 ms
+2025-09-03 21:44:58 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 21:44:58 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 21:44:58 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 21:44:58 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 21:44:58 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 21:44:58 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ec98ccc
+2025-09-03 21:44:58 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 21:44:58 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 21:44:58 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 21:44:58 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 21:44:59 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 21:44:59 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:44:59 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 21:44:59 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 21:44:59 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 21:45:00 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 21:45:01 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:45:01 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 21:45:01 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 4.021 seconds (process running for 4.261)
+2025-09-03 21:45:01 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:45:01 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:45:01 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:46:06 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 21:46:06 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 21:46:06 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-09-03 21:46:07 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2NDg3NzMzLCJleHAiOjE3NTY0ODc3NjN9.0D3sQKKcznmDvk_wB6o5Q5_EO9UzxM6Jbpu1rx2IpnY2jl8TJDGm8kZ-UPZ1-PUy-fv6v3BNcNILP4bgg30N3g
+2025-09-03 21:46:07 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:46:12 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjE2OCwiZXhwIjoxNzU2OTE2MTk4fQ.5XVHVMCzbxYJ1yH21f-QoAs0pvZEfbupnjgyAXcRikrGcr0HqLeHH1P5mLZwPPpDU36BF4XPUwBE2n7Qxa3f_g
+2025-09-03 21:46:12 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 21:46:12 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 21:46:12 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-09-03 21:46:12 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - Time taken 31 ms
+2025-09-03 21:46:12 INFO  [http-nio-8081-exec-4] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-09-03 21:46:28 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjE2OCwiZXhwIjoxNzU2OTE2MTk4fQ.5XVHVMCzbxYJ1yH21f-QoAs0pvZEfbupnjgyAXcRikrGcr0HqLeHH1P5mLZwPPpDU36BF4XPUwBE2n7Qxa3f_g
+2025-09-03 21:46:28 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 21:46:28 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 21:46:28 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution userTrainSearch 
+2025-09-03 21:46:28 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 44 ms
+2025-09-03 21:46:28 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution userTrainSearch 
+2025-09-03 21:52:34 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjE2OCwiZXhwIjoxNzU2OTE2MTk4fQ.5XVHVMCzbxYJ1yH21f-QoAs0pvZEfbupnjgyAXcRikrGcr0HqLeHH1P5mLZwPPpDU36BF4XPUwBE2n7Qxa3f_g
+2025-09-03 21:52:34 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:52:34 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjE2OCwiZXhwIjoxNzU2OTE2MTk4fQ.5XVHVMCzbxYJ1yH21f-QoAs0pvZEfbupnjgyAXcRikrGcr0HqLeHH1P5mLZwPPpDU36BF4XPUwBE2n7Qxa3f_g
+2025-09-03 21:52:34 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:52:35 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjU1NCwiZXhwIjoxNzU2OTE2NTg0fQ.PCMRuVBNSwORpJWG5TwXBB1TLOqItcyxnGOx8Xc9GI9w6UR8L3HWRJ6lbxyJd2J4WuLPXUTt_QHx7dunTCcwjQ
+2025-09-03 21:52:35 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 21:52:35 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 21:52:38 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 21:52:39 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 21:52:47 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 21:52:50 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjU2NywiZXhwIjoxNzU2OTE2NTk3fQ.poBR1mNoCO1oNby_ev7guSbYE-kU2WOe3qrLE5_WThSgxsUx5eBXVRvLcISnZkls_IzrSNUQlpqcKhFHHaTivw
+2025-09-03 21:52:50 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 21:52:50 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 21:56:22 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 21:56:22 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 21:56:22 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:56:22 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 21:56:22 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-03 21:56:24 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 21:56:24 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 24584 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 21:56:24 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 21:56:24 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 21:56:24 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 11 JPA repository interfaces.
+2025-09-03 21:56:25 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 21:56:25 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:56:25 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 21:56:25 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 21:56:25 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 21:56:25 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 956 ms
+2025-09-03 21:56:25 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 21:56:25 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 21:56:25 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 21:56:25 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 21:56:25 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 21:56:25 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a38e3d1
+2025-09-03 21:56:25 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 21:56:25 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 21:56:25 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 21:56:25 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 21:56:26 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 21:56:26 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:56:26 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 21:56:26 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 21:56:26 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 21:56:27 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 21:56:27 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:56:27 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 21:56:27 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.725 seconds (process running for 3.93)
+2025-09-03 21:56:27 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:56:27 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:56:27 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:56:32 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 21:56:32 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 21:56:32 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-03 21:56:33 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjU2NywiZXhwIjoxNzU2OTE2NTk3fQ.poBR1mNoCO1oNby_ev7guSbYE-kU2WOe3qrLE5_WThSgxsUx5eBXVRvLcISnZkls_IzrSNUQlpqcKhFHHaTivw
+2025-09-03 21:56:33 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:56:33 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjU2NywiZXhwIjoxNzU2OTE2NTk3fQ.poBR1mNoCO1oNby_ev7guSbYE-kU2WOe3qrLE5_WThSgxsUx5eBXVRvLcISnZkls_IzrSNUQlpqcKhFHHaTivw
+2025-09-03 21:56:33 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:56:34 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjc5MywiZXhwIjoxNzU2OTE2ODIzfQ.SlK7WrDb-O-9H5NJMqG-zCrgoZXny8PphPF0fGHaZt5B180lxNrAikWkdXiBMceWR0fCdpM6b10SLgxyuNjP5w
+2025-09-03 21:56:34 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 21:56:34 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 21:56:45 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 21:56:45 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 21:56:45 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:56:45 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 21:56:45 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-03 21:57:04 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 21:57:04 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 24782 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 21:57:04 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 21:57:04 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 21:57:04 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 11 JPA repository interfaces.
+2025-09-03 21:57:05 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 21:57:05 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:57:05 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 21:57:05 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 21:57:05 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 21:57:05 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 810 ms
+2025-09-03 21:57:05 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 21:57:05 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 21:57:05 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 21:57:05 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 21:57:05 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 21:57:05 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a06eeef
+2025-09-03 21:57:05 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 21:57:05 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 21:57:05 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 21:57:05 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 21:57:06 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 21:57:06 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:57:06 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 21:57:06 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 21:57:06 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 21:57:07 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 21:57:07 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:57:07 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 21:57:07 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.688 seconds (process running for 3.865)
+2025-09-03 21:57:07 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:57:07 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:57:07 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:57:08 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 21:57:08 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 21:57:08 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-03 21:57:09 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjc5MywiZXhwIjoxNzU2OTE2ODIzfQ.SlK7WrDb-O-9H5NJMqG-zCrgoZXny8PphPF0fGHaZt5B180lxNrAikWkdXiBMceWR0fCdpM6b10SLgxyuNjP5w
+2025-09-03 21:57:09 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:57:09 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjc5MywiZXhwIjoxNzU2OTE2ODIzfQ.SlK7WrDb-O-9H5NJMqG-zCrgoZXny8PphPF0fGHaZt5B180lxNrAikWkdXiBMceWR0fCdpM6b10SLgxyuNjP5w
+2025-09-03 21:57:09 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:57:10 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjgyOSwiZXhwIjoxNzU2OTE2ODU5fQ.3Zhbl6iSRP4XKkL8XpbRb9fpZe_5boPCH3sZnhSTmkJxaKzoWtIQEHGAzXKtaDSOZZ3FH5TnDJJQrcmbW5Amlw
+2025-09-03 21:57:10 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 21:57:10 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 21:57:26 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 21:57:26 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 21:57:30 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 21:57:32 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjg1MCwiZXhwIjoxNzU2OTE2ODgwfQ.nmB70T8PjGX0gdNxCl2oHTi8G-GRs6mjBbhkGUXX92hg-GYlJT6P6n5B4T6aQFS7OXBTNpl7--g4KFwG8EGIvg
+2025-09-03 21:57:32 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 21:57:32 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 21:57:58 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 21:57:58 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 21:57:58 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:57:58 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 21:57:58 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-03 21:58:00 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 21:58:00 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 25045 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 21:58:00 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 21:58:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 21:58:00 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 11 JPA repository interfaces.
+2025-09-03 21:58:01 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 21:58:01 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:58:01 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 21:58:01 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 21:58:01 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 21:58:01 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 885 ms
+2025-09-03 21:58:01 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 21:58:01 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 21:58:01 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 21:58:01 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 21:58:01 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 21:58:01 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@104bc677
+2025-09-03 21:58:01 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 21:58:01 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 21:58:01 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 21:58:01 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 21:58:02 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 21:58:02 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:58:02 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 21:58:02 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 21:58:02 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 21:58:03 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 21:58:03 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:58:03 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 21:58:03 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.562 seconds (process running for 3.769)
+2025-09-03 21:58:03 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:58:03 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:58:03 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 21:58:03 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 21:58:03 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 21:58:03 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-03 21:58:04 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjg1MCwiZXhwIjoxNzU2OTE2ODgwfQ.nmB70T8PjGX0gdNxCl2oHTi8G-GRs6mjBbhkGUXX92hg-GYlJT6P6n5B4T6aQFS7OXBTNpl7--g4KFwG8EGIvg
+2025-09-03 21:58:04 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:58:04 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjg1MCwiZXhwIjoxNzU2OTE2ODgwfQ.nmB70T8PjGX0gdNxCl2oHTi8G-GRs6mjBbhkGUXX92hg-GYlJT6P6n5B4T6aQFS7OXBTNpl7--g4KFwG8EGIvg
+2025-09-03 21:58:04 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 21:58:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjg4NCwiZXhwIjoxNzU2OTE2OTE0fQ.-5J3EvLF01OQM22TgGSf2cLcvDeOxaT8JtqEa1GZTfSylhOTsNyF0SszdY7qux4l9ZRSxu95s77f8Pv7-xgrbw
+2025-09-03 21:58:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 21:58:05 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 21:59:55 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 21:59:55 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 21:59:55 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:59:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 21:59:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-03 21:59:56 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 21:59:57 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 25626 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 21:59:57 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 21:59:57 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 21:59:57 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 11 JPA repository interfaces.
+2025-09-03 21:59:57 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 21:59:57 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 21:59:57 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 21:59:57 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 21:59:57 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 21:59:57 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 886 ms
+2025-09-03 21:59:58 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 21:59:58 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 21:59:58 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 21:59:58 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 21:59:58 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 21:59:58 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11ce9319
+2025-09-03 21:59:58 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 21:59:58 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 21:59:58 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 21:59:58 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 21:59:58 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 21:59:59 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 21:59:59 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 21:59:59 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 21:59:59 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 21:59:59 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 22:00:00 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:00:00 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 22:00:00 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.451 seconds (process running for 3.657)
+2025-09-03 22:00:00 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:00:00 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:00:00 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:00:22 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 22:00:22 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 22:00:22 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-09-03 22:00:23 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjg4NCwiZXhwIjoxNzU2OTE2OTE0fQ.-5J3EvLF01OQM22TgGSf2cLcvDeOxaT8JtqEa1GZTfSylhOTsNyF0SszdY7qux4l9ZRSxu95s77f8Pv7-xgrbw
+2025-09-03 22:00:23 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:00:23 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNjg4NCwiZXhwIjoxNzU2OTE2OTE0fQ.-5J3EvLF01OQM22TgGSf2cLcvDeOxaT8JtqEa1GZTfSylhOTsNyF0SszdY7qux4l9ZRSxu95s77f8Pv7-xgrbw
+2025-09-03 22:00:23 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:00:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzAyMywiZXhwIjoxNzU2OTE3MDUzfQ.zwsyLEixzv3pRtLeceaS1Ww9RbuE0J63DIGGxFJJxaLcU28rIUJIAt8r9BrQ2PX_m6bWYipoT5sn4x_CVUaa3A
+2025-09-03 22:00:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:00:24 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:05:19 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 22:05:19 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 22:05:19 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:05:19 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 22:05:19 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-03 22:05:22 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 22:05:22 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 27195 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 22:05:22 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 22:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 22:05:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 11 JPA repository interfaces.
+2025-09-03 22:05:23 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 22:05:23 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:05:23 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 22:05:23 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 22:05:23 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 22:05:23 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 892 ms
+2025-09-03 22:05:23 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 22:05:23 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 22:05:23 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 22:05:23 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 22:05:24 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 22:05:24 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@188bf4d8
+2025-09-03 22:05:24 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 22:05:24 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 22:05:24 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 22:05:24 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 22:05:24 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 22:05:24 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:05:25 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 22:05:25 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 22:05:25 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 22:05:25 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 22:05:26 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:05:26 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 22:05:26 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.474 seconds (process running for 3.681)
+2025-09-03 22:05:26 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:05:26 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:05:26 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:05:32 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 22:05:32 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 22:05:32 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-03 22:05:32 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzAyMywiZXhwIjoxNzU2OTE3MDUzfQ.zwsyLEixzv3pRtLeceaS1Ww9RbuE0J63DIGGxFJJxaLcU28rIUJIAt8r9BrQ2PX_m6bWYipoT5sn4x_CVUaa3A
+2025-09-03 22:05:32 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:05:33 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzAyMywiZXhwIjoxNzU2OTE3MDUzfQ.zwsyLEixzv3pRtLeceaS1Ww9RbuE0J63DIGGxFJJxaLcU28rIUJIAt8r9BrQ2PX_m6bWYipoT5sn4x_CVUaa3A
+2025-09-03 22:05:33 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:05:33 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzMzMywiZXhwIjoxNzU2OTE3MzYzfQ.nzC72L3Z2ReNUQfFeRkbSOpFbbzP89lSBfj_SoWaz-nEvX-3Ad8S2cn6tP7PMML20OgenfMQeGwgCxm4-CPEIQ
+2025-09-03 22:05:33 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:05:33 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:06:36 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzMzMywiZXhwIjoxNzU2OTE3MzYzfQ.nzC72L3Z2ReNUQfFeRkbSOpFbbzP89lSBfj_SoWaz-nEvX-3Ad8S2cn6tP7PMML20OgenfMQeGwgCxm4-CPEIQ
+2025-09-03 22:06:36 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:06:37 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzMzMywiZXhwIjoxNzU2OTE3MzYzfQ.nzC72L3Z2ReNUQfFeRkbSOpFbbzP89lSBfj_SoWaz-nEvX-3Ad8S2cn6tP7PMML20OgenfMQeGwgCxm4-CPEIQ
+2025-09-03 22:06:37 ERROR [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:06:37 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzM5NywiZXhwIjoxNzU2OTE3NDI3fQ.iVuQwvrDs0a8LDsxNASRpsitcd9wK-aRnZGG4blpFDqHapoh6HpXmBOPzc4-Q8gtsClMB8eHF9eRZN5rEaaNrA
+2025-09-03 22:06:37 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:06:37 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:09:17 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 22:09:17 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 22:09:17 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:09:17 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 22:09:17 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-03 22:09:19 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 22:09:19 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 28330 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 22:09:19 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 22:09:20 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 22:09:20 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 11 JPA repository interfaces.
+2025-09-03 22:09:20 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 22:09:20 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:09:20 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 22:09:20 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 22:09:20 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 22:09:20 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 803 ms
+2025-09-03 22:09:20 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 22:09:20 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 22:09:20 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 22:09:20 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 22:09:20 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 22:09:20 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70ed902a
+2025-09-03 22:09:20 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 22:09:20 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 22:09:20 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 22:09:20 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 22:09:21 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 22:09:21 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:09:21 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 22:09:21 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 22:09:21 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 22:09:22 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 22:09:22 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:09:22 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 22:09:22 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.316 seconds (process running for 3.519)
+2025-09-03 22:09:22 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:09:22 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:09:22 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:09:26 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 22:09:26 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 22:09:26 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-03 22:09:27 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzM5NywiZXhwIjoxNzU2OTE3NDI3fQ.iVuQwvrDs0a8LDsxNASRpsitcd9wK-aRnZGG4blpFDqHapoh6HpXmBOPzc4-Q8gtsClMB8eHF9eRZN5rEaaNrA
+2025-09-03 22:09:27 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:09:27 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzM5NywiZXhwIjoxNzU2OTE3NDI3fQ.iVuQwvrDs0a8LDsxNASRpsitcd9wK-aRnZGG4blpFDqHapoh6HpXmBOPzc4-Q8gtsClMB8eHF9eRZN5rEaaNrA
+2025-09-03 22:09:27 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:09:28 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzU2NywiZXhwIjoxNzU2OTE3NTk3fQ.Hk_qbp88r-EfNDh9RRXvMXuuRwMD9ixt43-uJRTlt1qvqDLESgW-1VObpth_fwJzg1eqjmMDEryvWMOLTs5tmA
+2025-09-03 22:09:28 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:09:28 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:09:38 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzU2NywiZXhwIjoxNzU2OTE3NTk3fQ.Hk_qbp88r-EfNDh9RRXvMXuuRwMD9ixt43-uJRTlt1qvqDLESgW-1VObpth_fwJzg1eqjmMDEryvWMOLTs5tmA
+2025-09-03 22:09:38 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:09:38 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:09:45 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 22:09:47 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxNzU4NSwiZXhwIjoxNzU2OTE3NjE1fQ.sda57ejvU6-Mazry7u83C72VuUxYiNmW7Upq3jEBLnXIAkQJn_YMVyhiU9EJzq0DVGlIUr4mwxO2EYn2jeGR5w
+2025-09-03 22:09:47 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:09:47 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:19:36 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 22:19:39 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODE3NiwiZXhwIjoxNzU2OTE4MjA2fQ.b8k2L1Mgd82pTb7N5F3La4WDAEf5qnEfV7jOAeifsoGaGo35BuVlkP26lSBsOLso6CWKiODJIpYtueGJnPxzIQ
+2025-09-03 22:19:39 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:19:39 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:26:18 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 22:26:18 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 22:26:18 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:26:18 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 22:26:18 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-03 22:26:20 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 22:26:20 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 35158 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 22:26:20 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 22:26:21 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 22:26:21 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 11 JPA repository interfaces.
+2025-09-03 22:26:21 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 22:26:21 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:26:21 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 22:26:21 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 22:26:21 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 22:26:21 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 918 ms
+2025-09-03 22:26:22 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 22:26:22 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 22:26:22 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 22:26:22 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 22:26:22 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 22:26:22 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@756200d1
+2025-09-03 22:26:22 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 22:26:22 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 22:26:22 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 22:26:22 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 22:26:22 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 22:26:23 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:26:23 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 22:26:23 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 22:26:23 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 22:26:23 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 22:26:24 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:26:24 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 22:26:24 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.659 seconds (process running for 3.876)
+2025-09-03 22:26:24 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:26:24 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:26:24 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:26:28 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 22:26:28 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 22:26:28 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-03 22:26:28 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODE3NiwiZXhwIjoxNzU2OTE4MjA2fQ.b8k2L1Mgd82pTb7N5F3La4WDAEf5qnEfV7jOAeifsoGaGo35BuVlkP26lSBsOLso6CWKiODJIpYtueGJnPxzIQ
+2025-09-03 22:26:28 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:26:29 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODE3NiwiZXhwIjoxNzU2OTE4MjA2fQ.b8k2L1Mgd82pTb7N5F3La4WDAEf5qnEfV7jOAeifsoGaGo35BuVlkP26lSBsOLso6CWKiODJIpYtueGJnPxzIQ
+2025-09-03 22:26:29 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:26:29 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODU4OSwiZXhwIjoxNzU2OTE4NjE5fQ.eXAJhsl61z1zvh7uIosvCiCEPLkJHoVRi_Cq-_AIkOPT4dOjxarUMgoNDIY1A6OiqUOyT8DsQAnIVyw3FV-qkQ
+2025-09-03 22:26:29 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:26:29 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:27:11 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODU4OSwiZXhwIjoxNzU2OTE4NjE5fQ.eXAJhsl61z1zvh7uIosvCiCEPLkJHoVRi_Cq-_AIkOPT4dOjxarUMgoNDIY1A6OiqUOyT8DsQAnIVyw3FV-qkQ
+2025-09-03 22:27:11 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:27:12 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODU4OSwiZXhwIjoxNzU2OTE4NjE5fQ.eXAJhsl61z1zvh7uIosvCiCEPLkJHoVRi_Cq-_AIkOPT4dOjxarUMgoNDIY1A6OiqUOyT8DsQAnIVyw3FV-qkQ
+2025-09-03 22:27:12 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:27:12 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODYzMiwiZXhwIjoxNzU2OTE4NjYyfQ.rK4kFjnhgNqh-zl48niDr6afrKcra_5cmKHH-oIcbuTefJ9XVFc1f1puH_er-mPuKEI5WXKIjqAz0QqQeuNP8g
+2025-09-03 22:27:12 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:27:12 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:31:44 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 22:31:44 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 22:31:44 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:31:44 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 22:31:44 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-03 22:31:46 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-03 22:31:46 INFO  [main] c.s.irctc.IrctcBackendApplication - Starting IrctcBackendApplication using Java 21.0.1 with PID 36787 (/Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend/target/classes started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-03 22:31:46 INFO  [main] c.s.irctc.IrctcBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-03 22:31:46 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03 22:31:46 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 11 JPA repository interfaces.
+2025-09-03 22:31:47 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-09-03 22:31:47 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:31:47 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-03 22:31:47 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-09-03 22:31:47 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-03 22:31:47 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 947 ms
+2025-09-03 22:31:47 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03 22:31:47 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-03 22:31:47 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-03 22:31:47 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03 22:31:47 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-03 22:31:47 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dd7ec56
+2025-09-03 22:31:47 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-03 22:31:47 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03 22:31:47 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-03 22:31:47 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03 22:31:48 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03 22:31:48 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:31:48 DEBUG [main] c.s.i.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-03 22:31:48 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-03 22:31:48 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-03 22:31:49 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03 22:31:49 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-09-03 22:31:49 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-09-03 22:31:49 INFO  [main] c.s.irctc.IrctcBackendApplication - Started IrctcBackendApplication in 3.694 seconds (process running for 3.905)
+2025-09-03 22:31:49 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:31:49 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:31:49 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-03 22:32:05 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03 22:32:05 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-03 22:32:05 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-09-03 22:32:06 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 22:32:08 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODkyNiwiZXhwIjoxNzU2OTE4OTU2fQ.X2_wqrv1tu8IwAj7e6bwdXqxEpturijoN-mKAaIgUUAoqn6oU03t12I1LpIriiii7B9nvqwSdOu8Nfvu07v3bw
+2025-09-03 22:32:08 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:32:08 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:32:43 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODkyNiwiZXhwIjoxNzU2OTE4OTU2fQ.X2_wqrv1tu8IwAj7e6bwdXqxEpturijoN-mKAaIgUUAoqn6oU03t12I1LpIriiii7B9nvqwSdOu8Nfvu07v3bw
+2025-09-03 22:32:43 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:32:44 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODkyNiwiZXhwIjoxNzU2OTE4OTU2fQ.X2_wqrv1tu8IwAj7e6bwdXqxEpturijoN-mKAaIgUUAoqn6oU03t12I1LpIriiii7B9nvqwSdOu8Nfvu07v3bw
+2025-09-03 22:32:44 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:32:44 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODk2NCwiZXhwIjoxNzU2OTE4OTk0fQ.lezpQdYO1vKCR7Vvb89VUtKAXdHHZucLOeBncH5JX9Q6vw4JWHCY44_LMf77auBQsHh0ZTR5Y7awA2mVVU5atg
+2025-09-03 22:32:44 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:32:44 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:33:46 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODk2NCwiZXhwIjoxNzU2OTE4OTk0fQ.lezpQdYO1vKCR7Vvb89VUtKAXdHHZucLOeBncH5JX9Q6vw4JWHCY44_LMf77auBQsHh0ZTR5Y7awA2mVVU5atg
+2025-09-03 22:33:46 ERROR [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:33:46 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxODk2NCwiZXhwIjoxNzU2OTE4OTk0fQ.lezpQdYO1vKCR7Vvb89VUtKAXdHHZucLOeBncH5JX9Q6vw4JWHCY44_LMf77auBQsHh0ZTR5Y7awA2mVVU5atg
+2025-09-03 22:33:46 ERROR [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:33:47 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTAyNiwiZXhwIjoxNzU2OTE5MDU2fQ.Vf2vSgf3jb8o8tbdgPvfVT0ouGTKa6LLYEU4WFQby2x9xfWjyV9EaNzfErfGQ_c8C8qlPCKrpDRZ8PKsJKu1ww
+2025-09-03 22:33:47 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:33:47 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:34:20 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTAyNiwiZXhwIjoxNzU2OTE5MDU2fQ.Vf2vSgf3jb8o8tbdgPvfVT0ouGTKa6LLYEU4WFQby2x9xfWjyV9EaNzfErfGQ_c8C8qlPCKrpDRZ8PKsJKu1ww
+2025-09-03 22:34:20 ERROR [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:34:20 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTAyNiwiZXhwIjoxNzU2OTE5MDU2fQ.Vf2vSgf3jb8o8tbdgPvfVT0ouGTKa6LLYEU4WFQby2x9xfWjyV9EaNzfErfGQ_c8C8qlPCKrpDRZ8PKsJKu1ww
+2025-09-03 22:34:20 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:34:21 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTA2MCwiZXhwIjoxNzU2OTE5MDkwfQ.oWice0tcp9NBk0Pw72UaH1v6RYuOrotOWDv4XWxBhYVgioD2-KYrwOBfJi7AxfEUt20L-xSrpYZUMF7Vh9wFXA
+2025-09-03 22:34:21 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:34:21 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:36:15 TRACE [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTA2MCwiZXhwIjoxNzU2OTE5MDkwfQ.oWice0tcp9NBk0Pw72UaH1v6RYuOrotOWDv4XWxBhYVgioD2-KYrwOBfJi7AxfEUt20L-xSrpYZUMF7Vh9wFXA
+2025-09-03 22:36:15 ERROR [http-nio-8081-exec-3] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:36:16 TRACE [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTA2MCwiZXhwIjoxNzU2OTE5MDkwfQ.oWice0tcp9NBk0Pw72UaH1v6RYuOrotOWDv4XWxBhYVgioD2-KYrwOBfJi7AxfEUt20L-xSrpYZUMF7Vh9wFXA
+2025-09-03 22:36:16 ERROR [http-nio-8081-exec-5] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:36:16 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTE3NiwiZXhwIjoxNzU2OTE5MjA2fQ.eTV9U-DlbYwOABRUU0hEgF0pElvJZ09BcerQHU3-PqFqZbHx7Scvfy_haD_EjjvbegyyemSXw43zPRVJQEnAcg
+2025-09-03 22:36:16 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:36:16 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:36:16 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-09-03 22:36:16 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - Time taken 38 ms
+2025-09-03 22:36:16 INFO  [http-nio-8081-exec-6] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-09-03 22:37:17 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTE3NiwiZXhwIjoxNzU2OTE5MjA2fQ.eTV9U-DlbYwOABRUU0hEgF0pElvJZ09BcerQHU3-PqFqZbHx7Scvfy_haD_EjjvbegyyemSXw43zPRVJQEnAcg
+2025-09-03 22:37:17 ERROR [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:37:18 TRACE [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTE3NiwiZXhwIjoxNzU2OTE5MjA2fQ.eTV9U-DlbYwOABRUU0hEgF0pElvJZ09BcerQHU3-PqFqZbHx7Scvfy_haD_EjjvbegyyemSXw43zPRVJQEnAcg
+2025-09-03 22:37:18 ERROR [http-nio-8081-exec-1] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:37:18 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTIzOCwiZXhwIjoxNzU2OTE5MjY4fQ.uOavsgg3tgmZnYw1lsVhtlokMtt1dFejdtXaN6CBF8VCWmWvxQ5Yx5tpRvt86mysrplfHzyv8op6uI3WV9GPkA
+2025-09-03 22:37:18 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:37:18 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:37:18 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-09-03 22:37:18 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 10 ms
+2025-09-03 22:37:18 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-09-03 22:37:30 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 22:37:36 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 22:37:37 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2OTE5MjU2LCJleHAiOjE3NTY5MTkyODZ9.hvpBnQGxiCQ3lH8LLLL4Tqp3phqFSXd__FVx4wLBbKcIJNPysMT19jr3r927zdiBbX-voY-uCoiOTSjcLHtxrw
+2025-09-03 22:37:37 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2OTE5MjU2LCJleHAiOjE3NTY5MTkyODZ9.hvpBnQGxiCQ3lH8LLLL4Tqp3phqFSXd__FVx4wLBbKcIJNPysMT19jr3r927zdiBbX-voY-uCoiOTSjcLHtxrw
+2025-09-03 22:37:37 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-09-03 22:37:37 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-09-03 22:37:37 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:37:37 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:43:57 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 22:43:57 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2OTE5NjM3LCJleHAiOjE3NTY5MTk2Njd9.adT8S4vQHLBoLqUSRf9AMlM6LaYe7A9BrpBRCLg1V1p5GIeSmR5qrFk6D2wVcxYwOJK9eqdUF3FnkPNbF8zoJA
+2025-09-03 22:43:57 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoic2FoaWxAZ21haWwuY29tIiwiaWF0IjoxNzU2OTE5NjM3LCJleHAiOjE3NTY5MTk2Njd9.adT8S4vQHLBoLqUSRf9AMlM6LaYe7A9BrpBRCLg1V1p5GIeSmR5qrFk6D2wVcxYwOJK9eqdUF3FnkPNbF8zoJA
+2025-09-03 22:43:57 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-09-03 22:43:57 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - user name : sahil@gmail.com
+2025-09-03 22:43:57 TRACE [http-nio-8081-exec-7] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:43:57 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:44:06 TRACE [http-nio-8081-exec-9] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : null
+2025-09-03 22:44:08 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTY0NiwiZXhwIjoxNzU2OTE5Njc2fQ.oKNjQsMQWQq8C3OcDxk2f-VsuWEUOe_CVI1lGY5_D5KRL3AsOu2a5daRJgc963a13bve0pW3pMoV2583UZNx9A
+2025-09-03 22:44:08 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:44:08 TRACE [http-nio-8081-exec-2] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:44:08 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Before method Execution listStations 
+2025-09-03 22:44:08 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - Time taken 20 ms
+2025-09-03 22:44:08 INFO  [http-nio-8081-exec-2] c.s.irctc.aspects.LoggingAspect - After  method Execution listStations 
+2025-09-03 22:44:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTY0NiwiZXhwIjoxNzU2OTE5Njc2fQ.oKNjQsMQWQq8C3OcDxk2f-VsuWEUOe_CVI1lGY5_D5KRL3AsOu2a5daRJgc963a13bve0pW3pMoV2583UZNx9A
+2025-09-03 22:44:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:44:15 TRACE [http-nio-8081-exec-4] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:44:57 TRACE [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTY0NiwiZXhwIjoxNzU2OTE5Njc2fQ.oKNjQsMQWQq8C3OcDxk2f-VsuWEUOe_CVI1lGY5_D5KRL3AsOu2a5daRJgc963a13bve0pW3pMoV2583UZNx9A
+2025-09-03 22:44:57 ERROR [http-nio-8081-exec-6] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:44:58 TRACE [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTY0NiwiZXhwIjoxNzU2OTE5Njc2fQ.oKNjQsMQWQq8C3OcDxk2f-VsuWEUOe_CVI1lGY5_D5KRL3AsOu2a5daRJgc963a13bve0pW3pMoV2583UZNx9A
+2025-09-03 22:44:58 ERROR [http-nio-8081-exec-8] c.s.i.c.s.JwtAuthenticationFilter - JWT Token has expired
+2025-09-03 22:44:58 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Request to the JWT Filter : Bearer eyJhbGciOiJIUzUxMiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwic3ViIjoiY2hhaXRhbnlhQGdtYWlsLmNvbSIsImlhdCI6MTc1NjkxOTY5OCwiZXhwIjoxNzU2OTE5NzI4fQ.P7owY5OBGXdXqowfz155uWOdXjzeOz6Wrsuv69DLfRq5HZRGwlv6yUorssnxgHf4qRH7RFzpFZ0abbBAc4o-fw
+2025-09-03 22:44:58 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - user name : chaitanya@gmail.com
+2025-09-03 22:44:58 TRACE [http-nio-8081-exec-10] c.s.i.c.s.JwtAuthenticationFilter - Authentication set in the Security Context
+2025-09-03 22:48:39 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03 22:48:39 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-03 22:48:39 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03 22:48:39 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-03 22:48:39 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

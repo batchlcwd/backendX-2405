@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-boot-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-boot-app
+  template:
+    metadata:
+      labels:
+        app: simple-boot-app
+    spec:
+      containers:
+        - name: simple-boot-app
+          image: batchlcwd/docker-example-image:v1
+          ports:
+            - containerPort: 8080
+          # env:
+          #   - name: APP_DATA_VALUE
+          #     value: "Hello from Kubernetes"
+          envFrom:
+            - configMapRef:
+                name: simple-boot-app-config
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-boot-app-service
+spec:
+  selector:
+    app: simple-boot-app
+  ports:
+    - protocol: TCP
+      # http://simple-boot-app-service:8080
+      port: 8080
+      # container port
+      targetPort: 8080
+      # Exposes the Service on every Node’s IP at port 30080.
+      nodePort: 30080
+
+  type: NodePort

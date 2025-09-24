@@ -8,11 +8,7 @@ public class CoachValidator implements ConstraintValidator<ValidCoach, Integer> 
     public boolean isValid(Integer value, ConstraintValidatorContext context) {
 
         System.out.println("validating coach numbers");
-        if (value > 100) {
-            return true;
-        }
+        return value > 100;
         //logic-- validation logic
-
-        return false;
     }
 }
