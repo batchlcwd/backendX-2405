@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.substring.quiz</groupId>
-	<artifactId>questionDtos-generator</artifactId>
+	<artifactId>question-generator-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>questionDtos-generator</name>
+	<name>question-generator-service</name>
 	<description>This is quiz service used for managing quizzes</description>
 	<url/>
 	<licenses>

@@ -23,6 +23,7 @@ spec:
           envFrom:
             - configMapRef:
                 name: simple-boot-app-config
+---
 apiVersion: v1
 kind: Service
 metadata:

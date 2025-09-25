@@ -1,78 +1,22 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: mysql
-spec:
-  selector:
-    app: mysql
-  ports:
-    - port: 3306
-      targetPort: 3306
-  type: ClusterIP
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql
+  name: irctc-backend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      app: mysql
+      app: irctc-backend
   template:
     metadata:
       labels:
-        app: mysql
+        app: irctc-backend
     spec:
       containers:
-        - name: mysql
-          image: mysql:8.0
-          env:
-            - name: MYSQL_ROOT_PASSWORD
-              value: root1234
-            - name: MYSQL_DATABASE
-              value: irctcdb
+        - name: irctc-backend
+          image: batchlcwd/irctc-backend:v1
           ports:
-            - containerPort: 3306
-          volumeMounts:
-            - name: mysql-data
-              mountPath: /var/lib/mysql
-      volumes:
-        - name: mysql-data
-          emptyDir: {}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: springboot-service
-spec:
-  selector:
-    app: springboot-sample
-  ports:
-    - port: 8080
-      targetPort: 8080
-      nodePort: 30081
-  type: NodePort
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: springboot-sample
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: springboot-sample
-  template:
-    metadata:
-      labels:
-        app: springboot-sample
-    spec:
-      containers:
-        - name: springboot-app
-          image: batchlcwd/docker-example-image:v1
-          ports:
-            - containerPort: 8080
+            - containerPort: 8081
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:mysql://mysql:3306/irctcdb?useSSL=false&allowPublicKeyRetrieval=true"
@@ -80,3 +24,17 @@ spec:
               value: "root"
             - name: SPRING_DATASOURCE_PASSWORD
               value: "root1234"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: irctc-backend-service
+spec:
+  selector:
+    app: irctc-backend
+  ports:
+    - port: 8081
+      targetPort: 8081
+      nodePort: 30082
+  type: NodePort

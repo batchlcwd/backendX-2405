@@ -1,0 +1,46 @@
+2025-09-16 22:08:47 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-16 22:08:47 WARN  [main] o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/durgesh_mac/.m2/repository/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+	jar:file:/Users/durgesh_mac/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2025-09-16 22:08:47 INFO  [main] c.s.i.IrctcBackendApplicationTests - Starting IrctcBackendApplicationTests using Java 21.0.1 with PID 54804 (started by durgesh_mac in /Users/durgesh_mac/Documents/Workspace/Live batch/backendX-2405/mvc/irctc-backend)
+2025-09-16 22:08:47 INFO  [main] c.s.i.IrctcBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-16 22:08:47 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-16 22:08:48 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 11 JPA repository interfaces.
+2025-09-16 22:08:48 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-16 22:08:48 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-09-16 22:08:48 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-16 22:08:48 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-16 22:08:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-16 22:08:48 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6109d880
+2025-09-16 22:08:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-16 22:08:49 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-16 22:08:49 WARN  [main] org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-16 22:08:49 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-16 22:08:49 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-16 22:08:49 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-16 22:08:50 INFO  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-09-16 22:08:50 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-16 22:08:50 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-16 22:08:51 INFO  [main] c.s.i.IrctcBackendApplicationTests - Started IrctcBackendApplicationTests in 3.747 seconds (process running for 4.205)
+2025-09-16 22:08:51 INFO  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-16 22:08:51 WARN  [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-16 22:08:51 ERROR [main] c.s.irctc.IrctcBackendApplication - Initializing roles...
+2025-09-16 22:08:51 INFO  [main] c.s.irctc.aspects.LoggingAspect - Before method Execution getAllTrains 
+2025-09-16 22:08:51 INFO  [main] c.s.irctc.aspects.LoggingAspect - Time taken 49 ms
+2025-09-16 22:08:51 INFO  [main] c.s.irctc.aspects.LoggingAspect - After  method Execution getAllTrains 
+2025-09-16 22:08:51 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-16 22:08:51 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-16 22:08:51 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
